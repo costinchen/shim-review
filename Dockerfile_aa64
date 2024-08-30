@@ -1,0 +1,20 @@
+FROM --platform=linux/arm64 tencentos/tencentos_server40_aarch64
+ENV SHIM_VERSION 15.8-1.tl4
+
+# build efi
+COPY shim-unsigned-aarch64-$SHIM_VERSION.src.rpm /
+RUN dnf -y install rpm-build
+RUN rpm -ivh shim-unsigned-aarch64-$SHIM_VERSION.src.rpm
+RUN dnf builddep -y /root/rpmbuild/SPECS/shim-unsigned-aarch64.spec
+RUN rpmbuild -bb /root/rpmbuild/SPECS/shim-unsigned-aarch64.spec
+COPY shimaa64.efi /
+RUN rpm2cpio /root/rpmbuild/RPMS/aarch64/shim-unsigned-aarch64-$SHIM_VERSION.aarch64.rpm | cpio -diu
+RUN ls -l /*.efi /usr/share/shim/$SHIM_VERSION/*/shim*.efi
+
+# compare
+RUN hexdump -Cv /usr/share/shim/$SHIM_VERSION/aa64/shimaa64.efi > built-aa64.hex
+RUN hexdump -Cv /shimaa64.efi > orig-aa64.hex
+RUN diff -u orig-aa64.hex built-aa64.hex
+RUN pesign -h -P -i /usr/share/shim/$SHIM_VERSION/aa64/shimaa64.efi
+RUN pesign -h -P -i /shimaa64.efi
+RUN sha256sum /usr/share/shim/$SHIM_VERSION/aa64/shimaa64.efi /shimaa64.efi
