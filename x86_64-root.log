@@ -1,0 +1,1718 @@
+INFO buildroot.py:553:  Mock Version: 4.1
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG buildroot.py:746:  kernel version == 5.4.119-1-tlinux4-0008
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts3-build-495286-67591/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts3-build-495286-67591/result
+INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/pki/mock
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf
+DEBUG package_manager.py:623:  configure DNF vars
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts3-build-495286-67591/root', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/installation-homedir
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/installation-homedir
+DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts3-build-495286-67591/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build']
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts3-build-495286-67591/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts3-build-495286-67591/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  Unable to detect release version (use '--releasever' to specify release version)
+DEBUG util.py:442:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:444:  Last metadata expiration check: 0:00:03 ago on Thu Aug 29 17:55:19 2024.
+DEBUG util.py:444:  Dependencies resolved.
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:   Package                     Arch   Version                         Repo   Size
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:  Installing group/module packages:
+DEBUG util.py:444:   bash                        x86_64 4.4.20-5.tl3                    build 1.5 M
+DEBUG util.py:444:   buildsys-macros-ts3         noarch 5.0-1.tl3                       build 6.9 k
+DEBUG util.py:444:   bzip2                       x86_64 1.0.6-26.tl3                    build  59 k
+DEBUG util.py:444:   coreutils                   x86_64 8.30-15.tl3                     build 1.2 M
+DEBUG util.py:444:   cpio                        x86_64 2.12-11.tl3                     build 265 k
+DEBUG util.py:444:   diffutils                   x86_64 3.6-6.tl3                       build 357 k
+DEBUG util.py:444:   findutils                   x86_64 1:4.6.0-22.tl3                  build 526 k
+DEBUG util.py:444:   gawk                        x86_64 4.2.1-4.tl3                     build 1.1 M
+DEBUG util.py:444:   gcc                         x86_64 8.5.0-23.tl3                    build  23 M
+DEBUG util.py:444:   gcc-c++                     x86_64 8.5.0-23.tl3                    build  12 M
+DEBUG util.py:444:   git-core                    x86_64 2.43.5-1.tl3                    build  11 M
+DEBUG util.py:444:   grep                        x86_64 3.1-6.tl3                       build 272 k
+DEBUG util.py:444:   gzip                        x86_64 1.9-13.tl3                      build 166 k
+DEBUG util.py:444:   info                        x86_64 6.5-7.tl3                       build 196 k
+DEBUG util.py:444:   make                        x86_64 1:4.2.1-11.tl3                  build 497 k
+DEBUG util.py:444:   patch                       x86_64 2.7.6-11.tl3                    build 137 k
+DEBUG util.py:444:   redhat-rpm-config           noarch 131-1.tl3                       build  90 k
+DEBUG util.py:444:   rpm-build                   x86_64 4.14.3-31.tl3                   build 173 k
+DEBUG util.py:444:   scl-utils-build             x86_64 1:2.0.2-16.tl3                  build  25 k
+DEBUG util.py:444:   sed                         x86_64 4.5-5.tl3                       build 297 k
+DEBUG util.py:444:   shadow-utils                x86_64 2:4.6-22.tl3                    build 1.2 M
+DEBUG util.py:444:   tar                         x86_64 2:1.30-9.tl3                    build 838 k
+DEBUG util.py:444:   tencentos-certdb            noarch 0.1-3.tl3                       build  18 k
+DEBUG util.py:444:   tencentos-getsource         noarch 0.1.0-8.tl3.tencentos           build 8.2 k
+DEBUG util.py:444:   tencentos-release           x86_64 3.3-5.tl3                       build  21 k
+DEBUG util.py:444:   unzip                       x86_64 6.0-46.tl3                      build 195 k
+DEBUG util.py:444:   util-linux                  x86_64 2.32.1-46.tl3.1                 build 2.5 M
+DEBUG util.py:444:   which                       x86_64 2.21-20.tl3                     build  49 k
+DEBUG util.py:444:   xz                          x86_64 5.2.4-4.tl3                     build 152 k
+DEBUG util.py:444:  Installing dependencies:
+DEBUG util.py:444:   annobin                     x86_64 11.13-2.tl3                     build 971 k
+DEBUG util.py:444:   audit-libs                  x86_64 3.1.2-1.tl3                     build 124 k
+DEBUG util.py:444:   basesystem                  noarch 11-5.tl3                        build 9.4 k
+DEBUG util.py:444:   binutils                    x86_64 2.30-123.tl3.ap.1               build 5.8 M
+DEBUG util.py:444:   brotli                      x86_64 1.0.6-3.tl3                     build 322 k
+DEBUG util.py:444:   bzip2-libs                  x86_64 1.0.6-26.tl3                    build  47 k
+DEBUG util.py:444:   ca-certificates             noarch 2024.2.69_v8.0.303-80.0.tl3.1   build 982 k
+DEBUG util.py:444:   chkconfig                   x86_64 1.19.2-1.tl3                    build 197 k
+DEBUG util.py:444:   coreutils-common            x86_64 8.30-15.tl3                     build 2.0 M
+DEBUG util.py:444:   cpp                         x86_64 8.5.0-23.tl3                    build  10 M
+DEBUG util.py:444:   cracklib                    x86_64 2.9.6-15.tl3                    build  92 k
+DEBUG util.py:444:   cracklib-dicts              x86_64 2.9.6-15.tl3                    build 4.0 M
+DEBUG util.py:444:   crypto-policies             noarch 20230731-1.git3177e06.tl3       build  63 k
+DEBUG util.py:444:   crypto-policies-scripts     noarch 20230731-1.git3177e06.tl3       build  83 k
+DEBUG util.py:444:   curl                        x86_64 7.61.1-34.tl3.2                 build 353 k
+DEBUG util.py:444:   cyrus-sasl-lib              x86_64 2.1.27-6.tl3                    build 122 k
+DEBUG util.py:444:   dwz                         x86_64 0.12-10.tl3                     build 108 k
+DEBUG util.py:444:   efi-srpm-macros             noarch 3-3.tl3.1                       build  21 k
+DEBUG util.py:444:   efivar-libs                 x86_64 37-4.tl3                        build 107 k
+DEBUG util.py:444:   elfutils                    x86_64 0.190-2.tl3                     build 570 k
+DEBUG util.py:444:   elfutils-default-yama-scope noarch 0.190-2.tl3                     build  52 k
+DEBUG util.py:444:   elfutils-libelf             x86_64 0.190-2.tl3                     build 231 k
+DEBUG util.py:444:   elfutils-libs               x86_64 0.190-2.tl3                     build 304 k
+DEBUG util.py:444:   expat                       x86_64 2.2.5-13.tl3                    build 113 k
+DEBUG util.py:444:   file                        x86_64 5.33-26.tl3                     build  76 k
+DEBUG util.py:444:   file-libs                   x86_64 5.33-26.tl3                     build 543 k
+DEBUG util.py:444:   filesystem                  x86_64 3.8-6.tl3                       build 1.1 M
+DEBUG util.py:444:   gc                          x86_64 7.6.4-3.tl3                     build 108 k
+DEBUG util.py:444:   gcc-plugin-annobin          x86_64 8.5.0-23.tl3                    build  35 k
+DEBUG util.py:444:   gdb-headless                x86_64 8.2-19.tl3.1                    build 3.7 M
+DEBUG util.py:444:   gdbm                        x86_64 1:1.18-2.tl3                    build 129 k
+DEBUG util.py:444:   gdbm-libs                   x86_64 1:1.18-2.tl3                    build  59 k
+DEBUG util.py:444:   ghc-srpm-macros             noarch 1.4.2-7.tl3                     build 8.3 k
+DEBUG util.py:444:   glib2                       x86_64 2.56.4-162.tl3                  build 2.5 M
+DEBUG util.py:444:   glibc                       x86_64 2.28-251.tl3.4.ap.1             build 2.2 M
+DEBUG util.py:444:   glibc-all-langpacks         x86_64 2.28-251.tl3.4.ap.1             build  26 M
+DEBUG util.py:444:   glibc-common                x86_64 2.28-251.tl3.4.ap.1             build 1.0 M
+DEBUG util.py:444:   glibc-devel                 x86_64 2.28-251.tl3.4.ap.1             build  87 k
+DEBUG util.py:444:   glibc-gconv-extra           x86_64 2.28-251.tl3.4.ap.1             build 1.5 M
+DEBUG util.py:444:   glibc-headers               x86_64 2.28-251.tl3.4.ap.1             build 491 k
+DEBUG util.py:444:   gmp                         x86_64 1:6.1.2-11.tl3                  build 317 k
+DEBUG util.py:444:   gnupg2                      x86_64 2.2.20-3.tl3                    build 2.4 M
+DEBUG util.py:444:   gnutls                      x86_64 3.6.16-8.tl3.3                  build 1.0 M
+DEBUG util.py:444:   go-srpm-macros              noarch 2-17.tl3                        build  12 k
+DEBUG util.py:444:   guile                       x86_64 5:2.0.14-7.tl3                  build 3.5 M
+DEBUG util.py:444:   ima-evm-utils               x86_64 1.3.2-12.tl3                    build  63 k
+DEBUG util.py:444:   isl                         x86_64 0.16.1-6.tl3                    build 835 k
+DEBUG util.py:444:   iso-codes                   noarch 3.79-2.tl3                      build 3.4 M
+DEBUG util.py:444:   kernel-headers              x86_64 5.4.119-19.0009.54.tl3          build 1.3 M
+DEBUG util.py:444:   keyutils-libs               x86_64 1.5.10-9.tl3                    build  33 k
+DEBUG util.py:444:   krb5-libs                   x86_64 1.18.2-29.tl3                   build 843 k
+DEBUG util.py:444:   less                        x86_64 530-3.tl3                       build 163 k
+DEBUG util.py:444:   libacl                      x86_64 2.2.53-3.tl3                    build  34 k
+DEBUG util.py:444:   libarchive                  x86_64 3.3.3-5.tl3                     build 359 k
+DEBUG util.py:444:   libassuan                   x86_64 2.5.1-3.tl3                     build  81 k
+DEBUG util.py:444:   libatomic_ops               x86_64 7.6.2-3.tl3                     build  37 k
+DEBUG util.py:444:   libattr                     x86_64 2.4.48-3.tl3                    build  26 k
+DEBUG util.py:444:   libbabeltrace               x86_64 1.5.4-4.tl3                     build 199 k
+DEBUG util.py:444:   libblkid                    x86_64 2.32.1-46.tl3.1                 build 220 k
+DEBUG util.py:444:   libcap                      x86_64 2.48-6.tl3                      build  73 k
+DEBUG util.py:444:   libcap-ng                   x86_64 0.7.11-1.tl3                    build  32 k
+DEBUG util.py:444:   libcom_err                  x86_64 1.45.6-5.tl3                    build  48 k
+DEBUG util.py:444:   libcurl                     x86_64 7.61.1-34.tl3.2                 build 303 k
+DEBUG util.py:444:   libdb                       x86_64 5.3.28-42.tl3                   build 750 k
+DEBUG util.py:444:   libdb-utils                 x86_64 5.3.28-42.tl3                   build 149 k
+DEBUG util.py:444:   libedit                     x86_64 3.1-23.20170329cvs.tl3          build 101 k
+DEBUG util.py:444:   libfdisk                    x86_64 2.32.1-46.tl3.1                 build 253 k
+DEBUG util.py:444:   libffi                      x86_64 3.1-24.tl3                      build  37 k
+DEBUG util.py:444:   libgcc                      x86_64 8.5.0-23.tl3                    build  81 k
+DEBUG util.py:444:   libgcrypt                   x86_64 1.8.5-7.tl3                     build 462 k
+DEBUG util.py:444:   libgomp                     x86_64 8.5.0-23.tl3                    build 207 k
+DEBUG util.py:444:   libgpg-error                x86_64 1.31-1.tl3                      build 240 k
+DEBUG util.py:444:   libidn2                     x86_64 2.2.0-1.tl3                     build  92 k
+DEBUG util.py:444:   libipt                      x86_64 1.6.1-8.tl3                     build  49 k
+DEBUG util.py:444:   libksba                     x86_64 1.3.5-9.tl3                     build 133 k
+DEBUG util.py:444:   libmount                    x86_64 2.32.1-46.tl3.1                 build 236 k
+DEBUG util.py:444:   libmpc                      x86_64 1.1.0-9.1.tl3                   build  60 k
+DEBUG util.py:444:   libnghttp2                  x86_64 1.33.0-6.tl3.1                  build  77 k
+DEBUG util.py:444:   libnsl2                     x86_64 1.2.0-2.20180605git4a062cf.tl3  build  56 k
+DEBUG util.py:444:   libpkgconf                  x86_64 1.4.2-1.tl3                     build  34 k
+DEBUG util.py:444:   libpsl                      x86_64 0.20.2-6.tl3                    build  60 k
+DEBUG util.py:444:   libpwquality                x86_64 1.4.4-6.tl3                     build 106 k
+DEBUG util.py:444:   libselinux                  x86_64 2.9-8.tl3                       build 165 k
+DEBUG util.py:444:   libsemanage                 x86_64 2.9-9.tl3                       build 167 k
+DEBUG util.py:444:   libsepol                    x86_64 2.9-3.tl3                       build 339 k
+DEBUG util.py:444:   libsigsegv                  x86_64 2.11-5.tl3                      build  29 k
+DEBUG util.py:444:   libsmartcols                x86_64 2.32.1-46.tl3.1                 build 179 k
+DEBUG util.py:444:   libssh                      x86_64 0.9.6-14.tl3                    build 219 k
+DEBUG util.py:444:   libssh-config               noarch 0.9.6-14.tl3                    build  20 k
+DEBUG util.py:444:   libstdc++                   x86_64 8.5.0-23.tl3                    build 454 k
+DEBUG util.py:444:   libstdc++-devel             x86_64 8.5.0-23.tl3                    build 2.1 M
+DEBUG util.py:444:   libtasn1                    x86_64 4.13-4.tl3                      build  75 k
+DEBUG util.py:444:   libtirpc                    x86_64 1.1.4-12.tl3                    build 113 k
+DEBUG util.py:444:   libtool-ltdl                x86_64 2.4.6-25.tl3                    build  57 k
+DEBUG util.py:444:   libunistring                x86_64 0.9.9-3.tl3.1                   build 419 k
+DEBUG util.py:444:   libusbx                     x86_64 1.0.23-4.tl3                    build  73 k
+DEBUG util.py:444:   libutempter                 x86_64 1.1.6-14.tl3                    build  31 k
+DEBUG util.py:444:   libuuid                     x86_64 2.32.1-46.tl3.1                 build  98 k
+DEBUG util.py:444:   libverto                    x86_64 0.3.2-2.tl3                     build  23 k
+DEBUG util.py:444:   libxcrypt                   x86_64 4.1.1-6.tl3                     build  72 k
+DEBUG util.py:444:   libxcrypt-devel             x86_64 4.1.1-6.tl3                     build  24 k
+DEBUG util.py:444:   libxml2                     x86_64 2.9.7-18.tl3.1                  build 696 k
+DEBUG util.py:444:   libzstd                     x86_64 1.4.4-1.tl3                     build 265 k
+DEBUG util.py:444:   lua-libs                    x86_64 5.3.4-12.tl3                    build 117 k
+DEBUG util.py:444:   lz4-libs                    x86_64 1.8.3-3.tl3                     build  65 k
+DEBUG util.py:444:   mpfr                        x86_64 3.1.6-1.tl3                     build 219 k
+DEBUG util.py:444:   ncurses                     x86_64 6.1-10.20180224.tl3             build 386 k
+DEBUG util.py:444:   ncurses-base                noarch 6.1-10.20180224.tl3             build  80 k
+DEBUG util.py:444:   ncurses-libs                x86_64 6.1-10.20180224.tl3             build 333 k
+DEBUG util.py:444:   nettle                      x86_64 3.4.1-7.tl3                     build 300 k
+DEBUG util.py:444:   npth                        x86_64 1.5-4.tl3                       build  25 k
+DEBUG util.py:444:   nspr                        x86_64 4.35.0-1.tl3                    build 142 k
+DEBUG util.py:444:   nss                         x86_64 3.90.0-7.tl3                    build 750 k
+DEBUG util.py:444:   nss-softokn                 x86_64 3.90.0-7.tl3                    build 1.2 M
+DEBUG util.py:444:   nss-softokn-freebl          x86_64 3.90.0-7.tl3                    build 375 k
+DEBUG util.py:444:   nss-sysinit                 x86_64 3.90.0-7.tl3                    build  74 k
+DEBUG util.py:444:   nss-tools                   x86_64 3.90.0-7.tl3                    build 583 k
+DEBUG util.py:444:   nss-util                    x86_64 3.90.0-7.tl3                    build 139 k
+DEBUG util.py:444:   ocaml-srpm-macros           noarch 5-4.tl3                         build 8.3 k
+DEBUG util.py:444:   openblas-srpm-macros        noarch 2-2.tl3                         build 6.9 k
+DEBUG util.py:444:   openldap                    x86_64 2.4.46-19.tl3                   build 352 k
+DEBUG util.py:444:   openssh                     x86_64 8.0p1-25.tl3                    build 525 k
+DEBUG util.py:444:   openssh-clients             x86_64 8.0p1-25.tl3                    build 645 k
+DEBUG util.py:444:   openssl-libs                x86_64 1:1.1.1k-12.tl3                 build 1.5 M
+DEBUG util.py:444:   p11-kit                     x86_64 0.23.22-2.tl3                   build 326 k
+DEBUG util.py:444:   p11-kit-trust               x86_64 0.23.22-2.tl3                   build 137 k
+DEBUG util.py:444:   pam                         x86_64 1.3.1-34.tl3.2                  build 746 k
+DEBUG util.py:444:   pcre                        x86_64 8.42-6.tl3                      build 209 k
+DEBUG util.py:444:   pcre2                       x86_64 10.32-2.tl3                     build 245 k
+DEBUG util.py:444:   perl-srpm-macros            noarch 1-25.tl3                        build 9.7 k
+DEBUG util.py:444:   pesign                      x86_64 0.112-27.tl3                    build 179 k
+DEBUG util.py:444:   pkgconf                     x86_64 1.4.2-1.tl3                     build  37 k
+DEBUG util.py:444:   pkgconf-m4                  noarch 1.4.2-1.tl3                     build  16 k
+DEBUG util.py:444:   pkgconf-pkg-config          x86_64 1.4.2-1.tl3                     build  14 k
+DEBUG util.py:444:   platform-python             x86_64 3.6.8-62.tl3                    build  86 k
+DEBUG util.py:444:   platform-python-setuptools  noarch 39.2.0-8.tl3                    build 630 k
+DEBUG util.py:444:   popt                        x86_64 1.18-1.tl3                      build  60 k
+DEBUG util.py:444:   publicsuffix-list-dafsa     noarch 20180723-1.tl3                  build  55 k
+DEBUG util.py:444:   python-rpm-macros           noarch 3-45.tl3                        build  15 k
+DEBUG util.py:444:   python-srpm-macros          noarch 3-45.tl3                        build  15 k
+DEBUG util.py:444:   python3-libs                x86_64 3.6.8-62.tl3                    build 7.9 M
+DEBUG util.py:444:   python3-pip-wheel           noarch 9.0.3-24.tl3                    build 864 k
+DEBUG util.py:444:   python3-rpm-macros          noarch 3-45.tl3                        build  14 k
+DEBUG util.py:444:   python3-setuptools-wheel    noarch 39.2.0-8.tl3                    build 286 k
+DEBUG util.py:444:   qt5-srpm-macros             noarch 5.15.3-1.tl3                    build 9.5 k
+DEBUG util.py:444:   readline                    x86_64 7.0-10.tl3                      build 198 k
+DEBUG util.py:444:   rpm                         x86_64 4.14.3-31.tl3                   build 543 k
+DEBUG util.py:444:   rpm-build-libs              x86_64 4.14.3-31.tl3                   build 156 k
+DEBUG util.py:444:   rpm-libs                    x86_64 4.14.3-31.tl3                   build 347 k
+DEBUG util.py:444:   rust-srpm-macros            noarch 5-2.tl3                         build 8.2 k
+DEBUG util.py:444:   setup                       noarch 2.12.2-10.tl3                   build 180 k
+DEBUG util.py:444:   sqlite-libs                 x86_64 3.26.0-19.tl3                   build 580 k
+DEBUG util.py:444:   systemd-libs                x86_64 239-82.tl3.2                    build 1.1 M
+DEBUG util.py:444:   tpm2-tss                    x86_64 2.3.2-6.tl3                     build 274 k
+DEBUG util.py:444:   tzdata                      noarch 2024a-1.tl3                     build 474 k
+DEBUG util.py:444:   xml-common                  noarch 0.6.3-50.tl3                    build  38 k
+DEBUG util.py:444:   xz-libs                     x86_64 5.2.4-4.tl3                     build  93 k
+DEBUG util.py:444:   zip                         x86_64 3.0-23.tl3                      build 269 k
+DEBUG util.py:444:   zlib                        x86_64 1.2.11-25.tl3                   build 102 k
+DEBUG util.py:444:   zstd                        x86_64 1.4.4-1.tl3                     build 392 k
+DEBUG util.py:444:  Installing Groups:
+DEBUG util.py:444:   build                                                                         
+DEBUG util.py:444:  Transaction Summary
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:  Install  189 Packages
+DEBUG util.py:444:  Total download size: 172 M
+DEBUG util.py:444:  Installed size: 874 M
+DEBUG util.py:444:  Downloading Packages:
+DEBUG util.py:444:  --------------------------------------------------------------------------------
+DEBUG util.py:444:  Total                                            68 MB/s | 172 MB     00:02     
+DEBUG util.py:444:  Running transaction check
+DEBUG util.py:444:  Transaction check succeeded.
+DEBUG util.py:444:  Running transaction test
+DEBUG util.py:444:  Transaction test succeeded.
+DEBUG util.py:444:  Running transaction
+DEBUG util.py:444:  warning: /etc/hosts created as /etc/hosts.rpmnew
+DEBUG util.py:444:  Installed:
+DEBUG util.py:444:    annobin-11.13-2.tl3.x86_64                                                    
+DEBUG util.py:444:    audit-libs-3.1.2-1.tl3.x86_64                                                 
+DEBUG util.py:444:    basesystem-11-5.tl3.noarch                                                    
+DEBUG util.py:444:    bash-4.4.20-5.tl3.x86_64                                                      
+DEBUG util.py:444:    binutils-2.30-123.tl3.ap.1.x86_64                                             
+DEBUG util.py:444:    brotli-1.0.6-3.tl3.x86_64                                                     
+DEBUG util.py:444:    buildsys-macros-ts3-5.0-1.tl3.noarch                                          
+DEBUG util.py:444:    bzip2-1.0.6-26.tl3.x86_64                                                     
+DEBUG util.py:444:    bzip2-libs-1.0.6-26.tl3.x86_64                                                
+DEBUG util.py:444:    ca-certificates-2024.2.69_v8.0.303-80.0.tl3.1.noarch                          
+DEBUG util.py:444:    chkconfig-1.19.2-1.tl3.x86_64                                                 
+DEBUG util.py:444:    coreutils-8.30-15.tl3.x86_64                                                  
+DEBUG util.py:444:    coreutils-common-8.30-15.tl3.x86_64                                           
+DEBUG util.py:444:    cpio-2.12-11.tl3.x86_64                                                       
+DEBUG util.py:444:    cpp-8.5.0-23.tl3.x86_64                                                       
+DEBUG util.py:444:    cracklib-2.9.6-15.tl3.x86_64                                                  
+DEBUG util.py:444:    cracklib-dicts-2.9.6-15.tl3.x86_64                                            
+DEBUG util.py:444:    crypto-policies-20230731-1.git3177e06.tl3.noarch                              
+DEBUG util.py:444:    crypto-policies-scripts-20230731-1.git3177e06.tl3.noarch                      
+DEBUG util.py:444:    curl-7.61.1-34.tl3.2.x86_64                                                   
+DEBUG util.py:444:    cyrus-sasl-lib-2.1.27-6.tl3.x86_64                                            
+DEBUG util.py:444:    diffutils-3.6-6.tl3.x86_64                                                    
+DEBUG util.py:444:    dwz-0.12-10.tl3.x86_64                                                        
+DEBUG util.py:444:    efi-srpm-macros-3-3.tl3.1.noarch                                              
+DEBUG util.py:444:    efivar-libs-37-4.tl3.x86_64                                                   
+DEBUG util.py:444:    elfutils-0.190-2.tl3.x86_64                                                   
+DEBUG util.py:444:    elfutils-default-yama-scope-0.190-2.tl3.noarch                                
+DEBUG util.py:444:    elfutils-libelf-0.190-2.tl3.x86_64                                            
+DEBUG util.py:444:    elfutils-libs-0.190-2.tl3.x86_64                                              
+DEBUG util.py:444:    expat-2.2.5-13.tl3.x86_64                                                     
+DEBUG util.py:444:    file-5.33-26.tl3.x86_64                                                       
+DEBUG util.py:444:    file-libs-5.33-26.tl3.x86_64                                                  
+DEBUG util.py:444:    filesystem-3.8-6.tl3.x86_64                                                   
+DEBUG util.py:444:    findutils-1:4.6.0-22.tl3.x86_64                                               
+DEBUG util.py:444:    gawk-4.2.1-4.tl3.x86_64                                                       
+DEBUG util.py:444:    gc-7.6.4-3.tl3.x86_64                                                         
+DEBUG util.py:444:    gcc-8.5.0-23.tl3.x86_64                                                       
+DEBUG util.py:444:    gcc-c++-8.5.0-23.tl3.x86_64                                                   
+DEBUG util.py:444:    gcc-plugin-annobin-8.5.0-23.tl3.x86_64                                        
+DEBUG util.py:444:    gdb-headless-8.2-19.tl3.1.x86_64                                              
+DEBUG util.py:444:    gdbm-1:1.18-2.tl3.x86_64                                                      
+DEBUG util.py:444:    gdbm-libs-1:1.18-2.tl3.x86_64                                                 
+DEBUG util.py:444:    ghc-srpm-macros-1.4.2-7.tl3.noarch                                            
+DEBUG util.py:444:    git-core-2.43.5-1.tl3.x86_64                                                  
+DEBUG util.py:444:    glib2-2.56.4-162.tl3.x86_64                                                   
+DEBUG util.py:444:    glibc-2.28-251.tl3.4.ap.1.x86_64                                              
+DEBUG util.py:444:    glibc-all-langpacks-2.28-251.tl3.4.ap.1.x86_64                                
+DEBUG util.py:444:    glibc-common-2.28-251.tl3.4.ap.1.x86_64                                       
+DEBUG util.py:444:    glibc-devel-2.28-251.tl3.4.ap.1.x86_64                                        
+DEBUG util.py:444:    glibc-gconv-extra-2.28-251.tl3.4.ap.1.x86_64                                  
+DEBUG util.py:444:    glibc-headers-2.28-251.tl3.4.ap.1.x86_64                                      
+DEBUG util.py:444:    gmp-1:6.1.2-11.tl3.x86_64                                                     
+DEBUG util.py:444:    gnupg2-2.2.20-3.tl3.x86_64                                                    
+DEBUG util.py:444:    gnutls-3.6.16-8.tl3.3.x86_64                                                  
+DEBUG util.py:444:    go-srpm-macros-2-17.tl3.noarch                                                
+DEBUG util.py:444:    grep-3.1-6.tl3.x86_64                                                         
+DEBUG util.py:444:    guile-5:2.0.14-7.tl3.x86_64                                                   
+DEBUG util.py:444:    gzip-1.9-13.tl3.x86_64                                                        
+DEBUG util.py:444:    ima-evm-utils-1.3.2-12.tl3.x86_64                                             
+DEBUG util.py:444:    info-6.5-7.tl3.x86_64                                                         
+DEBUG util.py:444:    isl-0.16.1-6.tl3.x86_64                                                       
+DEBUG util.py:444:    iso-codes-3.79-2.tl3.noarch                                                   
+DEBUG util.py:444:    kernel-headers-5.4.119-19.0009.54.tl3.x86_64                                  
+DEBUG util.py:444:    keyutils-libs-1.5.10-9.tl3.x86_64                                             
+DEBUG util.py:444:    krb5-libs-1.18.2-29.tl3.x86_64                                                
+DEBUG util.py:444:    less-530-3.tl3.x86_64                                                         
+DEBUG util.py:444:    libacl-2.2.53-3.tl3.x86_64                                                    
+DEBUG util.py:444:    libarchive-3.3.3-5.tl3.x86_64                                                 
+DEBUG util.py:444:    libassuan-2.5.1-3.tl3.x86_64                                                  
+DEBUG util.py:444:    libatomic_ops-7.6.2-3.tl3.x86_64                                              
+DEBUG util.py:444:    libattr-2.4.48-3.tl3.x86_64                                                   
+DEBUG util.py:444:    libbabeltrace-1.5.4-4.tl3.x86_64                                              
+DEBUG util.py:444:    libblkid-2.32.1-46.tl3.1.x86_64                                               
+DEBUG util.py:444:    libcap-2.48-6.tl3.x86_64                                                      
+DEBUG util.py:444:    libcap-ng-0.7.11-1.tl3.x86_64                                                 
+DEBUG util.py:444:    libcom_err-1.45.6-5.tl3.x86_64                                                
+DEBUG util.py:444:    libcurl-7.61.1-34.tl3.2.x86_64                                                
+DEBUG util.py:444:    libdb-5.3.28-42.tl3.x86_64                                                    
+DEBUG util.py:444:    libdb-utils-5.3.28-42.tl3.x86_64                                              
+DEBUG util.py:444:    libedit-3.1-23.20170329cvs.tl3.x86_64                                         
+DEBUG util.py:444:    libfdisk-2.32.1-46.tl3.1.x86_64                                               
+DEBUG util.py:444:    libffi-3.1-24.tl3.x86_64                                                      
+DEBUG util.py:444:    libgcc-8.5.0-23.tl3.x86_64                                                    
+DEBUG util.py:444:    libgcrypt-1.8.5-7.tl3.x86_64                                                  
+DEBUG util.py:444:    libgomp-8.5.0-23.tl3.x86_64                                                   
+DEBUG util.py:444:    libgpg-error-1.31-1.tl3.x86_64                                                
+DEBUG util.py:444:    libidn2-2.2.0-1.tl3.x86_64                                                    
+DEBUG util.py:444:    libipt-1.6.1-8.tl3.x86_64                                                     
+DEBUG util.py:444:    libksba-1.3.5-9.tl3.x86_64                                                    
+DEBUG util.py:444:    libmount-2.32.1-46.tl3.1.x86_64                                               
+DEBUG util.py:444:    libmpc-1.1.0-9.1.tl3.x86_64                                                   
+DEBUG util.py:444:    libnghttp2-1.33.0-6.tl3.1.x86_64                                              
+DEBUG util.py:444:    libnsl2-1.2.0-2.20180605git4a062cf.tl3.x86_64                                 
+DEBUG util.py:444:    libpkgconf-1.4.2-1.tl3.x86_64                                                 
+DEBUG util.py:444:    libpsl-0.20.2-6.tl3.x86_64                                                    
+DEBUG util.py:444:    libpwquality-1.4.4-6.tl3.x86_64                                               
+DEBUG util.py:444:    libselinux-2.9-8.tl3.x86_64                                                   
+DEBUG util.py:444:    libsemanage-2.9-9.tl3.x86_64                                                  
+DEBUG util.py:444:    libsepol-2.9-3.tl3.x86_64                                                     
+DEBUG util.py:444:    libsigsegv-2.11-5.tl3.x86_64                                                  
+DEBUG util.py:444:    libsmartcols-2.32.1-46.tl3.1.x86_64                                           
+DEBUG util.py:444:    libssh-0.9.6-14.tl3.x86_64                                                    
+DEBUG util.py:444:    libssh-config-0.9.6-14.tl3.noarch                                             
+DEBUG util.py:444:    libstdc++-8.5.0-23.tl3.x86_64                                                 
+DEBUG util.py:444:    libstdc++-devel-8.5.0-23.tl3.x86_64                                           
+DEBUG util.py:444:    libtasn1-4.13-4.tl3.x86_64                                                    
+DEBUG util.py:444:    libtirpc-1.1.4-12.tl3.x86_64                                                  
+DEBUG util.py:444:    libtool-ltdl-2.4.6-25.tl3.x86_64                                              
+DEBUG util.py:444:    libunistring-0.9.9-3.tl3.1.x86_64                                             
+DEBUG util.py:444:    libusbx-1.0.23-4.tl3.x86_64                                                   
+DEBUG util.py:444:    libutempter-1.1.6-14.tl3.x86_64                                               
+DEBUG util.py:444:    libuuid-2.32.1-46.tl3.1.x86_64                                                
+DEBUG util.py:444:    libverto-0.3.2-2.tl3.x86_64                                                   
+DEBUG util.py:444:    libxcrypt-4.1.1-6.tl3.x86_64                                                  
+DEBUG util.py:444:    libxcrypt-devel-4.1.1-6.tl3.x86_64                                            
+DEBUG util.py:444:    libxml2-2.9.7-18.tl3.1.x86_64                                                 
+DEBUG util.py:444:    libzstd-1.4.4-1.tl3.x86_64                                                    
+DEBUG util.py:444:    lua-libs-5.3.4-12.tl3.x86_64                                                  
+DEBUG util.py:444:    lz4-libs-1.8.3-3.tl3.x86_64                                                   
+DEBUG util.py:444:    make-1:4.2.1-11.tl3.x86_64                                                    
+DEBUG util.py:444:    mpfr-3.1.6-1.tl3.x86_64                                                       
+DEBUG util.py:444:    ncurses-6.1-10.20180224.tl3.x86_64                                            
+DEBUG util.py:444:    ncurses-base-6.1-10.20180224.tl3.noarch                                       
+DEBUG util.py:444:    ncurses-libs-6.1-10.20180224.tl3.x86_64                                       
+DEBUG util.py:444:    nettle-3.4.1-7.tl3.x86_64                                                     
+DEBUG util.py:444:    npth-1.5-4.tl3.x86_64                                                         
+DEBUG util.py:444:    nspr-4.35.0-1.tl3.x86_64                                                      
+DEBUG util.py:444:    nss-3.90.0-7.tl3.x86_64                                                       
+DEBUG util.py:444:    nss-softokn-3.90.0-7.tl3.x86_64                                               
+DEBUG util.py:444:    nss-softokn-freebl-3.90.0-7.tl3.x86_64                                        
+DEBUG util.py:444:    nss-sysinit-3.90.0-7.tl3.x86_64                                               
+DEBUG util.py:444:    nss-tools-3.90.0-7.tl3.x86_64                                                 
+DEBUG util.py:444:    nss-util-3.90.0-7.tl3.x86_64                                                  
+DEBUG util.py:444:    ocaml-srpm-macros-5-4.tl3.noarch                                              
+DEBUG util.py:444:    openblas-srpm-macros-2-2.tl3.noarch                                           
+DEBUG util.py:444:    openldap-2.4.46-19.tl3.x86_64                                                 
+DEBUG util.py:444:    openssh-8.0p1-25.tl3.x86_64                                                   
+DEBUG util.py:444:    openssh-clients-8.0p1-25.tl3.x86_64                                           
+DEBUG util.py:444:    openssl-libs-1:1.1.1k-12.tl3.x86_64                                           
+DEBUG util.py:444:    p11-kit-0.23.22-2.tl3.x86_64                                                  
+DEBUG util.py:444:    p11-kit-trust-0.23.22-2.tl3.x86_64                                            
+DEBUG util.py:444:    pam-1.3.1-34.tl3.2.x86_64                                                     
+DEBUG util.py:444:    patch-2.7.6-11.tl3.x86_64                                                     
+DEBUG util.py:444:    pcre-8.42-6.tl3.x86_64                                                        
+DEBUG util.py:444:    pcre2-10.32-2.tl3.x86_64                                                      
+DEBUG util.py:444:    perl-srpm-macros-1-25.tl3.noarch                                              
+DEBUG util.py:444:    pesign-0.112-27.tl3.x86_64                                                    
+DEBUG util.py:444:    pkgconf-1.4.2-1.tl3.x86_64                                                    
+DEBUG util.py:444:    pkgconf-m4-1.4.2-1.tl3.noarch                                                 
+DEBUG util.py:444:    pkgconf-pkg-config-1.4.2-1.tl3.x86_64                                         
+DEBUG util.py:444:    platform-python-3.6.8-62.tl3.x86_64                                           
+DEBUG util.py:444:    platform-python-setuptools-39.2.0-8.tl3.noarch                                
+DEBUG util.py:444:    popt-1.18-1.tl3.x86_64                                                        
+DEBUG util.py:444:    publicsuffix-list-dafsa-20180723-1.tl3.noarch                                 
+DEBUG util.py:444:    python-rpm-macros-3-45.tl3.noarch                                             
+DEBUG util.py:444:    python-srpm-macros-3-45.tl3.noarch                                            
+DEBUG util.py:444:    python3-libs-3.6.8-62.tl3.x86_64                                              
+DEBUG util.py:444:    python3-pip-wheel-9.0.3-24.tl3.noarch                                         
+DEBUG util.py:444:    python3-rpm-macros-3-45.tl3.noarch                                            
+DEBUG util.py:444:    python3-setuptools-wheel-39.2.0-8.tl3.noarch                                  
+DEBUG util.py:444:    qt5-srpm-macros-5.15.3-1.tl3.noarch                                           
+DEBUG util.py:444:    readline-7.0-10.tl3.x86_64                                                    
+DEBUG util.py:444:    redhat-rpm-config-131-1.tl3.noarch                                            
+DEBUG util.py:444:    rpm-4.14.3-31.tl3.x86_64                                                      
+DEBUG util.py:444:    rpm-build-4.14.3-31.tl3.x86_64                                                
+DEBUG util.py:444:    rpm-build-libs-4.14.3-31.tl3.x86_64                                           
+DEBUG util.py:444:    rpm-libs-4.14.3-31.tl3.x86_64                                                 
+DEBUG util.py:444:    rust-srpm-macros-5-2.tl3.noarch                                               
+DEBUG util.py:444:    scl-utils-build-1:2.0.2-16.tl3.x86_64                                         
+DEBUG util.py:444:    sed-4.5-5.tl3.x86_64                                                          
+DEBUG util.py:444:    setup-2.12.2-10.tl3.noarch                                                    
+DEBUG util.py:444:    shadow-utils-2:4.6-22.tl3.x86_64                                              
+DEBUG util.py:444:    sqlite-libs-3.26.0-19.tl3.x86_64                                              
+DEBUG util.py:444:    systemd-libs-239-82.tl3.2.x86_64                                              
+DEBUG util.py:444:    tar-2:1.30-9.tl3.x86_64                                                       
+DEBUG util.py:444:    tencentos-certdb-0.1-3.tl3.noarch                                             
+DEBUG util.py:444:    tencentos-getsource-0.1.0-8.tl3.tencentos.noarch                              
+DEBUG util.py:444:    tencentos-release-3.3-5.tl3.x86_64                                            
+DEBUG util.py:444:    tpm2-tss-2.3.2-6.tl3.x86_64                                                   
+DEBUG util.py:444:    tzdata-2024a-1.tl3.noarch                                                     
+DEBUG util.py:444:    unzip-6.0-46.tl3.x86_64                                                       
+DEBUG util.py:444:    util-linux-2.32.1-46.tl3.1.x86_64                                             
+DEBUG util.py:444:    which-2.21-20.tl3.x86_64                                                      
+DEBUG util.py:444:    xml-common-0.6.3-50.tl3.noarch                                                
+DEBUG util.py:444:    xz-5.2.4-4.tl3.x86_64                                                         
+DEBUG util.py:444:    xz-libs-5.2.4-4.tl3.x86_64                                                    
+DEBUG util.py:444:    zip-3.0-23.tl3.x86_64                                                         
+DEBUG util.py:444:    zlib-1.2.11-25.tl3.x86_64                                                     
+DEBUG util.py:444:    zstd-1.4.4-1.tl3.x86_64                                                       
+DEBUG util.py:444:  Complete!
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/os-release
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  userdel: user 'mockbuild' does not exist
+DEBUG util.py:595:  Child return code was: 6
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  groupdel: group 'mock' does not exist
+DEBUG util.py:595:  Child return code was: 6
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '991', '-g', '135', '-d', '/builddir', '-N', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/RPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/RPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SPECS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SPECS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SRPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SRPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SOURCES
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SOURCES
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILD
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILD
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILDROOT
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILDROOT
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/originals
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/originals
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/.initialized
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts3-build-495286-67591/root', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qa', '--root', '/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  python-srpm-macros-3-45.tl3.noarch
+DEBUG util.py:444:  python3-pip-wheel-9.0.3-24.tl3.noarch
+DEBUG util.py:444:  python3-rpm-macros-3-45.tl3.noarch
+DEBUG util.py:444:  tencentos-release-3.3-5.tl3.x86_64
+DEBUG util.py:444:  filesystem-3.8-6.tl3.x86_64
+DEBUG util.py:444:  rust-srpm-macros-5-2.tl3.noarch
+DEBUG util.py:444:  publicsuffix-list-dafsa-20180723-1.tl3.noarch
+DEBUG util.py:444:  perl-srpm-macros-1-25.tl3.noarch
+DEBUG util.py:444:  ocaml-srpm-macros-5-4.tl3.noarch
+DEBUG util.py:444:  pcre2-10.32-2.tl3.x86_64
+DEBUG util.py:444:  ncurses-libs-6.1-10.20180224.tl3.x86_64
+DEBUG util.py:444:  glibc-gconv-extra-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  glibc-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  libsepol-2.9-3.tl3.x86_64
+DEBUG util.py:444:  info-6.5-7.tl3.x86_64
+DEBUG util.py:444:  xz-libs-5.2.4-4.tl3.x86_64
+DEBUG util.py:444:  libstdc++-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  sqlite-libs-3.26.0-19.tl3.x86_64
+DEBUG util.py:444:  elfutils-libelf-0.190-2.tl3.x86_64
+DEBUG util.py:444:  popt-1.18-1.tl3.x86_64
+DEBUG util.py:444:  mpfr-3.1.6-1.tl3.x86_64
+DEBUG util.py:444:  libcap-2.48-6.tl3.x86_64
+DEBUG util.py:444:  libuuid-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  libunistring-0.9.9-3.tl3.1.x86_64
+DEBUG util.py:444:  libacl-2.2.53-3.tl3.x86_64
+DEBUG util.py:444:  libffi-3.1-24.tl3.x86_64
+DEBUG util.py:444:  libgpg-error-1.31-1.tl3.x86_64
+DEBUG util.py:444:  libidn2-2.2.0-1.tl3.x86_64
+DEBUG util.py:444:  file-libs-5.33-26.tl3.x86_64
+DEBUG util.py:444:  file-5.33-26.tl3.x86_64
+DEBUG util.py:444:  libxml2-2.9.7-18.tl3.1.x86_64
+DEBUG util.py:444:  findutils-4.6.0-22.tl3.x86_64
+DEBUG util.py:444:  elfutils-libs-0.190-2.tl3.x86_64
+DEBUG util.py:444:  keyutils-libs-1.5.10-9.tl3.x86_64
+DEBUG util.py:444:  audit-libs-3.1.2-1.tl3.x86_64
+DEBUG util.py:444:  p11-kit-trust-0.23.22-2.tl3.x86_64
+DEBUG util.py:444:  pcre-8.42-6.tl3.x86_64
+DEBUG util.py:444:  xz-5.2.4-4.tl3.x86_64
+DEBUG util.py:444:  gdbm-1.18-2.tl3.x86_64
+DEBUG util.py:444:  zip-3.0-23.tl3.x86_64
+DEBUG util.py:444:  iso-codes-3.79-2.tl3.noarch
+DEBUG util.py:444:  libpsl-0.20.2-6.tl3.x86_64
+DEBUG util.py:444:  libksba-1.3.5-9.tl3.x86_64
+DEBUG util.py:444:  patch-2.7.6-11.tl3.x86_64
+DEBUG util.py:444:  nss-softokn-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  libstdc++-devel-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  isl-0.16.1-6.tl3.x86_64
+DEBUG util.py:444:  bzip2-1.0.6-26.tl3.x86_64
+DEBUG util.py:444:  diffutils-3.6-6.tl3.x86_64
+DEBUG util.py:444:  less-530-3.tl3.x86_64
+DEBUG util.py:444:  cpio-2.12-11.tl3.x86_64
+DEBUG util.py:444:  libatomic_ops-7.6.2-3.tl3.x86_64
+DEBUG util.py:444:  libedit-3.1-23.20170329cvs.tl3.x86_64
+DEBUG util.py:444:  libnghttp2-1.33.0-6.tl3.1.x86_64
+DEBUG util.py:444:  pkgconf-1.4.2-1.tl3.x86_64
+DEBUG util.py:444:  libsigsegv-2.11-5.tl3.x86_64
+DEBUG util.py:444:  libsmartcols-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  libverto-0.3.2-2.tl3.x86_64
+DEBUG util.py:444:  krb5-libs-1.18.2-29.tl3.x86_64
+DEBUG util.py:444:  libnsl2-1.2.0-2.20180605git4a062cf.tl3.x86_64
+DEBUG util.py:444:  python3-libs-3.6.8-62.tl3.x86_64
+DEBUG util.py:444:  crypto-policies-scripts-20230731-1.git3177e06.tl3.noarch
+DEBUG util.py:444:  openssl-libs-1.1.1k-12.tl3.x86_64
+DEBUG util.py:444:  ca-certificates-2024.2.69_v8.0.303-80.0.tl3.1.noarch
+DEBUG util.py:444:  libblkid-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  shadow-utils-4.6-22.tl3.x86_64
+DEBUG util.py:444:  binutils-2.30-123.tl3.ap.1.x86_64
+DEBUG util.py:444:  cracklib-2.9.6-15.tl3.x86_64
+DEBUG util.py:444:  gnutls-3.6.16-8.tl3.3.x86_64
+DEBUG util.py:444:  libbabeltrace-1.5.4-4.tl3.x86_64
+DEBUG util.py:444:  pam-1.3.1-34.tl3.2.x86_64
+DEBUG util.py:444:  libutempter-1.1.6-14.tl3.x86_64
+DEBUG util.py:444:  ima-evm-utils-1.3.2-12.tl3.x86_64
+DEBUG util.py:444:  util-linux-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  openssh-clients-8.0p1-25.tl3.x86_64
+DEBUG util.py:444:  openldap-2.4.46-19.tl3.x86_64
+DEBUG util.py:444:  guile-2.0.14-7.tl3.x86_64
+DEBUG util.py:444:  nss-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  libarchive-3.3.3-5.tl3.x86_64
+DEBUG util.py:444:  gnupg2-2.2.20-3.tl3.x86_64
+DEBUG util.py:444:  libssh-0.9.6-14.tl3.x86_64
+DEBUG util.py:444:  curl-7.61.1-34.tl3.2.x86_64
+DEBUG util.py:444:  rpm-libs-4.14.3-31.tl3.x86_64
+DEBUG util.py:444:  rpm-build-libs-4.14.3-31.tl3.x86_64
+DEBUG util.py:444:  pesign-0.112-27.tl3.x86_64
+DEBUG util.py:444:  glibc-headers-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  glibc-devel-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  annobin-11.13-2.tl3.x86_64
+DEBUG util.py:444:  go-srpm-macros-2-17.tl3.noarch
+DEBUG util.py:444:  redhat-rpm-config-131-1.tl3.noarch
+DEBUG util.py:444:  scl-utils-build-2.0.2-16.tl3.x86_64
+DEBUG util.py:444:  tencentos-certdb-0.1-3.tl3.noarch
+DEBUG util.py:444:  git-core-2.43.5-1.tl3.x86_64
+DEBUG util.py:444:  make-4.2.1-11.tl3.x86_64
+DEBUG util.py:444:  libgcc-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  python3-setuptools-wheel-39.2.0-8.tl3.noarch
+DEBUG util.py:444:  python-rpm-macros-3-45.tl3.noarch
+DEBUG util.py:444:  tzdata-2024a-1.tl3.noarch
+DEBUG util.py:444:  setup-2.12.2-10.tl3.noarch
+DEBUG util.py:444:  basesystem-11-5.tl3.noarch
+DEBUG util.py:444:  qt5-srpm-macros-5.15.3-1.tl3.noarch
+DEBUG util.py:444:  pkgconf-m4-1.4.2-1.tl3.noarch
+DEBUG util.py:444:  openblas-srpm-macros-2-2.tl3.noarch
+DEBUG util.py:444:  ncurses-base-6.1-10.20180224.tl3.noarch
+DEBUG util.py:444:  libselinux-2.9-8.tl3.x86_64
+DEBUG util.py:444:  glibc-all-langpacks-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  glibc-common-2.28-251.tl3.4.ap.1.x86_64
+DEBUG util.py:444:  bash-4.4.20-5.tl3.x86_64
+DEBUG util.py:444:  zlib-1.2.11-25.tl3.x86_64
+DEBUG util.py:444:  bzip2-libs-1.0.6-26.tl3.x86_64
+DEBUG util.py:444:  gmp-6.1.2-11.tl3.x86_64
+DEBUG util.py:444:  libxcrypt-4.1.1-6.tl3.x86_64
+DEBUG util.py:444:  libzstd-1.4.4-1.tl3.x86_64
+DEBUG util.py:444:  nspr-4.35.0-1.tl3.x86_64
+DEBUG util.py:444:  nss-util-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  readline-7.0-10.tl3.x86_64
+DEBUG util.py:444:  libcom_err-1.45.6-5.tl3.x86_64
+DEBUG util.py:444:  chkconfig-1.19.2-1.tl3.x86_64
+DEBUG util.py:444:  libattr-2.4.48-3.tl3.x86_64
+DEBUG util.py:444:  sed-4.5-5.tl3.x86_64
+DEBUG util.py:444:  p11-kit-0.23.22-2.tl3.x86_64
+DEBUG util.py:444:  lua-libs-5.3.4-12.tl3.x86_64
+DEBUG util.py:444:  libmpc-1.1.0-9.1.tl3.x86_64
+DEBUG util.py:444:  expat-2.2.5-13.tl3.x86_64
+DEBUG util.py:444:  libgcrypt-1.8.5-7.tl3.x86_64
+DEBUG util.py:444:  unzip-6.0-46.tl3.x86_64
+DEBUG util.py:444:  elfutils-default-yama-scope-0.190-2.tl3.noarch
+DEBUG util.py:444:  gdbm-libs-1.18-2.tl3.x86_64
+DEBUG util.py:444:  libcap-ng-0.7.11-1.tl3.x86_64
+DEBUG util.py:444:  libtasn1-4.13-4.tl3.x86_64
+DEBUG util.py:444:  lz4-libs-1.8.3-3.tl3.x86_64
+DEBUG util.py:444:  grep-3.1-6.tl3.x86_64
+DEBUG util.py:444:  libsemanage-2.9-9.tl3.x86_64
+DEBUG util.py:444:  elfutils-0.190-2.tl3.x86_64
+DEBUG util.py:444:  xml-common-0.6.3-50.tl3.noarch
+DEBUG util.py:444:  cpp-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  libassuan-2.5.1-3.tl3.x86_64
+DEBUG util.py:444:  tar-1.30-9.tl3.x86_64
+DEBUG util.py:444:  nss-softokn-freebl-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  dwz-0.12-10.tl3.x86_64
+DEBUG util.py:444:  zstd-1.4.4-1.tl3.x86_64
+DEBUG util.py:444:  nettle-3.4.1-7.tl3.x86_64
+DEBUG util.py:444:  coreutils-common-8.30-15.tl3.x86_64
+DEBUG util.py:444:  libgomp-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  brotli-1.0.6-3.tl3.x86_64
+DEBUG util.py:444:  efivar-libs-37-4.tl3.x86_64
+DEBUG util.py:444:  gc-7.6.4-3.tl3.x86_64
+DEBUG util.py:444:  libipt-1.6.1-8.tl3.x86_64
+DEBUG util.py:444:  libpkgconf-1.4.2-1.tl3.x86_64
+DEBUG util.py:444:  pkgconf-pkg-config-1.4.2-1.tl3.x86_64
+DEBUG util.py:444:  gawk-4.2.1-4.tl3.x86_64
+DEBUG util.py:444:  libtool-ltdl-2.4.6-25.tl3.x86_64
+DEBUG util.py:444:  ncurses-6.1-10.20180224.tl3.x86_64
+DEBUG util.py:444:  libtirpc-1.1.4-12.tl3.x86_64
+DEBUG util.py:444:  platform-python-setuptools-39.2.0-8.tl3.noarch
+DEBUG util.py:444:  platform-python-3.6.8-62.tl3.x86_64
+DEBUG util.py:444:  crypto-policies-20230731-1.git3177e06.tl3.noarch
+DEBUG util.py:444:  coreutils-8.30-15.tl3.x86_64
+DEBUG util.py:444:  libdb-5.3.28-42.tl3.x86_64
+DEBUG util.py:444:  libmount-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  systemd-libs-239-82.tl3.2.x86_64
+DEBUG util.py:444:  gzip-1.9-13.tl3.x86_64
+DEBUG util.py:444:  cracklib-dicts-2.9.6-15.tl3.x86_64
+DEBUG util.py:444:  glib2-2.56.4-162.tl3.x86_64
+DEBUG util.py:444:  libpwquality-1.4.4-6.tl3.x86_64
+DEBUG util.py:444:  libusbx-1.0.23-4.tl3.x86_64
+DEBUG util.py:444:  tpm2-tss-2.3.2-6.tl3.x86_64
+DEBUG util.py:444:  libfdisk-2.32.1-46.tl3.1.x86_64
+DEBUG util.py:444:  openssh-8.0p1-25.tl3.x86_64
+DEBUG util.py:444:  cyrus-sasl-lib-2.1.27-6.tl3.x86_64
+DEBUG util.py:444:  libdb-utils-5.3.28-42.tl3.x86_64
+DEBUG util.py:444:  nss-sysinit-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  nss-tools-3.90.0-7.tl3.x86_64
+DEBUG util.py:444:  npth-1.5-4.tl3.x86_64
+DEBUG util.py:444:  libssh-config-0.9.6-14.tl3.noarch
+DEBUG util.py:444:  libcurl-7.61.1-34.tl3.2.x86_64
+DEBUG util.py:444:  rpm-4.14.3-31.tl3.x86_64
+DEBUG util.py:444:  gdb-headless-8.2-19.tl3.1.x86_64
+DEBUG util.py:444:  efi-srpm-macros-3-3.tl3.1.noarch
+DEBUG util.py:444:  kernel-headers-5.4.119-19.0009.54.tl3.x86_64
+DEBUG util.py:444:  libxcrypt-devel-4.1.1-6.tl3.x86_64
+DEBUG util.py:444:  gcc-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  gcc-plugin-annobin-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  ghc-srpm-macros-1.4.2-7.tl3.noarch
+DEBUG util.py:444:  rpm-build-4.14.3-31.tl3.x86_64
+DEBUG util.py:444:  gcc-c++-8.5.0-23.tl3.x86_64
+DEBUG util.py:444:  tencentos-getsource-0.1.0-8.tl3.tencentos.noarch
+DEBUG util.py:444:  which-2.21-20.tl3.x86_64
+DEBUG util.py:444:  buildsys-macros-ts3-5.0-1.tl3.noarch
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+INFO backend.py:231:  Installed packages:
+INFO backend.py:232:  file-libs-5.33-26.tl3.x86_64
+glibc-2.28-251.tl3.4.ap.1.x86_64
+libtasn1-4.13-4.tl3.x86_64
+setup-2.12.2-10.tl3.noarch
+p11-kit-trust-0.23.22-2.tl3.x86_64
+shadow-utils-4.6-22.tl3.x86_64
+util-linux-2.32.1-46.tl3.1.x86_64
+libacl-2.2.53-3.tl3.x86_64
+openssh-8.0p1-25.tl3.x86_64
+libidn2-2.2.0-1.tl3.x86_64
+findutils-4.6.0-22.tl3.x86_64
+nss-sysinit-3.90.0-7.tl3.x86_64
+libdb-5.3.28-42.tl3.x86_64
+libcom_err-1.45.6-5.tl3.x86_64
+tencentos-release-3.3-5.tl3.x86_64
+cpp-8.5.0-23.tl3.x86_64
+python-rpm-macros-3-45.tl3.noarch
+tencentos-getsource-0.1.0-8.tl3.tencentos.noarch
+tencentos-certdb-0.1-3.tl3.noarch
+xz-libs-5.2.4-4.tl3.x86_64
+libgcrypt-1.8.5-7.tl3.x86_64
+libtirpc-1.1.4-12.tl3.x86_64
+openssl-libs-1.1.1k-12.tl3.x86_64
+bzip2-1.0.6-26.tl3.x86_64
+scl-utils-build-2.0.2-16.tl3.x86_64
+systemd-libs-239-82.tl3.2.x86_64
+pkgconf-1.4.2-1.tl3.x86_64
+libdb-utils-5.3.28-42.tl3.x86_64
+kernel-headers-5.4.119-19.0009.54.tl3.x86_64
+python3-rpm-macros-3-45.tl3.noarch
+glib2-2.56.4-162.tl3.x86_64
+libpwquality-1.4.4-6.tl3.x86_64
+nspr-4.35.0-1.tl3.x86_64
+readline-7.0-10.tl3.x86_64
+zip-3.0-23.tl3.x86_64
+gzip-1.9-13.tl3.x86_64
+libfdisk-2.32.1-46.tl3.1.x86_64
+nss-softokn-3.90.0-7.tl3.x86_64
+curl-7.61.1-34.tl3.2.x86_64
+isl-0.16.1-6.tl3.x86_64
+guile-2.0.14-7.tl3.x86_64
+rpm-4.14.3-31.tl3.x86_64
+libattr-2.4.48-3.tl3.x86_64
+tzdata-2024a-1.tl3.noarch
+pcre-8.42-6.tl3.x86_64
+bzip2-libs-1.0.6-26.tl3.x86_64
+pkgconf-pkg-config-1.4.2-1.tl3.x86_64
+libarchive-3.3.3-5.tl3.x86_64
+less-530-3.tl3.x86_64
+pesign-0.112-27.tl3.x86_64
+bash-4.4.20-5.tl3.x86_64
+openldap-2.4.46-19.tl3.x86_64
+platform-python-3.6.8-62.tl3.x86_64
+python3-pip-wheel-9.0.3-24.tl3.noarch
+grep-3.1-6.tl3.x86_64
+libipt-1.6.1-8.tl3.x86_64
+sed-4.5-5.tl3.x86_64
+libedit-3.1-23.20170329cvs.tl3.x86_64
+glibc-devel-2.28-251.tl3.4.ap.1.x86_64
+audit-libs-3.1.2-1.tl3.x86_64
+libssh-0.9.6-14.tl3.x86_64
+nss-softokn-freebl-3.90.0-7.tl3.x86_64
+libpsl-0.20.2-6.tl3.x86_64
+gdbm-1.18-2.tl3.x86_64
+libselinux-2.9-8.tl3.x86_64
+gcc-plugin-annobin-8.5.0-23.tl3.x86_64
+libsepol-2.9-3.tl3.x86_64
+ncurses-libs-6.1-10.20180224.tl3.x86_64
+keyutils-libs-1.5.10-9.tl3.x86_64
+pam-1.3.1-34.tl3.2.x86_64
+gc-7.6.4-3.tl3.x86_64
+libsmartcols-2.32.1-46.tl3.1.x86_64
+elfutils-default-yama-scope-0.190-2.tl3.noarch
+chkconfig-1.19.2-1.tl3.x86_64
+gcc-8.5.0-23.tl3.x86_64
+gnutls-3.6.16-8.tl3.3.x86_64
+git-core-2.43.5-1.tl3.x86_64
+ncurses-base-6.1-10.20180224.tl3.noarch
+filesystem-3.8-6.tl3.x86_64
+ghc-srpm-macros-1.4.2-7.tl3.noarch
+pcre2-10.32-2.tl3.x86_64
+crypto-policies-scripts-20230731-1.git3177e06.tl3.noarch
+basesystem-11-5.tl3.noarch
+lua-libs-5.3.4-12.tl3.x86_64
+perl-srpm-macros-1-25.tl3.noarch
+nettle-3.4.1-7.tl3.x86_64
+cracklib-dicts-2.9.6-15.tl3.x86_64
+xml-common-0.6.3-50.tl3.noarch
+gmp-6.1.2-11.tl3.x86_64
+nss-tools-3.90.0-7.tl3.x86_64
+expat-2.2.5-13.tl3.x86_64
+brotli-1.0.6-3.tl3.x86_64
+libzstd-1.4.4-1.tl3.x86_64
+rpm-libs-4.14.3-31.tl3.x86_64
+libcurl-7.61.1-34.tl3.2.x86_64
+glibc-gconv-extra-2.28-251.tl3.4.ap.1.x86_64
+libuuid-2.32.1-46.tl3.1.x86_64
+python-srpm-macros-3-45.tl3.noarch
+redhat-rpm-config-131-1.tl3.noarch
+libxcrypt-4.1.1-6.tl3.x86_64
+rust-srpm-macros-5-2.tl3.noarch
+elfutils-libelf-0.190-2.tl3.x86_64
+iso-codes-3.79-2.tl3.noarch
+libxcrypt-devel-4.1.1-6.tl3.x86_64
+gcc-c++-8.5.0-23.tl3.x86_64
+libcap-ng-0.7.11-1.tl3.x86_64
+libpkgconf-1.4.2-1.tl3.x86_64
+gawk-4.2.1-4.tl3.x86_64
+libusbx-1.0.23-4.tl3.x86_64
+cyrus-sasl-lib-2.1.27-6.tl3.x86_64
+libbabeltrace-1.5.4-4.tl3.x86_64
+ncurses-6.1-10.20180224.tl3.x86_64
+annobin-11.13-2.tl3.x86_64
+platform-python-setuptools-39.2.0-8.tl3.noarch
+libverto-0.3.2-2.tl3.x86_64
+libblkid-2.32.1-46.tl3.1.x86_64
+efi-srpm-macros-3-3.tl3.1.noarch
+python3-libs-3.6.8-62.tl3.x86_64
+zlib-1.2.11-25.tl3.x86_64
+libatomic_ops-7.6.2-3.tl3.x86_64
+patch-2.7.6-11.tl3.x86_64
+binutils-2.30-123.tl3.ap.1.x86_64
+zstd-1.4.4-1.tl3.x86_64
+publicsuffix-list-dafsa-20180723-1.tl3.noarch
+dwz-0.12-10.tl3.x86_64
+glibc-common-2.28-251.tl3.4.ap.1.x86_64
+libsemanage-2.9-9.tl3.x86_64
+libmount-2.32.1-46.tl3.1.x86_64
+popt-1.18-1.tl3.x86_64
+cpio-2.12-11.tl3.x86_64
+libsigsegv-2.11-5.tl3.x86_64
+coreutils-common-8.30-15.tl3.x86_64
+make-4.2.1-11.tl3.x86_64
+gnupg2-2.2.20-3.tl3.x86_64
+libnghttp2-1.33.0-6.tl3.1.x86_64
+gdbm-libs-1.18-2.tl3.x86_64
+libksba-1.3.5-9.tl3.x86_64
+ima-evm-utils-1.3.2-12.tl3.x86_64
+which-2.21-20.tl3.x86_64
+libxml2-2.9.7-18.tl3.1.x86_64
+libgomp-8.5.0-23.tl3.x86_64
+info-6.5-7.tl3.x86_64
+buildsys-macros-ts3-5.0-1.tl3.noarch
+rpm-build-libs-4.14.3-31.tl3.x86_64
+libunistring-0.9.9-3.tl3.1.x86_64
+cracklib-2.9.6-15.tl3.x86_64
+lz4-libs-1.8.3-3.tl3.x86_64
+glibc-headers-2.28-251.tl3.4.ap.1.x86_64
+libgpg-error-1.31-1.tl3.x86_64
+coreutils-8.30-15.tl3.x86_64
+libnsl2-1.2.0-2.20180605git4a062cf.tl3.x86_64
+libstdc++-8.5.0-23.tl3.x86_64
+diffutils-3.6-6.tl3.x86_64
+libgcc-8.5.0-23.tl3.x86_64
+crypto-policies-20230731-1.git3177e06.tl3.noarch
+libmpc-1.1.0-9.1.tl3.x86_64
+xz-5.2.4-4.tl3.x86_64
+libassuan-2.5.1-3.tl3.x86_64
+python3-setuptools-wheel-39.2.0-8.tl3.noarch
+efivar-libs-37-4.tl3.x86_64
+gdb-headless-8.2-19.tl3.1.x86_64
+qt5-srpm-macros-5.15.3-1.tl3.noarch
+tpm2-tss-2.3.2-6.tl3.x86_64
+nss-3.90.0-7.tl3.x86_64
+nss-util-3.90.0-7.tl3.x86_64
+openssh-clients-8.0p1-25.tl3.x86_64
+mpfr-3.1.6-1.tl3.x86_64
+krb5-libs-1.18.2-29.tl3.x86_64
+libtool-ltdl-2.4.6-25.tl3.x86_64
+elfutils-0.190-2.tl3.x86_64
+libssh-config-0.9.6-14.tl3.noarch
+file-5.33-26.tl3.x86_64
+libutempter-1.1.6-14.tl3.x86_64
+libcap-2.48-6.tl3.x86_64
+libffi-3.1-24.tl3.x86_64
+rpm-build-4.14.3-31.tl3.x86_64
+tar-1.30-9.tl3.x86_64
+glibc-all-langpacks-2.28-251.tl3.4.ap.1.x86_64
+ca-certificates-2024.2.69_v8.0.303-80.0.tl3.1.noarch
+libstdc++-devel-8.5.0-23.tl3.x86_64
+go-srpm-macros-2-17.tl3.noarch
+openblas-srpm-macros-2-2.tl3.noarch
+elfutils-libs-0.190-2.tl3.x86_64
+ocaml-srpm-macros-5-4.tl3.noarch
+sqlite-libs-3.26.0-19.tl3.x86_64
+unzip-6.0-46.tl3.x86_64
+p11-kit-0.23.22-2.tl3.x86_64
+npth-1.5-4.tl3.x86_64
+pkgconf-m4-1.4.2-1.tl3.noarch
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+INFO buildroot.py:553:  Mock Version: 4.1
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG buildroot.py:746:  kernel version == 5.4.119-1-tlinux4-0008
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts3-build-495286-67591/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts3-build-495286-67591/result
+INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf
+DEBUG package_manager.py:623:  configure DNF vars
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/usermod', '-u', '991', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  usermod: no changes
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/.initialized
+INFO backend.py:388:  Running in chroot: ['uname -r']
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['uname -r'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell True
+DEBUG util.py:444:  5.4.119-1-tlinux4-0008
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+INFO buildroot.py:553:  Mock Version: 4.1
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/dev/mapper
+DEBUG buildroot.py:746:  kernel version == 5.4.119-1-tlinux4-0008
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/proc
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/sys
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts3-build-495286-67591/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts3-build-495286-67591/result
+INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/etc/dnf
+DEBUG package_manager.py:623:  configure DNF vars
+DEBUG buildroot.py:572:  removing 3 rpm db files
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts3-build-495286-67591/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts3-build-495286-67591/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts3-build-495286-67591/root/var/lib/rpm/__db.002
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/userdel', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/groupdel', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/groupadd', '-g', '135', 'mock'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '991', '-g', '135', '-d', '/builddir', '-N', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  useradd: warning: the home directory already exists.
+DEBUG util.py:442:  Not copying any file from skel directory into it.
+DEBUG util.py:442:  Creating mailbox file: File exists
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/RPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/RPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SPECS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SPECS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SRPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SRPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/SOURCES
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILD
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILD
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILDROOT
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/BUILDROOT
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/originals
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts3-build-495286-67591/root/builddir/build/originals
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/builddir
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts3-build-495286-67591/root/.initialized
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-unsigned-x64-15.8-1.tl3.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  Updating / installing...
+DEBUG util.py:444:  shim-unsigned-x64-15.8-1.tl3          ########################################
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-unsigned-x64-15.8-1.tl3.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  dbx.esl
+DEBUG util.py:444:  sbat.tencentos.csv
+DEBUG util.py:444:  shim-15.8.tar.bz2
+DEBUG util.py:444:  shim-find-debuginfo.sh
+DEBUG util.py:444:  shim-unsigned-x64.spec
+DEBUG util.py:444:  shim.patches
+DEBUG util.py:444:  tencentsecurebootca.der
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['rpmbuild', '--help'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:444:  Usage: rpmbuild [OPTION...]
+DEBUG util.py:444:  Build options with [ <specfile> | <tarball> | <source package> ]:
+DEBUG util.py:444:        -bp                        build through %prep (unpack sources and apply
+DEBUG util.py:444:                                   patches) from <specfile>
+DEBUG util.py:444:        -bc                        build through %build (%prep, then compile)
+DEBUG util.py:444:                                   from <specfile>
+DEBUG util.py:444:        -bi                        build through %install (%prep, %build, then
+DEBUG util.py:444:                                   install) from <specfile>
+DEBUG util.py:444:        -bl                        verify %files section from <specfile>
+DEBUG util.py:444:        -ba                        build source and binary packages from
+DEBUG util.py:444:                                   <specfile>
+DEBUG util.py:444:        -bb                        build binary package only from <specfile>
+DEBUG util.py:444:        -bs                        build source package only from <specfile>
+DEBUG util.py:444:        -rp                        build through %prep (unpack sources and apply
+DEBUG util.py:444:                                   patches) from <source package>
+DEBUG util.py:444:        -rc                        build through %build (%prep, then compile)
+DEBUG util.py:444:                                   from <source package>
+DEBUG util.py:444:        -ri                        build through %install (%prep, %build, then
+DEBUG util.py:444:                                   install) from <source package>
+DEBUG util.py:444:        -rl                        verify %files section from <source package>
+DEBUG util.py:444:        -ra                        build source and binary packages from <source
+DEBUG util.py:444:                                   package>
+DEBUG util.py:444:        -rb                        build binary package only from <source
+DEBUG util.py:444:                                   package>
+DEBUG util.py:444:        -rs                        build source package only from <source
+DEBUG util.py:444:                                   package>
+DEBUG util.py:444:        -tp                        build through %prep (unpack sources and apply
+DEBUG util.py:444:                                   patches) from <tarball>
+DEBUG util.py:444:        -tc                        build through %build (%prep, then compile)
+DEBUG util.py:444:                                   from <tarball>
+DEBUG util.py:444:        -ti                        build through %install (%prep, %build, then
+DEBUG util.py:444:                                   install) from <tarball>
+DEBUG util.py:444:        -ta                        build source and binary packages from
+DEBUG util.py:444:                                   <tarball>
+DEBUG util.py:444:        -tb                        build binary package only from <tarball>
+DEBUG util.py:444:        -ts                        build source package only from <tarball>
+DEBUG util.py:444:        --rebuild                  build binary package from <source package>
+DEBUG util.py:444:        --recompile                build through %install (%prep, %build, then
+DEBUG util.py:444:                                   install) from <source package>
+DEBUG util.py:444:        --buildroot=DIRECTORY      override build root
+DEBUG util.py:444:        --build-in-place           run build in current directory
+DEBUG util.py:444:        --clean                    remove build tree when done
+DEBUG util.py:444:        --nobuild                  do not execute any stages of the build
+DEBUG util.py:444:        --nodeps                   do not verify build dependencies
+DEBUG util.py:444:        --nodirtokens              generate package header(s) compatible with
+DEBUG util.py:444:                                   (legacy) rpm v3 packaging
+DEBUG util.py:444:        --noclean                  do not execute %clean stage of the build
+DEBUG util.py:444:        --noprep                   do not execute %prep stage of the build
+DEBUG util.py:444:        --nocheck                  do not execute %check stage of the build
+DEBUG util.py:444:        --rmsource                 remove sources when done
+DEBUG util.py:444:        --rmspec                   remove specfile when done
+DEBUG util.py:444:        --short-circuit            skip straight to specified stage (only for
+DEBUG util.py:444:                                   c,i)
+DEBUG util.py:444:        --target=CPU-VENDOR-OS     override target platform
+DEBUG util.py:444:  Common options for all rpm modes and executables:
+DEBUG util.py:444:    -D, --define='MACRO EXPR'      define MACRO with value EXPR
+DEBUG util.py:444:        --undefine=MACRO           undefine MACRO
+DEBUG util.py:444:    -E, --eval='EXPR'              print macro expansion of EXPR
+DEBUG util.py:444:        --target=CPU-VENDOR-OS     Specify target platform
+DEBUG util.py:444:        --macros=<FILE:...>        read <FILE:...> instead of default file(s)
+DEBUG util.py:444:        --noplugins                don't enable any plugins
+DEBUG util.py:444:        --nodigest                 don't verify package digest(s)
+DEBUG util.py:444:        --nosignature              don't verify package signature(s)
+DEBUG util.py:444:        --rcfile=<FILE:...>        read <FILE:...> instead of default file(s)
+DEBUG util.py:444:    -r, --root=ROOT                use ROOT as top level directory (default: "/")
+DEBUG util.py:444:        --dbpath=DIRECTORY         use database in DIRECTORY
+DEBUG util.py:444:        --querytags                display known query tags
+DEBUG util.py:444:        --showrc                   display final rpmrc and macro configuration
+DEBUG util.py:444:        --quiet                    provide less detailed output
+DEBUG util.py:444:    -v, --verbose                  provide more detailed output
+DEBUG util.py:444:        --version                  print the version of rpm being used
+DEBUG util.py:444:  Options implemented via popt alias/exec:
+DEBUG util.py:444:        --with=<option>            enable configure <option> for build
+DEBUG util.py:444:        --without=<option>         disable configure <option> for build
+DEBUG util.py:444:        --buildpolicy=<policy>     set buildroot <policy> (e.g. compress man
+DEBUG util.py:444:                                   pages)
+DEBUG util.py:444:        --sign                     generate GPG signature (deprecated, use
+DEBUG util.py:444:                                   command rpmsign instead)
+DEBUG util.py:444:        --nodebuginfo              do not generate debuginfo for this package
+DEBUG util.py:444:  Help options:
+DEBUG util.py:444:    -?, --help                     Show this help message
+DEBUG util.py:444:        --usage                    Display brief usage message
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts3-build-495286-67591/root', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591/root/installation-homedir
+DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts3-build-495286-67591/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts3-build-495286-67591/root//builddir/build/SRPMS/shim-unsigned-x64-15.8-1.tl3.src.rpm']
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts3-build-495286-67591/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts3-build-495286-67591/root//builddir/build/SRPMS/shim-unsigned-x64-15.8-1.tl3.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts3-build-495286-67591/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:442:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
+DEBUG util.py:444:  Package findutils-1:4.6.0-22.tl3.x86_64 is already installed.
+DEBUG util.py:444:  Package gcc-8.5.0-23.tl3.x86_64 is already installed.
+DEBUG util.py:444:  Package make-1:4.2.1-11.tl3.x86_64 is already installed.
+DEBUG util.py:444:  Package pesign-0.112-27.tl3.x86_64 is already installed.
+DEBUG util.py:444:  Dependencies resolved.
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:   Package                Arch   Version                              Repo   Size
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:  Installing:
+DEBUG util.py:444:   dos2unix               x86_64 7.4.0-3.tl3                          build 240 k
+DEBUG util.py:444:   elfutils-libelf-devel  x86_64 0.190-2.tl3                          build  61 k
+DEBUG util.py:444:   git                    x86_64 2.43.5-1.tl3                         build  91 k
+DEBUG util.py:444:   openssl                x86_64 1:1.1.1k-12.tl3                      build 710 k
+DEBUG util.py:444:   openssl-devel          x86_64 1:1.1.1k-12.tl3                      build 2.3 M
+DEBUG util.py:444:  Installing dependencies:
+DEBUG util.py:444:   emacs-filesystem       noarch 1:26.1-11.tl3                        build  69 k
+DEBUG util.py:444:   git-core-doc           noarch 2.43.5-1.tl3                         build 3.1 M
+DEBUG util.py:444:   groff-base             x86_64 1.22.3-18.tl3                        build 1.0 M
+DEBUG util.py:444:   keyutils-libs-devel    x86_64 1.5.10-9.tl3                         build  47 k
+DEBUG util.py:444:   krb5-devel             x86_64 1.18.2-29.tl3                        build 561 k
+DEBUG util.py:444:   libcom_err-devel       x86_64 1.45.6-5.tl3                         build  38 k
+DEBUG util.py:444:   libkadm5               x86_64 1.18.2-29.tl3                        build 187 k
+DEBUG util.py:444:   libselinux-devel       x86_64 2.9-8.tl3                            build 199 k
+DEBUG util.py:444:   libsepol-devel         x86_64 2.9-3.tl3                            build  86 k
+DEBUG util.py:444:   libverto-devel         x86_64 0.3.2-2.tl3                          build  17 k
+DEBUG util.py:444:   libzstd-devel          x86_64 1.4.4-1.tl3                          build  43 k
+DEBUG util.py:444:   pcre2-devel            x86_64 10.32-2.tl3                          build 604 k
+DEBUG util.py:444:   pcre2-utf16            x86_64 10.32-2.tl3                          build 228 k
+DEBUG util.py:444:   pcre2-utf32            x86_64 10.32-2.tl3                          build 219 k
+DEBUG util.py:444:   perl-Carp              noarch 1.42-396.tl3                         build  29 k
+DEBUG util.py:444:   perl-Data-Dumper       x86_64 2.167-399.tl3                        build  57 k
+DEBUG util.py:444:   perl-Digest            noarch 1.17-395.tl3                         build  26 k
+DEBUG util.py:444:   perl-Digest-MD5        x86_64 2.55-396.tl3                         build  36 k
+DEBUG util.py:444:   perl-Encode            x86_64 4:2.97-3.tl3                         build 1.5 M
+DEBUG util.py:444:   perl-Errno             x86_64 1.28-422.tl3                         build  75 k
+DEBUG util.py:444:   perl-Error             noarch 1:0.17025-2.tl3                      build  45 k
+DEBUG util.py:444:   perl-Exporter          noarch 5.72-396.tl3                         build  33 k
+DEBUG util.py:444:   perl-File-Path         noarch 2.15-2.tl3                           build  37 k
+DEBUG util.py:444:   perl-File-Temp         noarch 0.230.600-1.tl3                      build  62 k
+DEBUG util.py:444:   perl-Getopt-Long       noarch 1:2.50-4.tl3                         build  62 k
+DEBUG util.py:444:   perl-Git               noarch 2.43.5-1.tl3                         build  78 k
+DEBUG util.py:444:   perl-HTTP-Tiny         noarch 0.074-2.tl3.1                        build  58 k
+DEBUG util.py:444:   perl-IO                x86_64 1.38-422.tl3                         build 141 k
+DEBUG util.py:444:   perl-IO-Socket-IP      noarch 0.39-5.tl3                           build  46 k
+DEBUG util.py:444:   perl-IO-Socket-SSL     noarch 2.056-1.module+el8.6.0+229+a3e91c49  build 285 k
+DEBUG util.py:444:   perl-MIME-Base64       x86_64 3.15-396.tl3                         build  30 k
+DEBUG util.py:444:   perl-Mozilla-CA        noarch 20160104-7.module+el8.6.0+319+4ee386d4
+DEBUG util.py:444:                                                                      build  14 k
+DEBUG util.py:444:   perl-Net-SSLeay        x86_64 1.88-1.module+el8.6.0+229+a3e91c49   build 378 k
+DEBUG util.py:444:   perl-PathTools         x86_64 3.74-1.tl3                           build  89 k
+DEBUG util.py:444:   perl-Pod-Escapes       noarch 1:1.07-395.tl3                       build  19 k
+DEBUG util.py:444:   perl-Pod-Perldoc       noarch 3.28-396.tl3                         build  85 k
+DEBUG util.py:444:   perl-Pod-Simple        noarch 1:3.35-395.tl3                       build 212 k
+DEBUG util.py:444:   perl-Pod-Usage         noarch 4:1.69-395.tl3                       build  33 k
+DEBUG util.py:444:   perl-Scalar-List-Utils x86_64 3:1.49-2.tl3                         build  67 k
+DEBUG util.py:444:   perl-Socket            x86_64 4:2.027-3.tl3                        build  58 k
+DEBUG util.py:444:   perl-Storable          x86_64 1:3.11-3.tl3                         build  97 k
+DEBUG util.py:444:   perl-Term-ANSIColor    noarch 4.06-396.tl3                         build  45 k
+DEBUG util.py:444:   perl-Term-Cap          noarch 1.17-395.tl3                         build  22 k
+DEBUG util.py:444:   perl-TermReadKey       x86_64 2.37-7.tl3                           build  39 k
+DEBUG util.py:444:   perl-Text-ParseWords   noarch 3.30-395.tl3                         build  17 k
+DEBUG util.py:444:   perl-Text-Tabs+Wrap    noarch 2013.0523-395.tl3                    build  23 k
+DEBUG util.py:444:   perl-Time-Local        noarch 1:1.280-1.tl3                        build  32 k
+DEBUG util.py:444:   perl-URI               noarch 1.73-3.tl3                           build 115 k
+DEBUG util.py:444:   perl-Unicode-Normalize x86_64 1.25-396.tl3                         build  81 k
+DEBUG util.py:444:   perl-constant          noarch 1.33-396.tl3                         build  24 k
+DEBUG util.py:444:   perl-interpreter       x86_64 4:5.26.3-422.tl3                     build 6.3 M
+DEBUG util.py:444:   perl-libnet            noarch 3.11-3.tl3                           build 120 k
+DEBUG util.py:444:   perl-libs              x86_64 4:5.26.3-422.tl3                     build 1.6 M
+DEBUG util.py:444:   perl-macros            x86_64 4:5.26.3-422.tl3                     build  71 k
+DEBUG util.py:444:   perl-parent            noarch 1:0.237-1.tl3                        build  19 k
+DEBUG util.py:444:   perl-podlators         noarch 4.11-1.tl3                           build 117 k
+DEBUG util.py:444:   perl-threads           x86_64 1:2.21-2.tl3                         build  60 k
+DEBUG util.py:444:   perl-threads-shared    x86_64 1.58-2.tl3                           build  47 k
+DEBUG util.py:444:   zlib-devel             x86_64 1.2.11-25.tl3                        build  57 k
+DEBUG util.py:444:  Transaction Summary
+DEBUG util.py:444:  ================================================================================
+DEBUG util.py:444:  Install  64 Packages
+DEBUG util.py:444:  Total download size: 22 M
+DEBUG util.py:444:  Installed size: 64 M
+DEBUG util.py:444:  Downloading Packages:
+DEBUG util.py:444:  --------------------------------------------------------------------------------
+DEBUG util.py:444:  Total                                            35 MB/s |  22 MB     00:00     
+DEBUG util.py:444:  Running transaction check
+DEBUG util.py:444:  Transaction check succeeded.
+DEBUG util.py:444:  Running transaction test
+DEBUG util.py:444:  Transaction test succeeded.
+DEBUG util.py:444:  Running transaction
+DEBUG util.py:444:  Installed:
+DEBUG util.py:444:    dos2unix-7.4.0-3.tl3.x86_64                                                   
+DEBUG util.py:444:    elfutils-libelf-devel-0.190-2.tl3.x86_64                                      
+DEBUG util.py:444:    emacs-filesystem-1:26.1-11.tl3.noarch                                         
+DEBUG util.py:444:    git-2.43.5-1.tl3.x86_64                                                       
+DEBUG util.py:444:    git-core-doc-2.43.5-1.tl3.noarch                                              
+DEBUG util.py:444:    groff-base-1.22.3-18.tl3.x86_64                                               
+DEBUG util.py:444:    keyutils-libs-devel-1.5.10-9.tl3.x86_64                                       
+DEBUG util.py:444:    krb5-devel-1.18.2-29.tl3.x86_64                                               
+DEBUG util.py:444:    libcom_err-devel-1.45.6-5.tl3.x86_64                                          
+DEBUG util.py:444:    libkadm5-1.18.2-29.tl3.x86_64                                                 
+DEBUG util.py:444:    libselinux-devel-2.9-8.tl3.x86_64                                             
+DEBUG util.py:444:    libsepol-devel-2.9-3.tl3.x86_64                                               
+DEBUG util.py:444:    libverto-devel-0.3.2-2.tl3.x86_64                                             
+DEBUG util.py:444:    libzstd-devel-1.4.4-1.tl3.x86_64                                              
+DEBUG util.py:444:    openssl-1:1.1.1k-12.tl3.x86_64                                                
+DEBUG util.py:444:    openssl-devel-1:1.1.1k-12.tl3.x86_64                                          
+DEBUG util.py:444:    pcre2-devel-10.32-2.tl3.x86_64                                                
+DEBUG util.py:444:    pcre2-utf16-10.32-2.tl3.x86_64                                                
+DEBUG util.py:444:    pcre2-utf32-10.32-2.tl3.x86_64                                                
+DEBUG util.py:444:    perl-Carp-1.42-396.tl3.noarch                                                 
+DEBUG util.py:444:    perl-Data-Dumper-2.167-399.tl3.x86_64                                         
+DEBUG util.py:444:    perl-Digest-1.17-395.tl3.noarch                                               
+DEBUG util.py:444:    perl-Digest-MD5-2.55-396.tl3.x86_64                                           
+DEBUG util.py:444:    perl-Encode-4:2.97-3.tl3.x86_64                                               
+DEBUG util.py:444:    perl-Errno-1.28-422.tl3.x86_64                                                
+DEBUG util.py:444:    perl-Error-1:0.17025-2.tl3.noarch                                             
+DEBUG util.py:444:    perl-Exporter-5.72-396.tl3.noarch                                             
+DEBUG util.py:444:    perl-File-Path-2.15-2.tl3.noarch                                              
+DEBUG util.py:444:    perl-File-Temp-0.230.600-1.tl3.noarch                                         
+DEBUG util.py:444:    perl-Getopt-Long-1:2.50-4.tl3.noarch                                          
+DEBUG util.py:444:    perl-Git-2.43.5-1.tl3.noarch                                                  
+DEBUG util.py:444:    perl-HTTP-Tiny-0.074-2.tl3.1.noarch                                           
+DEBUG util.py:444:    perl-IO-1.38-422.tl3.x86_64                                                   
+DEBUG util.py:444:    perl-IO-Socket-IP-0.39-5.tl3.noarch                                           
+DEBUG util.py:444:    perl-IO-Socket-SSL-2.056-1.module+el8.6.0+229+a3e91c49.noarch                 
+DEBUG util.py:444:    perl-MIME-Base64-3.15-396.tl3.x86_64                                          
+DEBUG util.py:444:    perl-Mozilla-CA-20160104-7.module+el8.6.0+319+4ee386d4.noarch                 
+DEBUG util.py:444:    perl-Net-SSLeay-1.88-1.module+el8.6.0+229+a3e91c49.x86_64                     
+DEBUG util.py:444:    perl-PathTools-3.74-1.tl3.x86_64                                              
+DEBUG util.py:444:    perl-Pod-Escapes-1:1.07-395.tl3.noarch                                        
+DEBUG util.py:444:    perl-Pod-Perldoc-3.28-396.tl3.noarch                                          
+DEBUG util.py:444:    perl-Pod-Simple-1:3.35-395.tl3.noarch                                         
+DEBUG util.py:444:    perl-Pod-Usage-4:1.69-395.tl3.noarch                                          
+DEBUG util.py:444:    perl-Scalar-List-Utils-3:1.49-2.tl3.x86_64                                    
+DEBUG util.py:444:    perl-Socket-4:2.027-3.tl3.x86_64                                              
+DEBUG util.py:444:    perl-Storable-1:3.11-3.tl3.x86_64                                             
+DEBUG util.py:444:    perl-Term-ANSIColor-4.06-396.tl3.noarch                                       
+DEBUG util.py:444:    perl-Term-Cap-1.17-395.tl3.noarch                                             
+DEBUG util.py:444:    perl-TermReadKey-2.37-7.tl3.x86_64                                            
+DEBUG util.py:444:    perl-Text-ParseWords-3.30-395.tl3.noarch                                      
+DEBUG util.py:444:    perl-Text-Tabs+Wrap-2013.0523-395.tl3.noarch                                  
+DEBUG util.py:444:    perl-Time-Local-1:1.280-1.tl3.noarch                                          
+DEBUG util.py:444:    perl-URI-1.73-3.tl3.noarch                                                    
+DEBUG util.py:444:    perl-Unicode-Normalize-1.25-396.tl3.x86_64                                    
+DEBUG util.py:444:    perl-constant-1.33-396.tl3.noarch                                             
+DEBUG util.py:444:    perl-interpreter-4:5.26.3-422.tl3.x86_64                                      
+DEBUG util.py:444:    perl-libnet-3.11-3.tl3.noarch                                                 
+DEBUG util.py:444:    perl-libs-4:5.26.3-422.tl3.x86_64                                             
+DEBUG util.py:444:    perl-macros-4:5.26.3-422.tl3.x86_64                                           
+DEBUG util.py:444:    perl-parent-1:0.237-1.tl3.noarch                                              
+DEBUG util.py:444:    perl-podlators-4.11-1.tl3.noarch                                              
+DEBUG util.py:444:    perl-threads-1:2.21-2.tl3.x86_64                                              
+DEBUG util.py:444:    perl-threads-shared-1.58-2.tl3.x86_64                                         
+DEBUG util.py:444:    zlib-devel-1.2.11-25.tl3.x86_64                                               
+DEBUG util.py:444:  Complete!
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts3-build-495286-67591/root', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: rpm -qa --root '/data/mock/dist-ts3-build-495286-67591/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell True
+DEBUG util.py:444:  python-srpm-macros-3-45.tl3.noarch 1684996749 6093 cd1e0a37fd4b85073afc4aa1864d4a6c installed
+DEBUG util.py:444:  python3-pip-wheel-9.0.3-24.tl3.noarch 1716649253 897991 e59ff3542eafeb96068a70608d9ceab2 installed
+DEBUG util.py:444:  python3-rpm-macros-3-45.tl3.noarch 1684996749 3714 07e3394af2182b939077068f0d5044ec installed
+DEBUG util.py:444:  tencentos-release-3.3-5.tl3.x86_64 1671435432 30223 b8d8d29036cee2e3d75fd73e49d74f93 installed
+DEBUG util.py:444:  filesystem-3.8-6.tl3.x86_64 1640081897 0 f8c9c7af06a3c3629b01ec1865615663 installed
+DEBUG util.py:444:  rust-srpm-macros-5-2.tl3.noarch 1648298241 1131 56a39867d0f8e402ffea41832b052184 installed
+DEBUG util.py:444:  publicsuffix-list-dafsa-20180723-1.tl3.noarch 1665983038 64502 587dc02d92cb269437a42c2c1e1d466f installed
+DEBUG util.py:444:  perl-srpm-macros-1-25.tl3.noarch 1648296239 794 6f23983722d6274affd8fb7dd954f079 installed
+DEBUG util.py:444:  ocaml-srpm-macros-5-4.tl3.noarch 1648294670 737 256b8fb5ba7be7a6064a2a08e9d51b94 installed
+DEBUG util.py:444:  pcre2-10.32-2.tl3.x86_64 1645689147 660790 959c22257aa9b46876df662c4824a278 installed
+DEBUG util.py:444:  ncurses-libs-6.1-10.20180224.tl3.x86_64 1703499571 955832 ab8182f97d7d921586ceb8eed69fdea5 installed
+DEBUG util.py:444:  glibc-gconv-extra-2.28-251.tl3.4.ap.1.x86_64 1724728828 6417830 e5c35ff6718f8965f62321566842c540 installed
+DEBUG util.py:444:  glibc-2.28-251.tl3.4.ap.1.x86_64 1724728828 6878456 cd4ea712dabb1f8f0566133c303f028e installed
+DEBUG util.py:444:  libsepol-2.9-3.tl3.x86_64 1640083248 765640 a36e2bfa44471f34fcab7bcbd7e7ae92 installed
+DEBUG util.py:444:  info-6.5-7.tl3.x86_64 1665983479 381373 e30acf4d6302147e82e5ae422856f946 installed
+DEBUG util.py:444:  xz-libs-5.2.4-4.tl3.x86_64 1655182218 164943 f65ff715fd83f0e784d7e72e1ac27def installed
+DEBUG util.py:444:  libstdc++-8.5.0-23.tl3.x86_64 1724321801 1857732 cf6fdc94c2e5aba04d6cbb8babbd8f7b installed
+DEBUG util.py:444:  sqlite-libs-3.26.0-19.tl3.x86_64 1705651489 1166553 5c5733b524a35c260911832772fe4944 installed
+DEBUG util.py:444:  elfutils-libelf-0.190-2.tl3.x86_64 1716555587 1024026 2ca4c7f41fa80215b36b978ce2b460e9 installed
+DEBUG util.py:444:  popt-1.18-1.tl3.x86_64 1642706048 126650 75659471a6ce522e90c4c5e59aece8ad installed
+DEBUG util.py:444:  mpfr-3.1.6-1.tl3.x86_64 1665982490 521377 5c8365d98f00645ba2ea6cddbac7b978 installed
+DEBUG util.py:444:  libcap-2.48-6.tl3.x86_64 1705543379 164877 201060c4120141ee7767c52964300651 installed
+DEBUG util.py:444:  libuuid-2.32.1-46.tl3.1.x86_64 1718246512 35104 300dee46401aa21f985b6275b7c3a332 installed
+DEBUG util.py:444:  libunistring-0.9.9-3.tl3.1.x86_64 1666338687 1631236 8aefc0a488f39f31c23a275fd150cba6 installed
+DEBUG util.py:444:  libacl-2.2.53-3.tl3.x86_64 1716592329 37856 66af86e64565e3746a2f55ed678e4602 installed
+DEBUG util.py:444:  libffi-3.1-24.tl3.x86_64 1687686857 53844 b4470b44f24502ec307c8a6764e2a27f installed
+DEBUG util.py:444:  libgpg-error-1.31-1.tl3.x86_64 1665981831 893890 7fb37cef065092810836376f0f4b3c8f installed
+DEBUG util.py:444:  libidn2-2.2.0-1.tl3.x86_64 1665981850 245594 0529df5d53a6bd8f7a0448647a842f45 installed
+DEBUG util.py:444:  file-libs-5.33-26.tl3.x86_64 1717149330 6386570 36a2a2a37b25c408c7cbcd18e87ff5a2 installed
+DEBUG util.py:444:  file-5.33-26.tl3.x86_64 1717149330 93427 5b7784739ba4e7c92408b6c7e3514290 installed
+DEBUG util.py:444:  libxml2-2.9.7-18.tl3.1.x86_64 1717593166 1753138 29427b26fdb148bb7a84e696fea57439 installed
+DEBUG util.py:444:  findutils-1:4.6.0-22.tl3.x86_64 1716574643 1768964 b44ef0395d29c2ea0bd30c3a62179bed installed
+DEBUG util.py:444:  elfutils-libs-0.190-2.tl3.x86_64 1716555587 738167 f8ff7e92b579deb70e0e3784735fea61 installed
+DEBUG util.py:444:  keyutils-libs-1.5.10-9.tl3.x86_64 1640082525 51990 178e1ac9d3d646068afba21fcc83945a installed
+DEBUG util.py:444:  audit-libs-3.1.2-1.tl3.x86_64 1716799318 308498 b191c757feb46892a4bf9f5e668f4495 installed
+DEBUG util.py:444:  p11-kit-trust-0.23.22-2.tl3.x86_64 1716910971 483345 9bb8ea1015ee219ca984b610f465999d installed
+DEBUG util.py:444:  pcre-8.42-6.tl3.x86_64 1640085041 514019 fb56d6b348aa08e8d8d87b5f6571b106 installed
+DEBUG util.py:444:  xz-5.2.4-4.tl3.x86_64 1655182218 424186 4da72c9a216af6e3e90c9a568b55f184 installed
+DEBUG util.py:444:  gdbm-1:1.18-2.tl3.x86_64 1669803514 389737 33a0eafade9a4444d45563bba4ebd403 installed
+DEBUG util.py:444:  zip-3.0-23.tl3.x86_64 1665983651 826845 9c02dd77ea00ea5f83117f3466cc1c92 installed
+DEBUG util.py:444:  iso-codes-3.79-2.tl3.noarch 1648284159 18244318 b3bc03394877f27ffeff14e599fab522 installed
+DEBUG util.py:444:  libpsl-0.20.2-6.tl3.x86_64 1645688250 74940 9bd3b6cb02d18f8efc605c6e8dd3a1b8 installed
+DEBUG util.py:444:  libksba-1.3.5-9.tl3.x86_64 1675831436 334047 0c31b7e619ca65ec112896d89ed737e4 installed
+DEBUG util.py:444:  patch-2.7.6-11.tl3.x86_64 1665319125 266817 fea45d72bc1860c1206c037d0ebbbf58 installed
+DEBUG util.py:444:  nss-softokn-3.90.0-7.tl3.x86_64 1717195573 3915088 4e03abe4718f57e85abc39dd37adac5a installed
+DEBUG util.py:444:  libstdc++-devel-8.5.0-23.tl3.x86_64 1724321801 11815138 18d01539d10de205ac19bf2a48c31a4a installed
+DEBUG util.py:444:  isl-0.16.1-6.tl3.x86_64 1648284174 3208441 82eb6b1a45c67808ec5a3ef92fa038c4 installed
+DEBUG util.py:444:  bzip2-1.0.6-26.tl3.x86_64 1665981018 91980 6c2022ca89fa8bdba75c9092dbab8ec5 installed
+DEBUG util.py:444:  diffutils-3.6-6.tl3.x86_64 1666345659 1371087 cbebc040fdeb81fded8c5e03939e97d8 installed
+DEBUG util.py:444:  less-530-3.tl3.x86_64 1719944933 328450 85cb685473b879507b552a374babe9c8 installed
+DEBUG util.py:444:  cpio-2.12-11.tl3.x86_64 1652245515 967632 8eca59b535dbcd441819df26efa92dd5 installed
+DEBUG util.py:444:  libatomic_ops-7.6.2-3.tl3.x86_64 1648284730 76702 f5d970f82eeb9fe188d06e62b449cde9 installed
+DEBUG util.py:444:  libedit-3.1-23.20170329cvs.tl3.x86_64 1665981762 235488 79b41231f31f2285d2af82c57935dbde installed
+DEBUG util.py:444:  libnghttp2-1.33.0-6.tl3.1.x86_64 1719981735 168244 b1cc9cac53642db3bbab20e0e9206585 installed
+DEBUG util.py:444:  pkgconf-1.4.2-1.tl3.x86_64 1636122661 65919 d3220852c7cc14ff484e2e3c7f0cb219 installed
+DEBUG util.py:444:  libsigsegv-2.11-5.tl3.x86_64 1665982056 45754 8c41f4bf32aa3b2e5657176928a9b57a installed
+DEBUG util.py:444:  libsmartcols-2.32.1-46.tl3.1.x86_64 1718246512 248450 d6b88044ecf2e49a4f7c76982f7b8d35 installed
+DEBUG util.py:444:  libverto-0.3.2-2.tl3.x86_64 1669793979 26797 7c49bdcb732fee4fdcbefcae425a24c0 installed
+DEBUG util.py:444:  krb5-libs-1.18.2-29.tl3.x86_64 1723570227 2242440 58de4754c2b51a9bf334c44b405091d7 installed
+DEBUG util.py:444:  libnsl2-1.2.0-2.20180605git4a062cf.tl3.x86_64 1665982037 126938 f59e4705084f32c73b28de3b228c7a0b installed
+DEBUG util.py:444:  python3-libs-3.6.8-62.tl3.x86_64 1716543641 32371822 b6146cc0c8c5a2fd7074befbe8f22011 installed
+DEBUG util.py:444:  crypto-policies-scripts-20230731-1.git3177e06.tl3.noarch 1703498955 190779 ad153e325b45492b4102362b58cb206c installed
+DEBUG util.py:444:  openssl-libs-1:1.1.1k-12.tl3.x86_64 1703480926 3773970 eaec8dcb13db478da33fb0c26cae5406 installed
+DEBUG util.py:444:  ca-certificates-2024.2.69_v8.0.303-80.0.tl3.1.noarch 1724309758 2441100 e48e66a96598c89d89782fa002e32d68 installed
+DEBUG util.py:444:  libblkid-2.32.1-46.tl3.1.x86_64 1718246512 343944 625633b3068bebdcefb051383b4ddd56 installed
+DEBUG util.py:444:  shadow-utils-2:4.6-22.tl3.x86_64 1718246741 4072100 7774e0d8fa88accb305b61c34b4c6c18 installed
+DEBUG util.py:444:  binutils-2.30-123.tl3.ap.1.x86_64 1721819346 24945935 5516628ffe305df41b8308656a13e236 installed
+DEBUG util.py:444:  cracklib-2.9.6-15.tl3.x86_64 1665981107 234399 69824adc32de9f34bdb8351f11015310 installed
+DEBUG util.py:444:  gnutls-3.6.16-8.tl3.3.x86_64 1712854452 3007927 c962fb57698dfc76649824aefeaec4fa installed
+DEBUG util.py:444:  libbabeltrace-1.5.4-4.tl3.x86_64 1669705075 546515 137d59e76ce984c56d3a4801735632a2 installed
+DEBUG util.py:444:  pam-1.3.1-34.tl3.2.x86_64 1720604096 2650191 54abefa911326e0a9d865c3b9a1c5325 installed
+DEBUG util.py:444:  libutempter-1.1.6-14.tl3.x86_64 1665982269 51285 613bcf1037ab6e8eba90f35015c1bebd installed
+DEBUG util.py:444:  ima-evm-utils-1.3.2-12.tl3.x86_64 1636454824 145866 9761497a8c59a327fedf501ea841b8eb installed
+DEBUG util.py:444:  util-linux-2.32.1-46.tl3.1.x86_64 1718246512 11576307 e431baf071dec9f145543d87f8a0edb9 installed
+DEBUG util.py:444:  openssh-clients-8.0p1-25.tl3.x86_64 1723653258 2569707 c1f0985d9257a837f2a4760dfe8538c1 installed
+DEBUG util.py:444:  openldap-2.4.46-19.tl3.x86_64 1720440897 1006667 045addc249642e8a8d96bd92463876c0 installed
+DEBUG util.py:444:  guile-5:2.0.14-7.tl3.x86_64 1648281970 12094934 c1f04a477ac8ec284c4318f61ebbea40 installed
+DEBUG util.py:444:  nss-3.90.0-7.tl3.x86_64 1717195573 2062774 8e8c18d88ca20e8aecbfcb23f130511d installed
+DEBUG util.py:444:  libarchive-3.3.3-5.tl3.x86_64 1687687321 838255 8928b961ea49c4581b952e67e28e9b76 installed
+DEBUG util.py:444:  gnupg2-2.2.20-3.tl3.x86_64 1663124630 9919403 f4ba10907b9c88cd68b18fb00fec43f6 installed
+DEBUG util.py:444:  libssh-0.9.6-14.tl3.x86_64 1716445292 521903 c3409dd3dd341905212da729ba2d154b installed
+DEBUG util.py:444:  curl-7.61.1-34.tl3.2.x86_64 1724213237 700917 b076dfb9eef16d8cc5eb70be6260e47a installed
+DEBUG util.py:444:  rpm-libs-4.14.3-31.tl3.x86_64 1717132866 739544 77cb06678f7876811e3de9beda833a08 installed
+DEBUG util.py:444:  rpm-build-libs-4.14.3-31.tl3.x86_64 1717132866 216128 85ed8491f0721ace28e8bbe1ba310c2c installed
+DEBUG util.py:444:  pesign-0.112-27.tl3.x86_64 1680835921 1053384 1fbb7fc6545ab6ed3e57e2786c59bf48 installed
+DEBUG util.py:444:  glibc-headers-2.28-251.tl3.4.ap.1.x86_64 1724728828 2031958 5473c59f5f50e732e89078ac281a16fc installed
+DEBUG util.py:444:  glibc-devel-2.28-251.tl3.4.ap.1.x86_64 1724728828 240562 9a42552138915ebc3aac4ff67b9730a5 installed
+DEBUG util.py:444:  annobin-11.13-2.tl3.x86_64 1703566720 1005406 a193892334de504d46f54579d1cb4001 installed
+DEBUG util.py:444:  go-srpm-macros-2-17.tl3.noarch 1624271373 7342 379d08a9118b195d422c0f8a21a895c4 installed
+DEBUG util.py:444:  redhat-rpm-config-131-1.tl3.noarch 1684996627 157400 b24e83d3265731f9d4e2897ab1d31295 installed
+DEBUG util.py:444:  scl-utils-build-1:2.0.2-16.tl3.x86_64 1687686554 19481 c7a67fe37fc10c0ed9940c7956a96a23 installed
+DEBUG util.py:444:  tencentos-certdb-0.1-3.tl3.noarch 1689754757 71208 cf92912a94d039e4a19760f978da1a03 installed
+DEBUG util.py:444:  git-core-2.43.5-1.tl3.x86_64 1719308859 33333119 4437b00aaa510e10b99eee11f9de8f1f installed
+DEBUG util.py:444:  make-1:4.2.1-11.tl3.x86_64 1665982520 1436096 b47aa1bf64f90441d19d7b2d7e7c4283 installed
+DEBUG util.py:444:  zlib-devel-1.2.11-25.tl3.x86_64 1703499085 141078 c88a181a046cf763da4f0f480a426469 installed
+DEBUG util.py:444:  pcre2-utf16-10.32-2.tl3.x86_64 1645689147 603902 37ea720e39685fd38a5d14b0aa2a2ca8 installed
+DEBUG util.py:444:  openssl-1:1.1.1k-12.tl3.x86_64 1703480926 1185615 b7c3fa2763e2127b548c8d94b83b1a8d installed
+DEBUG util.py:444:  libverto-devel-0.3.2-2.tl3.x86_64 1669793979 26296 cb37548952e4ff66d5b3ac479551d886 installed
+DEBUG util.py:444:  libselinux-devel-2.9-8.tl3.x86_64 1687686881 192379 7e60ea55c76827eb0117e52fe7846eef installed
+DEBUG util.py:444:  libcom_err-devel-1.45.6-5.tl3.x86_64 1669605355 17058 4f64a810acfc87e6914163cdd1499e02 installed
+DEBUG util.py:444:  krb5-devel-1.18.2-29.tl3.x86_64 1723570227 1128207 e58648e88f74ea6fd516f997326094aa installed
+DEBUG util.py:444:  perl-Digest-1.17-395.tl3.noarch 1648295511 26685 e156c3fc48d9eebc43be96522e93ddeb installed
+DEBUG util.py:444:  perl-Data-Dumper-2.167-399.tl3.x86_64 1665982720 106387 169b45b8ee2a464d44135e4ce507cf9b installed
+DEBUG util.py:444:  perl-URI-1.73-3.tl3.noarch 1648296502 216452 b2553644a8479f7e304dd1bf412820ef installed
+DEBUG util.py:444:  perl-Net-SSLeay-1.88-1.module+el8.6.0+229+a3e91c49.x86_64 1667078811 1329471 c9e6ba134754290bb43a6e6dd7a885af installed
+DEBUG util.py:444:  perl-Mozilla-CA-20160104-7.module+el8.6.0+319+4ee386d4.noarch 1667201034 5714 6d9baeeb99a9672cf678abd5b59e0933 installed
+DEBUG util.py:444:  perl-IO-Socket-SSL-2.056-1.module+el8.6.0+229+a3e91c49.noarch 1667079788 591169 40f9810cf0f4475546e7b75ceac853c4 installed
+DEBUG util.py:444:  perl-Term-Cap-1.17-395.tl3.noarch 1665982829 29850 d56f34b769fe398933c50d93c34c698c installed
+DEBUG util.py:444:  perl-HTTP-Tiny-0.074-2.tl3.1.noarch 1712631042 149711 219d06d3c7f2caab5c5c51db8bddba6e installed
+DEBUG util.py:444:  perl-podlators-4.11-1.tl3.noarch 1665982795 287639 2ebfc50b3c04c558330722d202f72c9c installed
+DEBUG util.py:444:  perl-Text-ParseWords-3.30-395.tl3.noarch 1665982829 13101 8b4c226e261542c6525b324c5105be0d installed
+DEBUG util.py:444:  perl-MIME-Base64-3.15-396.tl3.x86_64 1665982771 41299 f0a6d195b0dbe3e814f930213ec6ffe3 installed
+DEBUG util.py:444:  perl-Getopt-Long-1:2.50-4.tl3.noarch 1665982885 139724 c65903e7bf4dfcf6d160e86993edfee8 installed
+DEBUG util.py:444:  perl-Socket-4:2.027-3.tl3.x86_64 1665982840 123878 ab2c6c081bdf0bbb522eec13c79a25ff installed
+DEBUG util.py:444:  perl-Carp-1.42-396.tl3.noarch 1665982689 41852 3f5f38aa61faec3a4dfc972c437a0dcb installed
+DEBUG util.py:444:  perl-libs-4:5.26.3-422.tl3.x86_64 1687687400 6105197 54f1a2ddfc35d486e3cc7357fde94252 installed
+DEBUG util.py:444:  perl-parent-1:0.237-1.tl3.noarch 1665982734 9187 82d226f93257eb3137fa8033c3d814ce installed
+DEBUG util.py:444:  perl-Text-Tabs+Wrap-2013.0523-395.tl3.noarch 1652942656 24825 ea32e3a8c4b5521222abc5c4201d1130 installed
+DEBUG util.py:444:  perl-File-Path-2.15-2.tl3.noarch 1665982712 64920 a5699b0913fcc2951f6656d3cebd5c8d installed
+DEBUG util.py:444:  perl-PathTools-3.74-1.tl3.x86_64 1665982835 182685 5ce574b6e10f450d123b97d2af02f8b5 installed
+DEBUG util.py:444:  perl-threads-1:2.21-2.tl3.x86_64 1665982948 109027 9f996cc9f3c305c95b3a52c2fe4c0e47 installed
+DEBUG util.py:444:  perl-interpreter-4:5.26.3-422.tl3.x86_64 1687687400 14400000 82c848d10273f0e3cf7d811f0e3de13e installed
+DEBUG util.py:444:  perl-TermReadKey-2.37-7.tl3.x86_64 1648296397 66071 09eaa6c50e50629661dfaf943896ee75 installed
+DEBUG util.py:444:  emacs-filesystem-1:26.1-11.tl3.noarch 1715066866 0 1fe55e632e6693f561ac0c38d5e7010a installed
+DEBUG util.py:444:  git-2.43.5-1.tl3.x86_64 1719308859 87937 fc8a3927ff1102e83e79159bd030611d installed
+DEBUG util.py:444:  elfutils-libelf-devel-0.190-2.tl3.x86_64 1716555587 35225 d0f1eb5105583cf82fe03fb67634f968 installed
+DEBUG util.py:444:  libgcc-8.5.0-23.tl3.x86_64 1724321801 190224 49cff8212abccc216d2f0c286ba82c89 installed
+DEBUG util.py:444:  python3-setuptools-wheel-39.2.0-8.tl3.noarch 1724210008 345272 68b42a314f75b0ed436bd547051645cd installed
+DEBUG util.py:444:  python-rpm-macros-3-45.tl3.noarch 1684996749 4325 826bf69253990e4e66fcbcb5541ddd3d installed
+DEBUG util.py:444:  tzdata-2024a-1.tl3.noarch 1714307030 1780398 8d3dfaaec4487cbd6f66bb1c6dbc4fc0 installed
+DEBUG util.py:444:  setup-2.12.2-10.tl3.noarch 1721894958 725613 e556cbe1f667ef1e61dd5e9b9c103a7f installed
+DEBUG util.py:444:  basesystem-11-5.tl3.noarch 1665981144 0 9a92445261fc1834747ebaa46dd0da74 installed
+DEBUG util.py:444:  qt5-srpm-macros-5.15.3-1.tl3.noarch 1669203365 0 2fbdebdc7ccb77b223eae54e8737b14a installed
+DEBUG util.py:444:  pkgconf-m4-1.4.2-1.tl3.noarch 1636122683 14187 5c1113de52d7ef3007a0bf5d64f6d661 installed
+DEBUG util.py:444:  openblas-srpm-macros-2-2.tl3.noarch 1648294743 104 2a5cb464ce414a70d243970e808728eb installed
+DEBUG util.py:444:  ncurses-base-6.1-10.20180224.tl3.noarch 1703499571 290089 61980e2b15295338ff3e923cd91f6afe installed
+DEBUG util.py:444:  libselinux-2.9-8.tl3.x86_64 1687686881 173176 a0246c8f81688af635952e8a9acea8ae installed
+DEBUG util.py:444:  glibc-all-langpacks-2.28-251.tl3.4.ap.1.x86_64 1724728828 436464792 4ad154550b8a92c6f86545dbafca30cd installed
+DEBUG util.py:444:  glibc-common-2.28-251.tl3.4.ap.1.x86_64 1724728828 7997172 a073d20103903253ec1c3585a4350eb0 installed
+DEBUG util.py:444:  bash-4.4.20-5.tl3.x86_64 1716784104 6861446 65e164494cc8a785389d3dca511fdac6 installed
+DEBUG util.py:444:  zlib-1.2.11-25.tl3.x86_64 1703499085 199967 969e4c7ac6140494a7da76ea4d7d8861 installed
+DEBUG util.py:444:  bzip2-libs-1.0.6-26.tl3.x86_64 1665981018 75005 9a4052e01ce8c7bb1ffbdfcda169c27a installed
+DEBUG util.py:444:  gmp-1:6.1.2-11.tl3.x86_64 1716474634 766308 8ed6d55d63a2018817126ecb26ac65fc installed
+DEBUG util.py:444:  libxcrypt-4.1.1-6.tl3.x86_64 1640083598 189988 2fd097ac4da4c88057850c3ed2373eae installed
+DEBUG util.py:444:  libzstd-1.4.4-1.tl3.x86_64 1645685064 698677 c029c9c92ee22e4dc514726c57a90531 installed
+DEBUG util.py:444:  nspr-4.35.0-1.tl3.x86_64 1698826271 317702 a39c6f8c75e42560837cdbdaa5910d49 installed
+DEBUG util.py:444:  nss-util-3.90.0-7.tl3.x86_64 1717195573 224852 f37ad0ed2044a505edc8373bda274b61 installed
+DEBUG util.py:444:  readline-7.0-10.tl3.x86_64 1665983265 450145 c75fe32ba22dae1daa62ecd000dccd6e installed
+DEBUG util.py:444:  libcom_err-1.45.6-5.tl3.x86_64 1669605355 61385 c52218f81e79bec496843f1644ef7d6f installed
+DEBUG util.py:444:  chkconfig-1.19.2-1.tl3.x86_64 1716468519 827686 874bddcad7c125b9bf480cf4a1e5967e installed
+DEBUG util.py:444:  libattr-2.4.48-3.tl3.x86_64 1665981018 25634 b2ebdf1fac7b086289ec074e6d059a02 installed
+DEBUG util.py:444:  sed-4.5-5.tl3.x86_64 1666345967 765054 7ee8dad88981b3fbecce50a2150dfc6b installed
+DEBUG util.py:444:  p11-kit-0.23.22-2.tl3.x86_64 1716910971 1650636 fcf2f6a999693141a4d99975e9c4cc6f installed
+DEBUG util.py:444:  lua-libs-5.3.4-12.tl3.x86_64 1640083820 251952 94e5c9afa7ceb56c9d28f1531fe72ba8 installed
+DEBUG util.py:444:  libmpc-1.1.0-9.1.tl3.x86_64 1624275376 131045 972416ddd0a26eacf96583bd9d4696c0 installed
+DEBUG util.py:444:  expat-2.2.5-13.tl3.x86_64 1717109453 315460 a1fe4824de321d4cac93239b4ec347c7 installed
+DEBUG util.py:444:  libgcrypt-1.8.5-7.tl3.x86_64 1662354749 1269750 3a8f294576d033b6a0c91fee239e39fd installed
+DEBUG util.py:444:  unzip-6.0-46.tl3.x86_64 1665983503 423997 992531787f1ce9d6edc295c34fde07f6 installed
+DEBUG util.py:444:  elfutils-default-yama-scope-0.190-2.tl3.noarch 1716555587 1810 004214e174d0d1822403cdaef32fc0b0 installed
+DEBUG util.py:444:  gdbm-libs-1:1.18-2.tl3.x86_64 1669803514 118464 5faceec37e1f6da956d5e63059d1ecdc installed
+DEBUG util.py:444:  libcap-ng-0.7.11-1.tl3.x86_64 1642027690 51502 629d88c651a71e7feb2efff3fc1b339d installed
+DEBUG util.py:444:  libtasn1-4.13-4.tl3.x86_64 1674018309 165301 a68dbd8696d7f208120ae697a9adc13c installed
+DEBUG util.py:444:  lz4-libs-1.8.3-3.tl3.x86_64 1636438071 125183 061d02dd68ce1d21496fe547861d8fcc installed
+DEBUG util.py:444:  grep-3.1-6.tl3.x86_64 1666346047 813333 aa139f69e60013d5a483e4b98005a3ef installed
+DEBUG util.py:444:  libsemanage-2.9-9.tl3.x86_64 1669790094 312360 62a1acefa58d9689689b0805d6096b6d installed
+DEBUG util.py:444:  elfutils-0.190-2.tl3.x86_64 1716555587 2931838 e0bf4dfae0747a3b3462f439bfe05a6a installed
+DEBUG util.py:444:  xml-common-0.6.3-50.tl3.noarch 1663147472 80250 a715acc32129f170dbfff814e7ba0ef2 installed
+DEBUG util.py:444:  cpp-8.5.0-23.tl3.x86_64 1724321801 28838982 e376d97ff3c1e0db69e129c6cf817da3 installed
+DEBUG util.py:444:  libassuan-2.5.1-3.tl3.x86_64 1665981748 193811 4ffdca92f9da0d843dc848c31162ed7e installed
+DEBUG util.py:444:  tar-2:1.30-9.tl3.x86_64 1685600881 2876647 6338ccfdd6ee3ee7be90c6d9e6f4013f installed
+DEBUG util.py:444:  nss-softokn-freebl-3.90.0-7.tl3.x86_64 1717195573 855160 529faf1b9ca2e1617c6ef81e481bac57 installed
+DEBUG util.py:444:  dwz-0.12-10.tl3.x86_64 1648277067 230223 1a97fcdfac5b27da66baa001729638e2 installed
+DEBUG util.py:444:  zstd-1.4.4-1.tl3.x86_64 1645685064 1539138 c83ec084fcab2471f30e2d5b6e4b0008 installed
+DEBUG util.py:444:  nettle-3.4.1-7.tl3.x86_64 1640084207 584521 d96b8347b0c6edcca0166d30815613e3 installed
+DEBUG util.py:444:  coreutils-common-8.30-15.tl3.x86_64 1685600712 9896370 cf0acd0e61aae83ae0de8148641e5c63 installed
+DEBUG util.py:444:  libgomp-8.5.0-23.tl3.x86_64 1724321801 331983 d04227dd1d8545909cf6347b089dec9d installed
+DEBUG util.py:444:  brotli-1.0.6-3.tl3.x86_64 1643052222 1538532 1395a436c3c215a0d53a416e4d66562e installed
+DEBUG util.py:444:  efivar-libs-37-4.tl3.x86_64 1652863576 276784 045d8b9a62f3a10c02665c1939243730 installed
+DEBUG util.py:444:  gc-7.6.4-3.tl3.x86_64 1648279671 215424 c23b8fefae61bbffe9a76ad7f8240f25 installed
+DEBUG util.py:444:  libipt-1.6.1-8.tl3.x86_64 1644902870 106415 335ad6dea70f8c0df7ac2250e6242115 installed
+DEBUG util.py:444:  libpkgconf-1.4.2-1.tl3.x86_64 1636122661 67829 f2ab15a378148848b515a887d7b5203e installed
+DEBUG util.py:444:  pkgconf-pkg-config-1.4.2-1.tl3.x86_64 1636122661 3094 c6d97ae1589cdd21ac28d13b47eabef3 installed
+DEBUG util.py:444:  gawk-4.2.1-4.tl3.x86_64 1665981614 2699614 c6e6f515bbf87922f2ee5fab9f1ab970 installed
+DEBUG util.py:444:  libtool-ltdl-2.4.6-25.tl3.x86_64 1665983997 68370 119f26eac7f5515fe5726be4a076e4ce installed
+DEBUG util.py:444:  ncurses-6.1-10.20180224.tl3.x86_64 1703499571 588988 835a7c9276f7afc4a08eed0bcf60b4f9 installed
+DEBUG util.py:444:  libtirpc-1.1.4-12.tl3.x86_64 1720422782 228758 da16e879496780c46366634488b67d92 installed
+DEBUG util.py:444:  platform-python-setuptools-39.2.0-8.tl3.noarch 1724210008 2916495 fee9f5f8e845c5e113e36d070dfbdd70 installed
+DEBUG util.py:444:  platform-python-3.6.8-62.tl3.x86_64 1716543641 41206 3977b96b2cad8caea5c324fe7db7f5e5 installed
+DEBUG util.py:444:  crypto-policies-20230731-1.git3177e06.tl3.noarch 1703498955 73739 07d8f1a8edd7c43ead81e0689c957826 installed
+DEBUG util.py:444:  coreutils-8.30-15.tl3.x86_64 1685600712 6108040 9622fadd3494d0e74bd778a55a09ff2d installed
+DEBUG util.py:444:  libdb-5.3.28-42.tl3.x86_64 1640083449 1907480 78a3689d5b1d044cdf655eca4c40aacd installed
+DEBUG util.py:444:  libmount-2.32.1-46.tl3.1.x86_64 1718246512 398290 b76262519240c9f3b363342cd5cf9ed3 installed
+DEBUG util.py:444:  systemd-libs-239-82.tl3.2.x86_64 1720422542 4694558 f97f53e487304548143b74eb55d95ffe installed
+DEBUG util.py:444:  gzip-1.9-13.tl3.x86_64 1651025898 352930 8541cd14da5cec66c25685eb8ae50b4e installed
+DEBUG util.py:444:  cracklib-dicts-2.9.6-15.tl3.x86_64 1665981107 9815016 b2a6e599293ece4455eb5c259aa1ce76 installed
+DEBUG util.py:444:  glib2-2.56.4-162.tl3.x86_64 1716585634 12279776 e4ea3beb7ba9a910b365ba9843fda9e3 installed
+DEBUG util.py:444:  libpwquality-1.4.4-6.tl3.x86_64 1685600209 396838 268456a384cbcf6639735b020e266102 installed
+DEBUG util.py:444:  libusbx-1.0.23-4.tl3.x86_64 1645178603 154251 71e11aaf08d69b257309f5c15031f198 installed
+DEBUG util.py:444:  tpm2-tss-2.3.2-6.tl3.x86_64 1716642857 1209142 6413474c9632af8aea907992efb9a638 installed
+DEBUG util.py:444:  libfdisk-2.32.1-46.tl3.1.x86_64 1718246512 438890 ae2642cce5735403355c2c24fff31222 installed
+DEBUG util.py:444:  openssh-8.0p1-25.tl3.x86_64 1723653258 1937840 016041194fbc71bf535dd40412ad63cc installed
+DEBUG util.py:444:  cyrus-sasl-lib-2.1.27-6.tl3.x86_64 1645775910 738402 bb4056af3477cff0161683188c356174 installed
+DEBUG util.py:444:  libdb-utils-5.3.28-42.tl3.x86_64 1640083449 403687 b1eb2806e5a7e455abd515f222664081 installed
+DEBUG util.py:444:  nss-sysinit-3.90.0-7.tl3.x86_64 1717195573 14393 120e68f10cb36ac7e7c517bfb07e0233 installed
+DEBUG util.py:444:  nss-tools-3.90.0-7.tl3.x86_64 1717195573 2435040 fcc6ccbb3dbbbe85d5c78690f259c0a3 installed
+DEBUG util.py:444:  npth-1.5-4.tl3.x86_64 1646038870 51525 b34969907de8f2b79d8aeaeaf3046fed installed
+DEBUG util.py:444:  libssh-config-0.9.6-14.tl3.noarch 1716445292 277 1439b33e7fd7622bb55d170cca80f013 installed
+DEBUG util.py:444:  libcurl-7.61.1-34.tl3.2.x86_64 1724213237 597616 c7b63d5ad4f4c78aa995611de039c489 installed
+DEBUG util.py:444:  rpm-4.14.3-31.tl3.x86_64 1717132866 2087822 017080df3f0642d3a39a641b79028ccb installed
+DEBUG util.py:444:  gdb-headless-8.2-19.tl3.1.x86_64 1682424015 11909977 e96665d69462f58181df0742113f21c8 installed
+DEBUG util.py:444:  efi-srpm-macros-3-3.tl3.1.noarch 1652944694 39226 892216d2a075a234ed647a32fd9b9b9f installed
+DEBUG util.py:444:  kernel-headers-5.4.119-19.0009.54.tl3.x86_64 1723734365 5111814 d0079c033f6c72693d30926ee06d92d6 installed
+DEBUG util.py:444:  libxcrypt-devel-4.1.1-6.tl3.x86_64 1640083598 24771 22f1ade76b762f0402425e57e5e095cc installed
+DEBUG util.py:444:  gcc-8.5.0-23.tl3.x86_64 1724321801 60282988 35da331cccf012f4d54fbbd68e242431 installed
+DEBUG util.py:444:  gcc-plugin-annobin-8.5.0-23.tl3.x86_64 1724321801 49376 caa2d16638aadaf6e16eb99ce2852fc1 installed
+DEBUG util.py:444:  ghc-srpm-macros-1.4.2-7.tl3.noarch 1648280007 414 866befccfd3e1c1dd920ab7ba60d5e7e installed
+DEBUG util.py:444:  rpm-build-4.14.3-31.tl3.x86_64 1717132866 299090 d0b00a352f34bf82df9f1d6a2e9e075f installed
+DEBUG util.py:444:  gcc-c++-8.5.0-23.tl3.x86_64 1724321801 31389581 c239c312d60447eea4974663ce7935e2 installed
+DEBUG util.py:444:  tencentos-getsource-0.1.0-8.tl3.tencentos.noarch 1664428185 2146 8826d918c36b35235f358d0037100340 installed
+DEBUG util.py:444:  which-2.21-20.tl3.x86_64 1703498834 83300 96f0a8f86843dca7f102ad759243dcc3 installed
+DEBUG util.py:444:  buildsys-macros-ts3-5.0-1.tl3.noarch 1664533847 96 9f0492741a7b270ad11fccbb7a08877b installed
+DEBUG util.py:444:  pcre2-utf32-10.32-2.tl3.x86_64 1645689147 587510 0dac67e8736386a23816e616215075e3 installed
+DEBUG util.py:444:  pcre2-devel-10.32-2.tl3.x86_64 1645689147 1922619 dbad0ab11ecc1d583c8f858cf1b832f7 installed
+DEBUG util.py:444:  libzstd-devel-1.4.4-1.tl3.x86_64 1645685064 152846 a8516afdff47ff1fe308dd62422b0946 installed
+DEBUG util.py:444:  libsepol-devel-2.9-3.tl3.x86_64 1640083248 129692 d2714c8f40027c4694704735b01ce198 installed
+DEBUG util.py:444:  libkadm5-1.18.2-29.tl3.x86_64 1723570227 224360 b95f894770baa6c72046b0d196abe699 installed
+DEBUG util.py:444:  keyutils-libs-devel-1.5.10-9.tl3.x86_64 1640082525 33454 21d9d5e2c3ee390e7dcb795bf5af79d8 installed
+DEBUG util.py:444:  groff-base-1.22.3-18.tl3.x86_64 1623742762 3998826 15e623ca4e63cb8bd5cf47a1312a62de installed
+DEBUG util.py:444:  perl-Digest-MD5-2.55-396.tl3.x86_64 1648295457 56590 1ddb9b4cc267904f7254fffcbc7d1e28 installed
+DEBUG util.py:444:  perl-libnet-3.11-3.tl3.noarch 1648295885 277134 a7cba888ed8b6afd4d829a9cec4aa3d1 installed
+DEBUG util.py:444:  perl-Pod-Escapes-1:1.07-395.tl3.noarch 1665982833 25763 23bbb51a592be0437de866203bae4e47 installed
+DEBUG util.py:444:  perl-IO-Socket-IP-0.39-5.tl3.noarch 1648295803 99525 033f92f49543990e14ada402a7238062 installed
+DEBUG util.py:444:  perl-Time-Local-1:1.280-1.tl3.noarch 1665982971 59906 1e9cf96c960dceb93388c66aa7059ba4 installed
+DEBUG util.py:444:  perl-Term-ANSIColor-4.06-396.tl3.noarch 1665982862 89627 e3e60006000a63a456bc5e695f6864f3 installed
+DEBUG util.py:444:  perl-File-Temp-0.230.600-1.tl3.noarch 1665982900 164723 5c13b8ff183ab79de9c67361fd8bb1ff installed
+DEBUG util.py:444:  perl-Pod-Simple-1:3.35-395.tl3.noarch 1665982780 543719 6dcfda6b2e4b2b262232c3038b0f6bf8 installed
+DEBUG util.py:444:  perl-Pod-Perldoc-3.28-396.tl3.noarch 1665982797 169228 ab954ea1d158e2f4ebbe47d0a367335e installed
+DEBUG util.py:444:  perl-Pod-Usage-4:1.69-395.tl3.noarch 1665982771 49721 b6bfc9e2f4739f2d3e4b199796b14be5 installed
+DEBUG util.py:444:  perl-Storable-1:3.11-3.tl3.x86_64 1665982832 221718 b497c983257f1ad113af371459874e8e installed
+DEBUG util.py:444:  perl-Errno-0:1.28-422.tl3.x86_64 1687687400 9496 fa91d070cb1b513715e213c7628edcd3 installed
+DEBUG util.py:444:  perl-Encode-4:2.97-3.tl3.x86_64 1665982760 10188591 76667d2d58e1d9533b97efc3e90f3f40 installed
+DEBUG util.py:444:  perl-Exporter-5.72-396.tl3.noarch 1665982747 55719 3d872c5fe2fd86280975174e02128e5b installed
+DEBUG util.py:444:  perl-Scalar-List-Utils-3:1.49-2.tl3.x86_64 1665982799 124496 bcd7edce5e021b8c0187aa9e8b9a36e7 installed
+DEBUG util.py:444:  perl-macros-4:5.26.3-422.tl3.x86_64 1687687400 5184 94ef8db8af8c43ca7e44005f8ca0c7be installed
+DEBUG util.py:444:  perl-Unicode-Normalize-1.25-396.tl3.x86_64 1665982922 637381 b5d99da1bae34da300f6f805bef94b64 installed
+DEBUG util.py:444:  perl-IO-0:1.38-422.tl3.x86_64 1687687400 139767 287430e308cb5bebd753238bf09ca5c6 installed
+DEBUG util.py:444:  perl-constant-1.33-396.tl3.noarch 1665982828 27105 64535c85cdf7d51341e008240e1729c6 installed
+DEBUG util.py:444:  perl-threads-shared-1.58-2.tl3.x86_64 1665982934 78042 d34331340138710260572436c30d3b8c installed
+DEBUG util.py:444:  perl-Error-1:0.17025-2.tl3.noarch 1648295541 71564 4374a6dfbb547ee1745dbc9001d915eb installed
+DEBUG util.py:444:  git-core-doc-2.43.5-1.tl3.noarch 1719308859 14698769 1d5c8027e887a10e5e4126243cdc1693 installed
+DEBUG util.py:444:  perl-Git-2.43.5-1.tl3.noarch 1719308859 66682 0327f2aa206e4e10bee041f63485eaae installed
+DEBUG util.py:444:  openssl-devel-1:1.1.1k-12.tl3.x86_64 1703480926 3550301 17c0e7923393875a112353c318a3079d installed
+DEBUG util.py:444:  dos2unix-7.4.0-3.tl3.x86_64 1665981178 679082 17c69857ac6ef356a68e332c8b352382 installed
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/data/mock/dist-ts3-build-495286-67591/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG backend.py:799:  Copying packages to result dir
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:167:  kill orphans
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts3-build-495286-67591-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
