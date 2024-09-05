@@ -95,7 +95,7 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-Our src rpm is attached in repo: https://github.com/costinchen/shim-review/blob/tencentos3-shim-x64-20240830/shim-unsigned-x64-15.8-1.tl3.src.rpm
+Our src rpm is attached in this repo: [x86_64](shim-unsigned-x64-15.8-2.tl3.src.rpm) and [aarch64](shim-unsigned-aarch64-15.8-1.tl3.src.rpm).
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -188,7 +188,7 @@ Yes, all mentioned upstream commits above are applied.
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-[your text here] // TODO
+Yes. We add some hardware drivers. As for security, we only have lockdown patches applied.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -218,13 +218,19 @@ Hint: Prefer using *frozen* packages for your toolchain, since an update to GCC,
 
 If your shim binaries can't be reproduced using the provided Dockerfile, please explain why that's the case, what the differences would be and what build environment (OS and toolchain) is being used to reproduce this build? In this case please write a detailed guide, how to setup this build environment from scratch.
 *******************************************************************************
-Yes, the Dockerfile to reproduce this build is included in this repo.
+Yes, the Dockerfiles to reproduce this build are included in this repo: [Dockerfile_x64](Dockerfile_x64) for ia32 and x86_64, [Dockerfile_aa64](Dockerfile_aa64) for aarch64.
 
 *******************************************************************************
 ### Which files in this repo are the logs for your build?
 This should include logs for creating the buildroots, applying patches, doing the build, creating the archives, etc.
 *******************************************************************************
-root.log and build.log in this repo.
+Logs are attached in this repo.
+```
+ia32/x64:
+build_x64.log and root_x64.log
+aarch64:
+build_aa64.log and root_aa64.log
+```
 
 *******************************************************************************
 ### What changes were made in the distro's secure boot chain since your SHIM was last signed?
@@ -237,7 +243,11 @@ N/A, this is our first application.
 *******************************************************************************
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
-`b79cf5dd057c31b3d95dabcc93a2a31f05e9bd53692a81cc52629b6806512e1d  shimx64.efi`
+```
+c017843a8f95abbbeb1e408ff61b84fa61f4cc91dc5f5544f224bbceb2963e1f  shimaa64.efi
+6d2af602bbfd8bba63d98aec5449ec87f45d9be9654ec8b835a0a8cddda0916c  shimia32.efi
+846799f52f2f310e1969d2a3d421c5d71ca44288530cd5c29f1dee4bfd27a347  shimx64.efi
+```
 
 *******************************************************************************
 ### How do you manage and protect the keys used in your shim?
@@ -262,7 +272,24 @@ If you are using a downstream implementation of GRUB2 (e.g. from Fedora or Debia
 
 Hint: run `objcopy --only-section .sbat -O binary YOUR_EFI_BINARY /dev/stdout` to get these entries. Paste them here. Preferably surround each listing with three backticks (\`\`\`), so they render well.
 *******************************************************************************
-// TODO
+```
+shim (x86_64/aarch64)
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+shim,4,UEFI shim,shim,1,https://github.com/rhboot/shim
+shim.tencentos,1,TencentOS Linux 3,shim,15.8,tencentos_secure@tencent.com
+
+grub2 (x86_64/aarch64)
+sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+grub,3,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
+grub.rh,2,Red Hat,grub2,2.02-156.tl3.1,mailto:secalert@redhat.com
+grub.tencentos3,1,TencentOS Linux 3,grub2,2.02,mail:tencentos_secure@tencent.com
+
+fwupd (x86_64/aarch64)
+sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
+fwupd-efi,1,Firmware update daemon,fwupd-efi,1.3,https://github.com/fwupd/fwupd-efi
+fwupd-efi.rhel,1,Red Hat Enterprise Linux,fwupd,1.7.8,mail:secalert@redhat.com
+fwupd-efi.tencentos,1,TencentOS Linux 3,fwupd,1.7.8,mail:tencentos_secure@tencent.com
+```
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, which modules are built into your signed GRUB2 image?
@@ -271,13 +298,28 @@ Skip this, if you're not using GRUB2.
 Hint: this is about those modules that are in the binary itself, not the `.mod` files in your filesystem.
 *******************************************************************************
 ```
-all_video boot blscfg cat configfile cryptodisk echo ext2 fat font gcry_rijndael gcry_rsa gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool gfxmenu gfxterm gzio halt http increment iso9660 jpeg loadenv loopback linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple part_msdos part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup efinet lsefi lsefimmap connectefi backtrace chain usb usbserial_common usbserial_pl2303 usbserial_ftdi usbserial_usbdebug keylayouts at_keyboard
+x86_64:
+all_video boot blscfg cat configfile cryptodisk echo ext2 fat font gcry_rijndael gcry_rsa
+gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool gfxmenu gfxterm gzio halt http increment
+iso9660 jpeg loadenv loopback linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple
+part_msdos part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
+search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup efinet lsefi
+lsefimmap connectefi backtrace chain usb usbserial_common usbserial_pl2303 usbserial_ftdi
+usbserial_usbdebug keylayouts at_keyboard
+
+aarch64:
+all_video boot blscfg cat configfile cryptodisk echo ext2 fat font gcry_rijndael gcry_rsa
+gcry_serpent gcry_sha256 gcry_twofish gcry_whirlpool gfxmenu gfxterm gzio halt http increment
+iso9660 jpeg loadenv loopback linux lvm luks mdraid09 mdraid1x minicmd net normal part_apple
+part_msdos part_gpt password_pbkdf2 png reboot regexp search search_fs_uuid search_fs_file
+search_label serial sleep syslinuxcfg test tftp video xfs efi_netfs efifwsetup efinet lsefi
+lsefimmap connectefi
 ```
 
 *******************************************************************************
 ### If you are using systemd-boot on arm64 or riscv, is the fix for [unverified Devicetree Blob loading](https://github.com/systemd/systemd/security/advisories/GHSA-6m6p-rjcq-334c) included?
 *******************************************************************************
-N/A // TODO
+No, we are not using systemd-boot.
 
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
@@ -288,19 +330,19 @@ Our grub2 is origined from RHEL 8 downstream and the version number is grub2-2.0
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
 Hint: The most common case here will be a firmware updater like fwupd.
 *******************************************************************************
-[your text here] // TODO
+It also launches fwupd.
 
 *******************************************************************************
 ### If your GRUB2 or systemd-boot launches any other binaries that are not the Linux kernel in SecureBoot mode, please provide further details on what is launched and how it enforces Secureboot lockdown.
 Skip this, if you're not using GRUB2 or systemd-boot.
 *******************************************************************************
-[your text here]
+Our GRUB2 only loads Linux kernel.
 
 *******************************************************************************
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-grub2 verifies signatures on booted kernels via shim. fwupd does not include code to launch other binaries, it can only load UEFI updates. // TODO
+grub2 verifies signatures on booted kernels via shim. fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
@@ -310,7 +352,7 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-[your text here]
+TencentOS Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable branch with some features for tencentos. We have RHEL patches for Secure Boot support.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
@@ -320,7 +362,7 @@ A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us 
 
 For newcomers, the applications labeled as [*easy to review*](https://github.com/rhboot/shim-review/issues?q=is%3Aopen+is%3Aissue+label%3A%22easy+to+review%22) are recommended to start the contribution process.
 *******************************************************************************
-[your text here]
+Although we have not yet helped review other applications, we will help you review other distributions according to the shim review guide during our applying period.
 
 *******************************************************************************
 ### Add any additional information you think we may need to validate this shim signing application.
