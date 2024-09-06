@@ -38,7 +38,7 @@ TencentOS is a commercial operating system. In order for our large amount of cus
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-TencentOS wants to employ Secure Boot for building a trusted operating system from Shim to GRUB to the kernel to kernel modules. As we are using our custom kernel with some essential features for our products, we need a signed shim with our certificate such that we can sign the kernel and loader to keep Secure Boot on.
+TencentOS wants to employ Secure Boot for building a trusted operating system from Shim to GRUB to the kernel to kernel modules. As we are using our custom kernel with some features for our products, we need a signed shim with our certificate such that we can sign the kernel and loader to keep Secure Boot on.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -188,7 +188,7 @@ Yes, all mentioned upstream commits above are applied.
 *******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-Yes. We add some hardware drivers. As for security, we only have lockdown patches applied.
+Yes. We add some hardware drivers and have local patches to enforce kernel_lockdown when secure boot is enabled.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -244,7 +244,7 @@ N/A, this is our first application.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-c017843a8f95abbbeb1e408ff61b84fa61f4cc91dc5f5544f224bbceb2963e1f  shimaa64.efi
+16e1cf3e03d7007b306e730fdc994c1931bba1bfaf3d270ae6b76597bfd6836e  shimaa64.efi
 6d2af602bbfd8bba63d98aec5449ec87f45d9be9654ec8b835a0a8cddda0916c  shimia32.efi
 846799f52f2f310e1969d2a3d421c5d71ca44288530cd5c29f1dee4bfd27a347  shimx64.efi
 ```
@@ -352,7 +352,7 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-TencentOS Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable branch with some features for tencentos. We have RHEL patches for Secure Boot support.
+TencentOS Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable branch with some features for tencentos. We have lockdown and other patches applied to the longterm kernel.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
