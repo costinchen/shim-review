@@ -95,7 +95,7 @@ Hint: If you attach all the patches and modifications that are being used to you
 
 You can also point to your custom git servers, where the code is hosted.
 *******************************************************************************
-Our src rpm is attached in this repo: [x86_64](shim-unsigned-x64-15.8-2.tl3.src.rpm) and [aarch64](shim-unsigned-aarch64-15.8-1.tl3.src.rpm).
+Our src rpm is attached in this repo: [x86_64](shim-unsigned-x64-15.8-3.tl3.src.rpm) and [aarch64](shim-unsigned-aarch64-15.8-3.tl3.src.rpm).
 
 *******************************************************************************
 ### What patches are being applied and why:
@@ -244,9 +244,9 @@ N/A, this is our first application.
 ### What is the SHA256 hash of your final shim binary?
 *******************************************************************************
 ```
-16e1cf3e03d7007b306e730fdc994c1931bba1bfaf3d270ae6b76597bfd6836e  shimaa64.efi
-6d2af602bbfd8bba63d98aec5449ec87f45d9be9654ec8b835a0a8cddda0916c  shimia32.efi
-846799f52f2f310e1969d2a3d421c5d71ca44288530cd5c29f1dee4bfd27a347  shimx64.efi
+ca145c15cd26430dda03c37fc2f079afb7c78b0cd3a15afa55b8e73266d4500b  shimaa64.efi
+fab52ed62f16cef5a0b02b3ae985bc5b09f261482417cefed3e84a837c8e9831  shimia32.efi
+a5e93e8908195fb79a4c781408193cb7e9128d44e165ae061f07cb66806835d1  shimx64.efi
 ```
 
 *******************************************************************************
@@ -282,7 +282,7 @@ grub2 (x86_64/aarch64)
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,3,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
 grub.rh,2,Red Hat,grub2,2.02-156.tl3.1,mailto:secalert@redhat.com
-grub.tencentos3,1,TencentOS Linux 3,grub2,2.02,mail:tencentos_secure@tencent.com
+grub.tencentos,1,TencentOS Linux 3,grub2,2.02,mail:tencentos_secure@tencent.com
 
 fwupd (x86_64/aarch64)
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md

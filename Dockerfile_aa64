@@ -1,5 +1,5 @@
 FROM --platform=linux/arm64 tencentos/tencentos_server33_aarch64
-ENV SHIM_VERSION 15.8-2.tl3
+ENV SHIM_VERSION 15.8-3.tl3
 
 # build efi
 COPY shim-unsigned-aarch64-$SHIM_VERSION.src.rpm /
