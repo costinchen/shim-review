@@ -1,74 +1,74 @@
 INFO buildroot.py:553:  Mock Version: 4.1
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
 DEBUG buildroot.py:746:  kernel version == 5.4.119-19-0011
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/fstab
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/yum/yum.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf/dnf.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/var/log/yum.log
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-496114-68005/root
-DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-496114-68005/result
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-498070-69073/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-498070-69073/result
 INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/pki/mock
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/etc/pki/mock
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/pki/mock
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf
 DEBUG package_manager.py:623:  configure DNF vars
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-496114-68005/root', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-498070-69073/root', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/installation-homedir
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/installation-homedir
-DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts4-build-496114-68005/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build']
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/installation-homedir
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/installation-homedir
+DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts4-build-498070-69073/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build']
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts4-build-496114-68005/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts4-build-496114-68005/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', '--installroot', '/data/mock/dist-ts4-build-498070-69073/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', 'groupinstall', 'build'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts4-build-498070-69073/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
 DEBUG util.py:442:  Unable to detect release version (use '--releasever' to specify release version)
 DEBUG util.py:442:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
-DEBUG util.py:444:  Last metadata expiration check: 0:00:08 ago on Mon Sep  9 11:49:42 2024.
+DEBUG util.py:444:  Last metadata expiration check: 0:00:08 ago on Mon Sep 30 11:36:26 2024.
 DEBUG util.py:444:  Dependencies resolved.
 DEBUG util.py:444:  ================================================================================
 DEBUG util.py:444:   Package                      Arch     Version                     Repo    Size
@@ -92,7 +92,7 @@ DEBUG util.py:444:   sed                          aarch64  4.9-1.tl4            
 DEBUG util.py:444:   shadow-utils                 aarch64  4.14.3-2.tl4                build  1.2 M
 DEBUG util.py:444:   tar                          aarch64  1.35-2.tl4                  build  957 k
 DEBUG util.py:444:   tencentos-release            noarch   4.2-1.tl4                   build  287 k
-DEBUG util.py:444:   tencentos-rpm-config         noarch   1.0-3.tl4                   build   76 k
+DEBUG util.py:444:   tencentos-rpm-config         noarch   1.0-4.tl4                   build   81 k
 DEBUG util.py:444:   unzip                        aarch64  6.0-4.tl4                   build  178 k
 DEBUG util.py:444:   util-linux                   aarch64  2.39.1-5.tl4                build  1.1 M
 DEBUG util.py:444:   which                        aarch64  2.21-4.tl4                  build   40 k
@@ -110,7 +110,7 @@ DEBUG util.py:444:   ca-certificates              noarch   2023.2.60-2.tl4      
 DEBUG util.py:444:   cracklib                     aarch64  2.9.11-4.tl4                build   80 k
 DEBUG util.py:444:   cracklib-dicts               aarch64  2.9.11-4.tl4                build  3.8 M
 DEBUG util.py:444:   crypto-policies              noarch   20230614-5.git027799d.tl4   build   52 k
-DEBUG util.py:444:   curl                         aarch64  8.4.0-5.tl4                 build  359 k
+DEBUG util.py:444:   curl                         aarch64  8.4.0-7.tl4                 build  359 k
 DEBUG util.py:444:   cyrus-sasl-lib               aarch64  2.1.28-8.tl4                build   94 k
 DEBUG util.py:444:   debugedit                    aarch64  5.0-7.tl4                   build   73 k
 DEBUG util.py:444:   dwz                          aarch64  0.15-3.tl4                  build  126 k
@@ -120,24 +120,25 @@ DEBUG util.py:444:   elfutils                     aarch64  0.190-2.tl4          
 DEBUG util.py:444:   elfutils-default-yama-scope  noarch   0.190-2.tl4                 build  9.0 k
 DEBUG util.py:444:   elfutils-libelf              aarch64  0.190-2.tl4                 build  187 k
 DEBUG util.py:444:   elfutils-libs                aarch64  0.190-2.tl4                 build  236 k
-DEBUG util.py:444:   emacs-filesystem             noarch   1:29.1-6.tl4                build  7.7 k
-DEBUG util.py:444:   expat                        aarch64  2.6.2-1.tl4                 build  106 k
+DEBUG util.py:444:   emacs-filesystem             noarch   1:29.1-7.tl4                build  7.8 k
+DEBUG util.py:444:   expat                        aarch64  2.6.3-1.tl4                 build  107 k
 DEBUG util.py:444:   fakeroot                     aarch64  1.29-5.tl4                  build  115 k
 DEBUG util.py:444:   file                         aarch64  5.45-3.tl4                  build   48 k
 DEBUG util.py:444:   file-libs                    aarch64  5.45-3.tl4                  build  802 k
-DEBUG util.py:444:   filesystem                   aarch64  3.16-6.tl4                  build  1.1 M
+DEBUG util.py:444:   filesystem                   aarch64  3.16-9.tl4                  build  1.1 M
 DEBUG util.py:444:   fonts-srpm-macros            noarch   2.0.5-5.tl4                 build   27 k
-DEBUG util.py:444:   gdb-minimal                  aarch64  13.2-4.tl4                  build  3.1 M
+DEBUG util.py:444:   gdb-minimal                  aarch64  13.2-7.tl4                  build  3.1 M
 DEBUG util.py:444:   gdbm-libs                    aarch64  1.23-4.tl4                  build   54 k
 DEBUG util.py:444:   glibc                        aarch64  2.38-13.tl4                 build  3.5 M
 DEBUG util.py:444:   glibc-common                 aarch64  2.38-13.tl4                 build  5.3 M
 DEBUG util.py:444:   gmp                          aarch64  6.3.0-1.tl4                 build  255 k
 DEBUG util.py:444:   gnupg2                       aarch64  2.4.3-2.tl4                 build  2.5 M
 DEBUG util.py:444:   gnutls                       aarch64  3.8.2-2.tl4                 build  1.0 M
+DEBUG util.py:444:   go-srpm-macros               noarch   3.5.0-4.tl4                 build   14 k
 DEBUG util.py:444:   ima-evm-utils                aarch64  1.5-1.tl4                   build   67 k
 DEBUG util.py:444:   json-c                       aarch64  0.17-1.tl4                  build   41 k
 DEBUG util.py:444:   keyutils-libs                aarch64  1.6.3-4.tl4                 build   31 k
-DEBUG util.py:444:   krb5-libs                    aarch64  1.21.2-3.tl4                build  730 k
+DEBUG util.py:444:   krb5-libs                    aarch64  1.21.2-5.tl4                build  730 k
 DEBUG util.py:444:   less                         aarch64  633-3.tl4                   build  170 k
 DEBUG util.py:444:   libacl                       aarch64  2.3.1-4.tl4                 build   22 k
 DEBUG util.py:444:   libarchive                   aarch64  3.7.1-4.tl4                 build  357 k
@@ -149,7 +150,7 @@ DEBUG util.py:444:   libbrotli                    aarch64  1.1.0-1.tl4          
 DEBUG util.py:444:   libcap                       aarch64  2.69-2.tl4                  build   79 k
 DEBUG util.py:444:   libcap-ng                    aarch64  0.8.3-5.tl4                 build   33 k
 DEBUG util.py:444:   libcom_err                   aarch64  1.47.0-2.tl4                build   25 k
-DEBUG util.py:444:   libcurl                      aarch64  8.4.0-5.tl4                 build  306 k
+DEBUG util.py:444:   libcurl                      aarch64  8.4.0-7.tl4                 build  306 k
 DEBUG util.py:444:   libeconf                     aarch64  0.5.2-1.tl4                 build   28 k
 DEBUG util.py:444:   libevent                     aarch64  2.1.12-4.tl4                build  241 k
 DEBUG util.py:444:   libfdisk                     aarch64  2.39.1-5.tl4                build  145 k
@@ -205,12 +206,12 @@ DEBUG util.py:444:   popt                         aarch64  1.19-2.tl4           
 DEBUG util.py:444:   publicsuffix-list-dafsa      noarch   20240106-1.tl4              build   55 k
 DEBUG util.py:444:   python-pip-wheel             noarch   23.3.1-1.tl4                build  1.5 M
 DEBUG util.py:444:   python-setuptools-wheel      noarch   68.0.0-2.tl4                build  672 k
-DEBUG util.py:444:   python3                      aarch64  3.11.6-10.tl4               build   25 k
+DEBUG util.py:444:   python3                      aarch64  3.11.6-11.tl4               build   25 k
 DEBUG util.py:444:   python3-argcomplete          noarch   3.1.2-2.tl4                 build   76 k
 DEBUG util.py:444:   python3-certifi              noarch   2023.7.22-2.tl4             build   14 k
 DEBUG util.py:444:   python3-charset-normalizer   noarch   3.2.0-1.tl4                 build   97 k
 DEBUG util.py:444:   python3-idna                 noarch   3.7-1.tl4                   build  102 k
-DEBUG util.py:444:   python3-libs                 aarch64  3.11.6-10.tl4               build  9.7 M
+DEBUG util.py:444:   python3-libs                 aarch64  3.11.6-11.tl4               build  9.7 M
 DEBUG util.py:444:   python3-progressbar2         noarch   4.2.0-1.tl4                 build   72 k
 DEBUG util.py:444:   python3-pysocks              noarch   1.7.1-5.tl4                 build   39 k
 DEBUG util.py:444:   python3-requests             noarch   2.28.2-2.tl4                build  147 k
@@ -241,12 +242,12 @@ DEBUG util.py:444:  Installing Groups:
 DEBUG util.py:444:   build                                                                         
 DEBUG util.py:444:  Transaction Summary
 DEBUG util.py:444:  ================================================================================
-DEBUG util.py:444:  Install  162 Packages
+DEBUG util.py:444:  Install  163 Packages
 DEBUG util.py:444:  Total download size: 78 M
 DEBUG util.py:444:  Installed size: 441 M
 DEBUG util.py:444:  Downloading Packages:
 DEBUG util.py:444:  --------------------------------------------------------------------------------
-DEBUG util.py:444:  Total                                            51 MB/s |  78 MB     00:01     
+DEBUG util.py:444:  Total                                            48 MB/s |  78 MB     00:01     
 DEBUG util.py:444:  Running transaction check
 DEBUG util.py:444:  Transaction check succeeded.
 DEBUG util.py:444:  Running transaction test
@@ -270,7 +271,7 @@ DEBUG util.py:444:    cpio-2.14-1.tl4.aarch64
 DEBUG util.py:444:    cracklib-2.9.11-4.tl4.aarch64                                                 
 DEBUG util.py:444:    cracklib-dicts-2.9.11-4.tl4.aarch64                                           
 DEBUG util.py:444:    crypto-policies-20230614-5.git027799d.tl4.noarch                              
-DEBUG util.py:444:    curl-8.4.0-5.tl4.aarch64                                                      
+DEBUG util.py:444:    curl-8.4.0-7.tl4.aarch64                                                      
 DEBUG util.py:444:    cyrus-sasl-lib-2.1.28-8.tl4.aarch64                                           
 DEBUG util.py:444:    debugedit-5.0-7.tl4.aarch64                                                   
 DEBUG util.py:444:    diffutils-3.10-2.tl4.aarch64                                                  
@@ -281,29 +282,30 @@ DEBUG util.py:444:    elfutils-0.190-2.tl4.aarch64
 DEBUG util.py:444:    elfutils-default-yama-scope-0.190-2.tl4.noarch                                
 DEBUG util.py:444:    elfutils-libelf-0.190-2.tl4.aarch64                                           
 DEBUG util.py:444:    elfutils-libs-0.190-2.tl4.aarch64                                             
-DEBUG util.py:444:    emacs-filesystem-1:29.1-6.tl4.noarch                                          
-DEBUG util.py:444:    expat-2.6.2-1.tl4.aarch64                                                     
+DEBUG util.py:444:    emacs-filesystem-1:29.1-7.tl4.noarch                                          
+DEBUG util.py:444:    expat-2.6.3-1.tl4.aarch64                                                     
 DEBUG util.py:444:    fakeroot-1.29-5.tl4.aarch64                                                   
 DEBUG util.py:444:    file-5.45-3.tl4.aarch64                                                       
 DEBUG util.py:444:    file-libs-5.45-3.tl4.aarch64                                                  
-DEBUG util.py:444:    filesystem-3.16-6.tl4.aarch64                                                 
+DEBUG util.py:444:    filesystem-3.16-9.tl4.aarch64                                                 
 DEBUG util.py:444:    findutils-4.9.0-4.tl4.aarch64                                                 
 DEBUG util.py:444:    fonts-srpm-macros-2.0.5-5.tl4.noarch                                          
 DEBUG util.py:444:    gawk-5.2.2-2.tl4.aarch64                                                      
-DEBUG util.py:444:    gdb-minimal-13.2-4.tl4.aarch64                                                
+DEBUG util.py:444:    gdb-minimal-13.2-7.tl4.aarch64                                                
 DEBUG util.py:444:    gdbm-libs-1.23-4.tl4.aarch64                                                  
 DEBUG util.py:444:    glibc-2.38-13.tl4.aarch64                                                     
 DEBUG util.py:444:    glibc-common-2.38-13.tl4.aarch64                                              
 DEBUG util.py:444:    gmp-6.3.0-1.tl4.aarch64                                                       
 DEBUG util.py:444:    gnupg2-2.4.3-2.tl4.aarch64                                                    
 DEBUG util.py:444:    gnutls-3.8.2-2.tl4.aarch64                                                    
+DEBUG util.py:444:    go-srpm-macros-3.5.0-4.tl4.noarch                                             
 DEBUG util.py:444:    grep-3.11-3.tl4.aarch64                                                       
 DEBUG util.py:444:    gzip-1.12-5.tl4.aarch64                                                       
 DEBUG util.py:444:    ima-evm-utils-1.5-1.tl4.aarch64                                               
 DEBUG util.py:444:    info-7.0.3-4.tl4.aarch64                                                      
 DEBUG util.py:444:    json-c-0.17-1.tl4.aarch64                                                     
 DEBUG util.py:444:    keyutils-libs-1.6.3-4.tl4.aarch64                                             
-DEBUG util.py:444:    krb5-libs-1.21.2-3.tl4.aarch64                                                
+DEBUG util.py:444:    krb5-libs-1.21.2-5.tl4.aarch64                                                
 DEBUG util.py:444:    less-633-3.tl4.aarch64                                                        
 DEBUG util.py:444:    libacl-2.3.1-4.tl4.aarch64                                                    
 DEBUG util.py:444:    libarchive-3.7.1-4.tl4.aarch64                                                
@@ -315,7 +317,7 @@ DEBUG util.py:444:    libbrotli-1.1.0-1.tl4.aarch64
 DEBUG util.py:444:    libcap-2.69-2.tl4.aarch64                                                     
 DEBUG util.py:444:    libcap-ng-0.8.3-5.tl4.aarch64                                                 
 DEBUG util.py:444:    libcom_err-1.47.0-2.tl4.aarch64                                               
-DEBUG util.py:444:    libcurl-8.4.0-5.tl4.aarch64                                                   
+DEBUG util.py:444:    libcurl-8.4.0-7.tl4.aarch64                                                   
 DEBUG util.py:444:    libeconf-0.5.2-1.tl4.aarch64                                                  
 DEBUG util.py:444:    libevent-2.1.12-4.tl4.aarch64                                                 
 DEBUG util.py:444:    libfdisk-2.39.1-5.tl4.aarch64                                                 
@@ -373,12 +375,12 @@ DEBUG util.py:444:    popt-1.19-2.tl4.aarch64
 DEBUG util.py:444:    publicsuffix-list-dafsa-20240106-1.tl4.noarch                                 
 DEBUG util.py:444:    python-pip-wheel-23.3.1-1.tl4.noarch                                          
 DEBUG util.py:444:    python-setuptools-wheel-68.0.0-2.tl4.noarch                                   
-DEBUG util.py:444:    python3-3.11.6-10.tl4.aarch64                                                 
+DEBUG util.py:444:    python3-3.11.6-11.tl4.aarch64                                                 
 DEBUG util.py:444:    python3-argcomplete-3.1.2-2.tl4.noarch                                        
 DEBUG util.py:444:    python3-certifi-2023.7.22-2.tl4.noarch                                        
 DEBUG util.py:444:    python3-charset-normalizer-3.2.0-1.tl4.noarch                                 
 DEBUG util.py:444:    python3-idna-3.7-1.tl4.noarch                                                 
-DEBUG util.py:444:    python3-libs-3.11.6-10.tl4.aarch64                                            
+DEBUG util.py:444:    python3-libs-3.11.6-11.tl4.aarch64                                            
 DEBUG util.py:444:    python3-progressbar2-4.2.0-1.tl4.noarch                                       
 DEBUG util.py:444:    python3-pysocks-1.7.1-5.tl4.noarch                                            
 DEBUG util.py:444:    python3-requests-2.28.2-2.tl4.noarch                                          
@@ -403,7 +405,7 @@ DEBUG util.py:444:    systemd-libs-255-5.tl4.ap.1.aarch64
 DEBUG util.py:444:    tar-1.35-2.tl4.aarch64                                                        
 DEBUG util.py:444:    tencentos-release-4.2-1.tl4.noarch                                            
 DEBUG util.py:444:    tencentos-repos-4.2-1.tl4.noarch                                              
-DEBUG util.py:444:    tencentos-rpm-config-1.0-3.tl4.noarch                                         
+DEBUG util.py:444:    tencentos-rpm-config-1.0-4.tl4.noarch                                         
 DEBUG util.py:444:    tpm2-tss-4.0.1-5.tl4.aarch64                                                  
 DEBUG util.py:444:    tzdata-2023c-2.tl4.noarch                                                     
 DEBUG util.py:444:    unzip-6.0-4.tl4.aarch64                                                       
@@ -420,12 +422,12 @@ DEBUG util.py:444:  Complete!
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/os-release
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/os-release
 DEBUG util.py:621:  child environment: None
 DEBUG util.py:539:  Executing command: ['/usr/sbin/userdel', '-r', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:442:  userdel: user 'mockbuild' does not exist
@@ -441,43 +443,43 @@ DEBUG util.py:621:  child environment: None
 DEBUG util.py:539:  Executing command: ['/usr/sbin/useradd', '-o', '-m', '-u', '991', '-g', '135', '-d', '/builddir', '-N', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:442:  useradd warning: mockbuild's uid 991 outside of the UID_MIN 1000 and UID_MAX 60000 range.
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/RPMS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/RPMS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SPECS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SPECS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SRPMS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SRPMS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SOURCES
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SOURCES
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILD
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILD
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILDROOT
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILDROOT
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/originals
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/originals
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/.initialized
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/RPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/RPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SPECS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SPECS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SRPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SRPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SOURCES
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SOURCES
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILD
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILD
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILDROOT
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILDROOT
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/originals
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/originals
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/.initialized
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-496114-68005/root', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-498070-69073/root', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qa', '--root', '/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qa', '--root', '/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:444:  libgcc-12.3.1.2-3.tl4.aarch64
 DEBUG util.py:444:  crypto-policies-20230614-5.git027799d.tl4.noarch
 DEBUG util.py:444:  tencentos-repos-4.2-1.tl4.noarch
 DEBUG util.py:444:  tencentos-release-4.2-1.tl4.noarch
 DEBUG util.py:444:  setup-2.14.5-2.tl4.noarch
-DEBUG util.py:444:  filesystem-3.16-6.tl4.aarch64
+DEBUG util.py:444:  filesystem-3.16-9.tl4.aarch64
 DEBUG util.py:444:  basesystem-1-6.tl4.noarch
 DEBUG util.py:444:  tzdata-2023c-2.tl4.noarch
 DEBUG util.py:444:  rust-toolset-srpm-macros-1.70.0-3.tl4.noarch
@@ -564,7 +566,7 @@ DEBUG util.py:444:  patch-2.7.6-4.tl4.aarch64
 DEBUG util.py:444:  mpdecimal-2.5.1-4.tl4.aarch64
 DEBUG util.py:444:  bzip2-1.0.8-4.tl4.aarch64
 DEBUG util.py:444:  cpio-2.14-1.tl4.aarch64
-DEBUG util.py:444:  expat-2.6.2-1.tl4.aarch64
+DEBUG util.py:444:  expat-2.6.3-1.tl4.aarch64
 DEBUG util.py:444:  json-c-0.17-1.tl4.aarch64
 DEBUG util.py:444:  libbrotli-1.1.0-1.tl4.aarch64
 DEBUG util.py:444:  libnghttp2-1.58.0-2.tl4.aarch64
@@ -574,7 +576,7 @@ DEBUG util.py:444:  pkgconf-pkg-config-1.9.5-3.tl4.aarch64
 DEBUG util.py:444:  libsigsegv-2.14-4.tl4.aarch64
 DEBUG util.py:444:  gawk-5.2.2-2.tl4.aarch64
 DEBUG util.py:444:  libverto-0.3.2-4.tl4.aarch64
-DEBUG util.py:444:  krb5-libs-1.21.2-3.tl4.aarch64
+DEBUG util.py:444:  krb5-libs-1.21.2-5.tl4.aarch64
 DEBUG util.py:444:  libtirpc-1.3.4-1.tl4.aarch64
 DEBUG util.py:444:  libnsl2-2.0.1-1.tl4.aarch64
 DEBUG util.py:444:  libpwquality-1.4.5-3.tl4.aarch64
@@ -591,8 +593,8 @@ DEBUG util.py:444:  util-linux-core-2.39.1-5.tl4.aarch64
 DEBUG util.py:444:  util-linux-2.39.1-5.tl4.aarch64
 DEBUG util.py:444:  fakeroot-1.29-5.tl4.aarch64
 DEBUG util.py:444:  python-pip-wheel-23.3.1-1.tl4.noarch
-DEBUG util.py:444:  python3-3.11.6-10.tl4.aarch64
-DEBUG util.py:444:  python3-libs-3.11.6-10.tl4.aarch64
+DEBUG util.py:444:  python3-3.11.6-11.tl4.aarch64
+DEBUG util.py:444:  python3-libs-3.11.6-11.tl4.aarch64
 DEBUG util.py:444:  python3-idna-3.7-1.tl4.noarch
 DEBUG util.py:444:  python3-six-1.16.0-6.tl4.noarch
 DEBUG util.py:444:  python3-argcomplete-3.1.2-2.tl4.noarch
@@ -608,13 +610,14 @@ DEBUG util.py:444:  libarchive-3.7.1-4.tl4.aarch64
 DEBUG util.py:444:  libevent-2.1.12-4.tl4.aarch64
 DEBUG util.py:444:  openldap-2.6.5-2.tl4.aarch64
 DEBUG util.py:444:  libssh-0.10.5-3.tl4.aarch64
-DEBUG util.py:444:  libcurl-8.4.0-5.tl4.aarch64
-DEBUG util.py:444:  curl-8.4.0-5.tl4.aarch64
+DEBUG util.py:444:  libcurl-8.4.0-7.tl4.aarch64
+DEBUG util.py:444:  curl-8.4.0-7.tl4.aarch64
 DEBUG util.py:444:  rpm-4.18.2-2.tl4.aarch64
 DEBUG util.py:444:  rpm-libs-4.18.2-2.tl4.aarch64
 DEBUG util.py:444:  efi-srpm-macros-4-3.tl4.noarch
 DEBUG util.py:444:  fonts-srpm-macros-2.0.5-5.tl4.noarch
-DEBUG util.py:444:  tencentos-rpm-config-1.0-3.tl4.noarch
+DEBUG util.py:444:  go-srpm-macros-3.5.0-4.tl4.noarch
+DEBUG util.py:444:  tencentos-rpm-config-1.0-4.tl4.noarch
 DEBUG util.py:444:  tpm2-tss-4.0.1-5.tl4.aarch64
 DEBUG util.py:444:  ima-evm-utils-1.5-1.tl4.aarch64
 DEBUG util.py:444:  npth-1.6-4.tl4.aarch64
@@ -622,7 +625,7 @@ DEBUG util.py:444:  gnupg2-2.4.3-2.tl4.aarch64
 DEBUG util.py:444:  rpm-sign-libs-4.18.2-2.tl4.aarch64
 DEBUG util.py:444:  unzip-6.0-4.tl4.aarch64
 DEBUG util.py:444:  xxhash-libs-0.8.2-2.tl4.aarch64
-DEBUG util.py:444:  gdb-minimal-13.2-4.tl4.aarch64
+DEBUG util.py:444:  gdb-minimal-13.2-7.tl4.aarch64
 DEBUG util.py:444:  elfutils-default-yama-scope-0.190-2.tl4.noarch
 DEBUG util.py:444:  elfutils-libs-0.190-2.tl4.aarch64
 DEBUG util.py:444:  elfutils-0.190-2.tl4.aarch64
@@ -630,269 +633,270 @@ DEBUG util.py:444:  rpm-build-libs-4.18.2-2.tl4.aarch64
 DEBUG util.py:444:  python3-rpm-4.18.2-2.tl4.aarch64
 DEBUG util.py:444:  debugedit-5.0-7.tl4.aarch64
 DEBUG util.py:444:  rpm-build-4.18.2-2.tl4.aarch64
-DEBUG util.py:444:  emacs-filesystem-29.1-6.tl4.noarch
+DEBUG util.py:444:  emacs-filesystem-29.1-7.tl4.noarch
 DEBUG util.py:444:  rpmdevtools-9.6-4.tl4.noarch
 DEBUG util.py:444:  which-2.21-4.tl4.aarch64
 DEBUG util.py:444:  make-4.4.1-2.tl4.aarch64
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 INFO backend.py:231:  Installed packages:
-INFO backend.py:232:  dwz-0.15-3.tl4.aarch64
-sqlite-libs-3.42.0-3.tl4.aarch64
-tzdata-2023c-2.tl4.noarch
-xz-libs-5.4.4-1.tl4.aarch64
-patch-2.7.6-4.tl4.aarch64
-binutils-gold-2.41-4.tl4.aarch64
-libidn2-2.3.4-3.tl4.aarch64
-binutils-2.41-4.tl4.aarch64
-elfutils-0.190-2.tl4.aarch64
-libselinux-3.5-4.tl4.aarch64
-libtasn1-4.19.0-1.tl4.aarch64
-crypto-policies-20230614-5.git027799d.tl4.noarch
-libsemanage-3.5-3.tl4.aarch64
-zlib-1.2.13-4.tl4.aarch64
-libsmartcols-2.39.1-5.tl4.aarch64
-python3-libs-3.11.6-10.tl4.aarch64
-python3-pysocks-1.7.1-5.tl4.noarch
+INFO backend.py:232:  setup-2.14.5-2.tl4.noarch
+openssl-libs-3.0.12-8.tl4.aarch64
 debugedit-5.0-7.tl4.aarch64
 libcap-2.69-2.tl4.aarch64
+zip-3.0-4.tl4.aarch64
+readline-8.2-2.tl4.aarch64
 gnutls-3.8.2-2.tl4.aarch64
-ncurses-libs-6.4-3.tl4.aarch64
-p11-kit-trust-0.25.0-2.tl4.aarch64
-util-linux-core-2.39.1-5.tl4.aarch64
-libassuan-2.5.6-2.tl4.aarch64
-rpmdevtools-9.6-4.tl4.noarch
-python3-certifi-2023.7.22-2.tl4.noarch
-libgcrypt-1.10.2-2.tl4.aarch64
-python3-urllib3-1.26.18-1.tl4.noarch
-libunistring-1.1-4.tl4.aarch64
-libgpg-error-1.47-2.tl4.aarch64
-libcap-ng-0.8.3-5.tl4.aarch64
-libsigsegv-2.14-4.tl4.aarch64
-python3-charset-normalizer-3.2.0-1.tl4.noarch
-basesystem-1-6.tl4.noarch
-tencentos-rpm-config-1.0-3.tl4.noarch
-filesystem-3.16-6.tl4.aarch64
-zstd-1.5.5-3.tl4.aarch64
-libxml2-2.11.5-2.tl4.aarch64
-libnsl2-2.0.1-1.tl4.aarch64
-openldap-2.6.5-2.tl4.aarch64
-pcre2-doc-10.42-2.tl4.noarch
-tpm2-tss-4.0.1-5.tl4.aarch64
-libmount-2.39.1-5.tl4.aarch64
-python3-progressbar2-4.2.0-1.tl4.noarch
-libeconf-0.5.2-1.tl4.aarch64
-rpm-build-4.18.2-2.tl4.aarch64
 libb2-0.98.1-2.tl4.aarch64
-cyrus-sasl-lib-2.1.28-8.tl4.aarch64
-cracklib-2.9.11-4.tl4.aarch64
-gawk-5.2.2-2.tl4.aarch64
-ncurses-base-6.4-3.tl4.noarch
+libuuid-2.39.1-5.tl4.aarch64
+python3-six-1.16.0-6.tl4.noarch
+ca-certificates-2023.2.60-2.tl4.noarch
+python-setuptools-wheel-68.0.0-2.tl4.noarch
+rust-toolset-srpm-macros-1.70.0-3.tl4.noarch
+libpwquality-1.4.5-3.tl4.aarch64
 gmp-6.3.0-1.tl4.aarch64
+less-633-3.tl4.aarch64
+libffi-3.4.4-2.tl4.aarch64
+emacs-filesystem-29.1-7.tl4.noarch
+tencentos-repos-4.2-1.tl4.noarch
+libblkid-2.39.1-5.tl4.aarch64
+bzip2-1.0.8-4.tl4.aarch64
+gnupg2-2.4.3-2.tl4.aarch64
+libzstd-1.5.5-3.tl4.aarch64
+file-libs-5.45-3.tl4.aarch64
+libpsl-0.21.2-3.tl4.aarch64
+make-4.4.1-2.tl4.aarch64
+ncurses-base-6.4-3.tl4.noarch
+gdbm-libs-1.23-4.tl4.aarch64
+rpm-libs-4.18.2-2.tl4.aarch64
+npth-1.6-4.tl4.aarch64
+lua-libs-5.4.6-2.tl4.aarch64
+sed-4.9-1.tl4.aarch64
+xz-5.4.4-1.tl4.aarch64
+libssh-0.10.5-3.tl4.aarch64
+libidn2-2.3.4-3.tl4.aarch64
+util-linux-core-2.39.1-5.tl4.aarch64
+rpmdevtools-9.6-4.tl4.noarch
+file-5.45-3.tl4.aarch64
+rpm-sign-libs-4.18.2-2.tl4.aarch64
+filesystem-3.16-9.tl4.aarch64
+python3-libs-3.11.6-11.tl4.aarch64
+curl-8.4.0-7.tl4.aarch64
+rpm-4.18.2-2.tl4.aarch64
+authselect-libs-1.4.3-2.tl4.1.aarch64
+binutils-2.41-4.tl4.aarch64
+libsigsegv-2.14-4.tl4.aarch64
+go-srpm-macros-3.5.0-4.tl4.noarch
+elfutils-default-yama-scope-0.190-2.tl4.noarch
+libmount-2.39.1-5.tl4.aarch64
+gdb-minimal-13.2-7.tl4.aarch64
+python3-pysocks-1.7.1-5.tl4.noarch
+libsemanage-3.5-3.tl4.aarch64
+rpm-build-4.18.2-2.tl4.aarch64
+libcap-ng-0.8.3-5.tl4.aarch64
+coreutils-9.4-2.tl4.aarch64
+libgcc-12.3.1.2-3.tl4.aarch64
+libevent-2.1.12-4.tl4.aarch64
+cracklib-2.9.11-4.tl4.aarch64
+xz-libs-5.4.4-1.tl4.aarch64
+libarchive-3.7.1-4.tl4.aarch64
+libcurl-8.4.0-7.tl4.aarch64
+xxhash-libs-0.8.2-2.tl4.aarch64
+krb5-libs-1.21.2-5.tl4.aarch64
+elfutils-0.190-2.tl4.aarch64
+libgpg-error-1.47-2.tl4.aarch64
+pcre2-10.42-2.tl4.aarch64
+shadow-utils-4.14.3-2.tl4.aarch64
+libgomp-12.3.1.2-3.tl4.aarch64
+python3-progressbar2-4.2.0-1.tl4.noarch
+fakeroot-1.29-5.tl4.aarch64
+python3-certifi-2023.7.22-2.tl4.noarch
+tpm2-tss-4.0.1-5.tl4.aarch64
+mpfr-4.2.1-1.tl4.aarch64
+libassuan-2.5.6-2.tl4.aarch64
+diffutils-3.10-2.tl4.aarch64
+ed-1.19-2.tl4.aarch64
+zlib-1.2.13-4.tl4.aarch64
+publicsuffix-list-dafsa-20240106-1.tl4.noarch
+python3-urllib3-1.26.18-1.tl4.noarch
+cracklib-dicts-2.9.11-4.tl4.aarch64
+tencentos-rpm-config-1.0-4.tl4.noarch
+libattr-2.5.1-4.tl4.aarch64
+libsepol-3.5-2.tl4.aarch64
+alternatives-1.25-2.tl4.aarch64
+python3-requests-2.28.2-2.tl4.noarch
+lz4-libs-1.9.4-2.tl4.aarch64
+basesystem-1-6.tl4.noarch
+libutempter-1.2.1-5.tl4.aarch64
+grep-3.11-3.tl4.aarch64
+python3-utils-3.7.0-1.tl4.noarch
+tzdata-2023c-2.tl4.noarch
+libselinux-3.5-4.tl4.aarch64
+binutils-gold-2.41-4.tl4.aarch64
+python3-typing-extensions-4.7.1-2.tl4.noarch
 util-linux-2.39.1-5.tl4.aarch64
 python3-rpm-4.18.2-2.tl4.aarch64
-elfutils-default-yama-scope-0.190-2.tl4.noarch
-emacs-filesystem-29.1-6.tl4.noarch
-python-pip-wheel-23.3.1-1.tl4.noarch
-rpm-libs-4.18.2-2.tl4.aarch64
-python3-requests-2.28.2-2.tl4.noarch
-ed-1.19-2.tl4.aarch64
-sed-4.9-1.tl4.aarch64
-pkgconf-1.9.5-3.tl4.aarch64
-libnghttp2-1.58.0-2.tl4.aarch64
-rpm-sign-libs-4.18.2-2.tl4.aarch64
-pcre2-10.42-2.tl4.aarch64
-expat-2.6.2-1.tl4.aarch64
-python3-3.11.6-10.tl4.aarch64
-libpkgconf-1.9.5-3.tl4.aarch64
-krb5-libs-1.21.2-3.tl4.aarch64
-python3-typing-extensions-4.7.1-2.tl4.noarch
-libuuid-2.39.1-5.tl4.aarch64
-json-c-0.17-1.tl4.aarch64
-libstdc++-12.3.1.2-3.tl4.aarch64
-libarchive-3.7.1-4.tl4.aarch64
-popt-1.19-2.tl4.aarch64
-libacl-2.3.1-4.tl4.aarch64
-libffi-3.4.4-2.tl4.aarch64
-libksba-1.6.4-2.tl4.aarch64
-p11-kit-0.25.0-2.tl4.aarch64
-publicsuffix-list-dafsa-20240106-1.tl4.noarch
-alternatives-1.25-2.tl4.aarch64
-ca-certificates-2023.2.60-2.tl4.noarch
-libfsverity-1.5-4.tl4.aarch64
-zip-3.0-4.tl4.aarch64
-python3-six-1.16.0-6.tl4.noarch
-libcurl-8.4.0-5.tl4.aarch64
-libsepol-3.5-2.tl4.aarch64
-readline-8.2-2.tl4.aarch64
-libcom_err-1.47.0-2.tl4.aarch64
-rpm-build-libs-4.18.2-2.tl4.aarch64
-libverto-0.3.2-4.tl4.aarch64
-libxcrypt-4.4.36-2.tl4.aarch64
-authselect-1.4.3-2.tl4.1.aarch64
-libgomp-12.3.1.2-3.tl4.aarch64
-mpdecimal-2.5.1-4.tl4.aarch64
-grep-3.11-3.tl4.aarch64
-libtirpc-1.3.4-1.tl4.aarch64
-libattr-2.5.1-4.tl4.aarch64
-bzip2-libs-1.0.8-4.tl4.aarch64
-elfutils-libelf-0.190-2.tl4.aarch64
-glibc-common-2.38-13.tl4.aarch64
-info-7.0.3-4.tl4.aarch64
-tencentos-repos-4.2-1.tl4.noarch
-file-libs-5.45-3.tl4.aarch64
-tencentos-release-4.2-1.tl4.noarch
-keyutils-libs-1.6.3-4.tl4.aarch64
-findutils-4.9.0-4.tl4.aarch64
-audit-libs-3.1.2-1.tl4.aarch64
-gnupg2-2.4.3-2.tl4.aarch64
-python-setuptools-wheel-68.0.0-2.tl4.noarch
-fonts-srpm-macros-2.0.5-5.tl4.noarch
-python3-idna-3.7-1.tl4.noarch
-gdbm-libs-1.23-4.tl4.aarch64
-libzstd-1.5.5-3.tl4.aarch64
-rpm-4.18.2-2.tl4.aarch64
-ima-evm-utils-1.5-1.tl4.aarch64
-pkgconf-pkg-config-1.9.5-3.tl4.aarch64
-glibc-2.38-13.tl4.aarch64
-libpwquality-1.4.5-3.tl4.aarch64
-xxhash-libs-0.8.2-2.tl4.aarch64
-python3-argcomplete-3.1.2-2.tl4.noarch
-lua-libs-5.4.6-2.tl4.aarch64
-nettle-3.8.1-4.tl4.aarch64
-libgcc-12.3.1.2-3.tl4.aarch64
-tar-1.35-2.tl4.aarch64
-setup-2.14.5-2.tl4.noarch
-efi-srpm-macros-4-3.tl4.noarch
-python3-utils-3.7.0-1.tl4.noarch
-gdb-minimal-13.2-4.tl4.aarch64
-file-5.45-3.tl4.aarch64
-libbrotli-1.1.0-1.tl4.aarch64
-systemd-libs-255-5.tl4.ap.1.aarch64
-libevent-2.1.12-4.tl4.aarch64
-gzip-1.12-5.tl4.aarch64
-rust-toolset-srpm-macros-1.70.0-3.tl4.noarch
-shadow-utils-4.14.3-2.tl4.aarch64
-less-633-3.tl4.aarch64
-bzip2-1.0.8-4.tl4.aarch64
-which-2.21-4.tl4.aarch64
-cpio-2.14-1.tl4.aarch64
-pam-1.5.3-4.tl4.aarch64
-make-4.4.1-2.tl4.aarch64
 pkgconf-m4-1.9.5-3.tl4.noarch
-diffutils-3.10-2.tl4.aarch64
-libpsl-0.21.2-3.tl4.aarch64
-coreutils-9.4-2.tl4.aarch64
-npth-1.6-4.tl4.aarch64
-curl-8.4.0-5.tl4.aarch64
+libtirpc-1.3.4-1.tl4.aarch64
+fonts-srpm-macros-2.0.5-5.tl4.noarch
 unzip-6.0-4.tl4.aarch64
-authselect-libs-1.4.3-2.tl4.1.aarch64
-xz-5.4.4-1.tl4.aarch64
-elfutils-libs-0.190-2.tl4.aarch64
-openssl-libs-3.0.12-8.tl4.aarch64
-libutempter-1.2.1-5.tl4.aarch64
-libssh-0.10.5-3.tl4.aarch64
-mpfr-4.2.1-1.tl4.aarch64
+p11-kit-0.25.0-2.tl4.aarch64
+cyrus-sasl-lib-2.1.28-8.tl4.aarch64
+info-7.0.3-4.tl4.aarch64
+libunistring-1.1-4.tl4.aarch64
+pkgconf-pkg-config-1.9.5-3.tl4.aarch64
+libtasn1-4.19.0-1.tl4.aarch64
+python-pip-wheel-23.3.1-1.tl4.noarch
+crypto-policies-20230614-5.git027799d.tl4.noarch
+elfutils-libelf-0.190-2.tl4.aarch64
+authselect-1.4.3-2.tl4.1.aarch64
+libnghttp2-1.58.0-2.tl4.aarch64
+libnsl2-2.0.1-1.tl4.aarch64
+python3-3.11.6-11.tl4.aarch64
+libxml2-2.11.5-2.tl4.aarch64
+libxcrypt-4.4.36-2.tl4.aarch64
+keyutils-libs-1.6.3-4.tl4.aarch64
+libeconf-0.5.2-1.tl4.aarch64
+libsmartcols-2.39.1-5.tl4.aarch64
+zstd-1.5.5-3.tl4.aarch64
+glibc-common-2.38-13.tl4.aarch64
+popt-1.19-2.tl4.aarch64
+libpkgconf-1.9.5-3.tl4.aarch64
+gzip-1.12-5.tl4.aarch64
+which-2.21-4.tl4.aarch64
+pam-1.5.3-4.tl4.aarch64
+python3-idna-3.7-1.tl4.noarch
 bash-5.2.15-4.tl4.aarch64
-lz4-libs-1.9.4-2.tl4.aarch64
-cracklib-dicts-2.9.11-4.tl4.aarch64
-fakeroot-1.29-5.tl4.aarch64
-libblkid-2.39.1-5.tl4.aarch64
+p11-kit-trust-0.25.0-2.tl4.aarch64
+python3-charset-normalizer-3.2.0-1.tl4.noarch
+cpio-2.14-1.tl4.aarch64
+audit-libs-3.1.2-1.tl4.aarch64
+bzip2-libs-1.0.8-4.tl4.aarch64
+mpdecimal-2.5.1-4.tl4.aarch64
+efi-srpm-macros-4-3.tl4.noarch
+gawk-5.2.2-2.tl4.aarch64
+dwz-0.15-3.tl4.aarch64
+ima-evm-utils-1.5-1.tl4.aarch64
+elfutils-libs-0.190-2.tl4.aarch64
+nettle-3.8.1-4.tl4.aarch64
+libstdc++-12.3.1.2-3.tl4.aarch64
+libgcrypt-1.10.2-2.tl4.aarch64
 libfdisk-2.39.1-5.tl4.aarch64
+glibc-2.38-13.tl4.aarch64
+libksba-1.6.4-2.tl4.aarch64
+json-c-0.17-1.tl4.aarch64
+libfsverity-1.5-4.tl4.aarch64
+tencentos-release-4.2-1.tl4.noarch
+pcre2-doc-10.42-2.tl4.noarch
+systemd-libs-255-5.tl4.ap.1.aarch64
+tar-1.35-2.tl4.aarch64
+sqlite-libs-3.42.0-3.tl4.aarch64
+findutils-4.9.0-4.tl4.aarch64
+patch-2.7.6-4.tl4.aarch64
+pkgconf-1.9.5-3.tl4.aarch64
+ncurses-libs-6.4-3.tl4.aarch64
+python3-argcomplete-3.1.2-2.tl4.noarch
+openldap-2.6.5-2.tl4.aarch64
+libacl-2.3.1-4.tl4.aarch64
+expat-2.6.3-1.tl4.aarch64
+libcom_err-1.47.0-2.tl4.aarch64
+libverto-0.3.2-4.tl4.aarch64
+libbrotli-1.1.0-1.tl4.aarch64
+rpm-build-libs-4.18.2-2.tl4.aarch64
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 INFO buildroot.py:553:  Mock Version: 4.1
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
 DEBUG buildroot.py:746:  kernel version == 5.4.119-19-0011
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/fstab
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/yum/yum.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf/dnf.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/var/log/yum.log
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-496114-68005/root
-DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-496114-68005/result
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-498070-69073/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-498070-69073/result
 INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/pki/mock
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf
 DEBUG package_manager.py:623:  configure DNF vars
 DEBUG util.py:621:  child environment: None
 DEBUG util.py:539:  Executing command: ['/usr/sbin/usermod', '-u', '991', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:444:  usermod: no changes
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/.initialized
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/.initialized
 INFO backend.py:388:  Running in chroot: ['uname -r']
 DEBUG util.py:621:  child environment: None
 DEBUG util.py:539:  Executing command: ['uname -r'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell True
@@ -900,92 +904,92 @@ DEBUG util.py:444:  5.4.119-19-0011
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 INFO buildroot.py:553:  Mock Version: 4.1
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/dev/mapper
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/dev/mapper
 DEBUG buildroot.py:746:  kernel version == 5.4.119-19-0011
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/fstab
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/yum/yum.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf/dnf.conf
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/var/log/yum.log
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/fstab
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/yum/yum.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf/dnf.conf
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/var/log/yum.log
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/proc
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/proc
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/sys
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/proc', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/shm
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'rprivate', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/dev/pts
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/sys
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/sys', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-496114-68005/root
-DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-496114-68005/result
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,nodev,noexec,nosuid,readonly,rprivate,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/shm
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/dev/pts
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'devpts', '-o', 'gid=5,mode=0620,ptmxmode=0666,newinstance', 'devpts', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG buildroot.py:245:  rootdir = /data/mock/dist-ts4-build-498070-69073/root
+DEBUG buildroot.py:246:  resultdir = /data/mock/dist-ts4-build-498070-69073/result
 INFO buildroot.py:158:  Package manager dnf detected and used (direct choice)
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/pki/mock
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/etc/dnf
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/pki/mock
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/etc/dnf
 DEBUG package_manager.py:623:  configure DNF vars
 DEBUG buildroot.py:572:  removing 3 rpm db files
-DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-496114-68005/root/var/lib/rpm/__db.003
-DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-496114-68005/root/var/lib/rpm/__db.002
-DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-496114-68005/root/var/lib/rpm/__db.001
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-498070-69073/root/var/lib/rpm/__db.003
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-498070-69073/root/var/lib/rpm/__db.002
+DEBUG buildroot.py:577:  nuke_rpm_db: removing /data/mock/dist-ts4-build-498070-69073/root/var/lib/rpm/__db.001
 DEBUG util.py:621:  child environment: None
 DEBUG util.py:539:  Executing command: ['/usr/sbin/userdel', '-f', 'mockbuild'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
@@ -1002,29 +1006,29 @@ DEBUG util.py:442:  useradd: warning: the home directory /builddir already exist
 DEBUG util.py:442:  useradd: Not copying any file from skel directory into it.
 DEBUG util.py:442:  Creating mailbox file: File exists
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/RPMS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/RPMS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SPECS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SPECS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SRPMS
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SRPMS
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/SOURCES
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILD
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILD
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILDROOT
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/BUILDROOT
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/originals
-DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-496114-68005/root/builddir/build/originals
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/builddir
-DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-496114-68005/root/.initialized
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/RPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/RPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SPECS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SPECS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SRPMS
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SRPMS
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/SOURCES
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILD
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILD
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILDROOT
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/BUILDROOT
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/originals
+DEBUG file_util.py:31:  creating dir: /data/mock/dist-ts4-build-498070-69073/root/builddir/build/originals
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/builddir
+DEBUG file_util.py:41:  touching file: /data/mock/dist-ts4-build-498070-69073/root/.initialized
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-unsigned-aarch64-15.8-1.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-Uvh', '--nodeps', '/builddir/build/originals/shim-unsigned-aarch64-15.8-2.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:444:  Updating / installing...
-DEBUG util.py:444:  shim-unsigned-aarch64-15.8-1.tl4      ########################################
+DEBUG util.py:444:  shim-unsigned-aarch64-15.8-2.tl4      ########################################
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-unsigned-aarch64-15.8-1.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/rpm', '-qpl', '/builddir/build/originals/shim-unsigned-aarch64-15.8-2.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:444:  openssl-add-ecdsa-and-ec-support-for-shim.patch
 DEBUG util.py:444:  sbat.tencentos.csv
 DEBUG util.py:444:  shim-15.8.tar.bz2
@@ -1135,21 +1139,21 @@ DEBUG util.py:444:    -?, --help                     Show this help message
 DEBUG util.py:444:        --usage                    Display brief usage message
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-496114-68005/root', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-498070-69073/root', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005/root/installation-homedir
-DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts4-build-496114-68005/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts4-build-496114-68005/root//builddir/build/SRPMS/shim-unsigned-aarch64-15.8-1.tl4.src.rpm']
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073/root/installation-homedir
+DEBUG package_manager.py:229:  ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts4-build-498070-69073/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts4-build-498070-69073/root//builddir/build/SRPMS/shim-unsigned-aarch64-15.8-2.tl4.src.rpm']
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts4-build-496114-68005/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts4-build-496114-68005/root//builddir/build/SRPMS/shim-unsigned-aarch64-15.8-1.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts4-build-496114-68005/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/usr/bin/dnf-3', 'builddep', '--installroot', '/data/mock/dist-ts4-build-498070-69073/root/', '--setopt=deltarpm=False', '--allowerasing', '--disableplugin=local', '--disableplugin=spacewalk', '--disableplugin=versionlock', '/data/mock/dist-ts4-build-498070-69073/root//builddir/build/SRPMS/shim-unsigned-aarch64-15.8-2.tl4.src.rpm'] with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/data/mock/dist-ts4-build-498070-69073/root/installation-homedir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8', 'LC_MESSAGES': 'C.UTF-8'} and shell False
 DEBUG util.py:442:  No matches found for the following disable plugin patterns: local, spacewalk, versionlock
 DEBUG util.py:444:  Package findutils-4.9.0-4.tl4.aarch64 is already installed.
 DEBUG util.py:444:  Package make-4.4.1-2.tl4.aarch64 is already installed.
@@ -1174,7 +1178,7 @@ DEBUG util.py:444:   git-core-doc              noarch    2.41.1-2.tl4           
 DEBUG util.py:444:   glib2                     aarch64   2.78.3-1.tl4                 build   2.8 M
 DEBUG util.py:444:   glibc-devel               aarch64   2.38-13.tl4                  build   1.6 M
 DEBUG util.py:444:   groff-base                aarch64   1.23.0-4.tl4                 build   1.0 M
-DEBUG util.py:444:   kernel-debug-headers      aarch64   6.6.41-10.mlnx.2.debug.tl4   build   1.5 M
+DEBUG util.py:444:   kernel-headers            aarch64   6.6.47-12.tl4                build   1.6 M
 DEBUG util.py:444:   libasan                   aarch64   12.3.1.2-3.tl4               build   377 k
 DEBUG util.py:444:   libatomic                 aarch64   12.3.1.2-3.tl4               build    22 k
 DEBUG util.py:444:   libcbor                   aarch64   0.10.2-2.tl4                 build    55 k
@@ -1258,7 +1262,7 @@ DEBUG util.py:444:  Total download size: 66 M
 DEBUG util.py:444:  Installed size: 237 M
 DEBUG util.py:444:  Downloading Packages:
 DEBUG util.py:444:  --------------------------------------------------------------------------------
-DEBUG util.py:444:  Total                                            63 MB/s |  66 MB     00:01     
+DEBUG util.py:444:  Total                                            59 MB/s |  66 MB     00:01     
 DEBUG util.py:444:  Running transaction check
 DEBUG util.py:444:  Transaction check succeeded.
 DEBUG util.py:444:  Running transaction test
@@ -1277,7 +1281,7 @@ DEBUG util.py:444:    git-core-doc-2.41.1-2.tl4.noarch
 DEBUG util.py:444:    glib2-2.78.3-1.tl4.aarch64                                                    
 DEBUG util.py:444:    glibc-devel-2.38-13.tl4.aarch64                                               
 DEBUG util.py:444:    groff-base-1.23.0-4.tl4.aarch64                                               
-DEBUG util.py:444:    kernel-debug-headers-6.6.41-10.mlnx.2.debug.tl4.aarch64                       
+DEBUG util.py:444:    kernel-headers-6.6.47-12.tl4.aarch64                                          
 DEBUG util.py:444:    libasan-12.3.1.2-3.tl4.aarch64                                                
 DEBUG util.py:444:    libatomic-12.3.1.2-3.tl4.aarch64                                              
 DEBUG util.py:444:    libcbor-0.10.2-2.tl4.aarch64                                                  
@@ -1361,30 +1365,30 @@ DEBUG util.py:444:  Complete!
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-t', 'tmpfs', '-o', 'private', 'tmpfs', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
-DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root
+DEBUG file_util.py:28:  ensuring that dir exists: /data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-496114-68005/root', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
-DEBUG util.py:595:  Child return code was: 0
-DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'rbind', '/data/mock/dist-ts4-build-498070-69073/root', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: rpm -qa --root '/data/mock/dist-ts4-build-496114-68005/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell True
+DEBUG util.py:539:  Executing command: ['/bin/mount', '-n', '-o', 'remount,private,rbind', '--target', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:595:  Child return code was: 0
+DEBUG util.py:621:  child environment: None
+DEBUG util.py:539:  Executing command: rpm -qa --root '/data/mock/dist-ts4-build-498070-69073/root' --qf '%{nevra} %{buildtime} %{size} %{pkgid} installed\n' with env {'TERM': 'vt100', 'SHELL': '/bin/bash', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'PROMPT_COMMAND': 'printf "\\033]0;<mock-chroot>\\007"', 'PS1': '<mock-chroot> \\s-\\v\\$ ', 'LANG': 'C.UTF-8'} and shell True
 DEBUG util.py:444:  libgcc-12.3.1.2-3.tl4.aarch64 1721984597 292226 475924e59641941450c143e032dbe111 installed
 DEBUG util.py:444:  crypto-policies-20230614-5.git027799d.tl4.noarch 1714983832 87143 3a97e2fde053b1b0790979e992cd6caa installed
 DEBUG util.py:444:  tencentos-repos-4.2-1.tl4.noarch 1713495716 2934 ca73ae5f1a7342b31c7f640823914cd6 installed
 DEBUG util.py:444:  tencentos-release-4.2-1.tl4.noarch 1713495716 4630450 b600a820a48324d031d6b6e6d54b4a46 installed
 DEBUG util.py:444:  setup-2.14.5-2.tl4.noarch 1710158912 731250 f47bb00c060dcca8c9f9b477b6a51224 installed
-DEBUG util.py:444:  filesystem-3.16-6.tl4.aarch64 1703673342 106 4ca4c22b4917badbd9944c1ea7767fbc installed
+DEBUG util.py:444:  filesystem-3.16-9.tl4.aarch64 1726661092 106 7529f26ed0cfb84a5877126fc553519d installed
 DEBUG util.py:444:  basesystem-1-6.tl4.noarch 1710210004 0 72f0bfef32729ebaa73018ab7dbaf869 installed
 DEBUG util.py:444:  tzdata-2023c-2.tl4.noarch 1703669691 1712925 46b4a099f1c0b953ac5cae71a0d430f7 installed
 DEBUG util.py:444:  rust-toolset-srpm-macros-1.70.0-3.tl4.noarch 1721204198 2058 cee77d37003252a6bde6de2b2245195d installed
@@ -1471,7 +1475,7 @@ DEBUG util.py:444:  patch-2.7.6-4.tl4.aarch64 1703665255 333882 69c26f3be281b047
 DEBUG util.py:444:  mpdecimal-2.5.1-4.tl4.aarch64 1703685572 537699 7b4b5613ed4415083ed3745892f74512 installed
 DEBUG util.py:444:  bzip2-1.0.8-4.tl4.aarch64 1703682398 437326 9b21395bf20f6b3a3c5894afb39f19de installed
 DEBUG util.py:444:  cpio-2.14-1.tl4.aarch64 1710211140 1198904 778c083dbc4ba632112de502647a4679 installed
-DEBUG util.py:444:  expat-2.6.2-1.tl4.aarch64 1712911410 557497 db7b422c6d6cd3e7be416077847749ef installed
+DEBUG util.py:444:  expat-2.6.3-1.tl4.aarch64 1726118416 560512 d12aefd2d24ed84d2d487bd8d872c6d6 installed
 DEBUG util.py:444:  json-c-0.17-1.tl4.aarch64 1710210671 206916 6bb39bf9b1dd6e3d04b3aeecb51958c8 installed
 DEBUG util.py:444:  libbrotli-1.1.0-1.tl4.aarch64 1710306979 1192554 d4b50945d74d543a81852860af7eb1f5 installed
 DEBUG util.py:444:  libnghttp2-1.58.0-2.tl4.aarch64 1717136119 268084 3bf177e67cd751bfd86a94908475ab33 installed
@@ -1481,7 +1485,7 @@ DEBUG util.py:444:  pkgconf-pkg-config-1.9.5-3.tl4.aarch64 1703658880 970 e69408
 DEBUG util.py:444:  libsigsegv-2.14-4.tl4.aarch64 1703670160 230169 f0f953864d8edc53931e7e9afeecc9e2 installed
 DEBUG util.py:444:  gawk-5.2.2-2.tl4.aarch64 1703841746 4517064 1734c475138b527b89cb086800a58d12 installed
 DEBUG util.py:444:  libverto-0.3.2-4.tl4.aarch64 1703668550 201837 d7f299d7af9463636f6e559b77c400fc installed
-DEBUG util.py:444:  krb5-libs-1.21.2-3.tl4.aarch64 1716809494 3496015 0ccdf4389850e2256c20474eb336132b installed
+DEBUG util.py:444:  krb5-libs-1.21.2-5.tl4.aarch64 1726106018 3495999 fadb333bd5c2e10bff84a2fbf34b0204 installed
 DEBUG util.py:444:  libtirpc-1.3.4-1.tl4.aarch64 1710158997 282414 fd6bb40344d825251ad271644dff10a9 installed
 DEBUG util.py:444:  libnsl2-2.0.1-1.tl4.aarch64 1710158947 226942 d482f9f2b7c60f7c32bc3bbcc7e53db3 installed
 DEBUG util.py:444:  libpwquality-1.4.5-3.tl4.aarch64 1703684301 1147074 7fac1560d02ced7bb5f8ccbd803ef938 installed
@@ -1498,8 +1502,8 @@ DEBUG util.py:444:  util-linux-core-2.39.1-5.tl4.aarch64 1724228062 6159817 1144
 DEBUG util.py:444:  util-linux-2.39.1-5.tl4.aarch64 1724228062 17518159 3d164d3775a297db9a120a4ad2580fee installed
 DEBUG util.py:444:  fakeroot-1.29-5.tl4.aarch64 1717379500 937644 37504eac83e8f9d21b9e4f108265b641 installed
 DEBUG util.py:444:  python-pip-wheel-23.3.1-1.tl4.noarch 1710302545 1596694 a918b380b22d6a92c377218ebc237e7f installed
-DEBUG util.py:444:  python3-3.11.6-10.tl4.aarch64 1725617074 216497 223fc38e533be63519703d22a446be24 installed
-DEBUG util.py:444:  python3-libs-3.11.6-10.tl4.aarch64 1725617074 57429830 0eaf31be5c4c554900f0a4a1cb03ad02 installed
+DEBUG util.py:444:  python3-3.11.6-11.tl4.aarch64 1726806673 216497 1432f44d8bc3afc70bf8c81573cc4cd1 installed
+DEBUG util.py:444:  python3-libs-3.11.6-11.tl4.aarch64 1726806673 57436516 a1d4b9e5bae14dc869577370f4d42270 installed
 DEBUG util.py:444:  python3-idna-3.7-1.tl4.noarch 1715064407 626695 987b6d01f2ee1f69519f18fb4b6b7238 installed
 DEBUG util.py:444:  python3-six-1.16.0-6.tl4.noarch 1703661638 124726 bcff3c218e52ca83f0974ab1c0b2b20d installed
 DEBUG util.py:444:  python3-argcomplete-3.1.2-2.tl4.noarch 1703665196 283302 e89c724dfd3fabd2942bafddff02fce4 installed
@@ -1515,13 +1519,14 @@ DEBUG util.py:444:  libarchive-3.7.1-4.tl4.aarch64 1718705010 978035 0b0324cced6
 DEBUG util.py:444:  libevent-2.1.12-4.tl4.aarch64 1703675542 1525794 659a68544aa7ac8d6ed39c6e6f48cd86 installed
 DEBUG util.py:444:  openldap-2.6.5-2.tl4.aarch64 1703662401 1037260 1807ff1ad2114bf6481b6a55a22a2934 installed
 DEBUG util.py:444:  libssh-0.10.5-3.tl4.aarch64 1708227234 594301 41a7845fefcdb1ff638f94dc3fe012a8 installed
-DEBUG util.py:444:  libcurl-8.4.0-5.tl4.aarch64 1712048395 876286 bccfd36a2242db7205ee7c32dc9516e3 installed
-DEBUG util.py:444:  curl-8.4.0-5.tl4.aarch64 1712048395 911512 4f3e0b37e5dae3ff97c57fc8a46281d4 installed
+DEBUG util.py:444:  libcurl-8.4.0-7.tl4.aarch64 1726826056 876286 2f5a687b245428b2c21897bdd2af798c installed
+DEBUG util.py:444:  curl-8.4.0-7.tl4.aarch64 1726826056 911512 284903d6883262523a349aa54a6a3c9e installed
 DEBUG util.py:444:  rpm-4.18.2-2.tl4.aarch64 1720700342 4730449 c35e63d494640ff8b345be072317fe00 installed
 DEBUG util.py:444:  rpm-libs-4.18.2-2.tl4.aarch64 1720700342 884188 f3faf8b4fd1e414933411f8c40e800b7 installed
 DEBUG util.py:444:  efi-srpm-macros-1:4-3.tl4.noarch 1715136157 40906 cb8aa122aadb93f0aa781f9ce4c6ce36 installed
 DEBUG util.py:444:  fonts-srpm-macros-2.0.5-5.tl4.noarch 1703670889 56930 ec314bed2877719a8ad7223196df5cb0 installed
-DEBUG util.py:444:  tencentos-rpm-config-1.0-3.tl4.noarch 1703216630 222646 2c48559734842c1baa8b450c22425a07 installed
+DEBUG util.py:444:  go-srpm-macros-3.5.0-4.tl4.noarch 1727233905 25925 18afa622c822030d3a7df94126904610 installed
+DEBUG util.py:444:  tencentos-rpm-config-1.0-4.tl4.noarch 1726048788 242918 7e479763b4a881f91c1702d95b012816 installed
 DEBUG util.py:444:  tpm2-tss-4.0.1-5.tl4.aarch64 1721128067 4337938 deea1e0c10f0a9c88f73fd7a3d9f7f47 installed
 DEBUG util.py:444:  ima-evm-utils-1.5-1.tl4.aarch64 1710158843 650677 3dc78e1b9f8ec063141d7e023624a7c5 installed
 DEBUG util.py:444:  npth-1.6-4.tl4.aarch64 1703839521 258855 e6dd4056d875993cf6d791bde50309e0 installed
@@ -1529,7 +1534,7 @@ DEBUG util.py:444:  gnupg2-2.4.3-2.tl4.aarch64 1703666369 12358678 36ddf7173cbcc
 DEBUG util.py:444:  rpm-sign-libs-4.18.2-2.tl4.aarch64 1720700342 199868 64ab8d5f1cc18ef5a977b3af4113c502 installed
 DEBUG util.py:444:  unzip-6.0-4.tl4.aarch64 1703673707 770687 ec31d94769fce1fe25fdfc2fd76c600b installed
 DEBUG util.py:444:  xxhash-libs-0.8.2-2.tl4.aarch64 1703662515 216958 50617044313bcc18a37b1eaf88285943 installed
-DEBUG util.py:444:  gdb-minimal-13.2-4.tl4.aarch64 1703670519 9895772 782305b1860ef92348ab3c92cb84cd61 installed
+DEBUG util.py:444:  gdb-minimal-13.2-7.tl4.aarch64 1726208488 9895772 b429c6a58f87670700d1ae91163031e2 installed
 DEBUG util.py:444:  elfutils-default-yama-scope-0.190-2.tl4.noarch 1710124839 1810 3581a09b5d589ec798ea2b08c25ebbdb installed
 DEBUG util.py:444:  elfutils-libs-0.190-2.tl4.aarch64 1710124866 960109 3a62f156f59d71f010cded34db4a1a61 installed
 DEBUG util.py:444:  elfutils-0.190-2.tl4.aarch64 1710124866 5046412 17f57f9f3143f171b0cd02696b4efb1a installed
@@ -1537,7 +1542,7 @@ DEBUG util.py:444:  rpm-build-libs-4.18.2-2.tl4.aarch64 1720700342 268286 0f7bda
 DEBUG util.py:444:  python3-rpm-4.18.2-2.tl4.aarch64 1720700342 474863 6f97ae41d564c0f8787bc4dd04f5552f installed
 DEBUG util.py:444:  debugedit-5.0-7.tl4.aarch64 1710410231 508841 d1cbf47cd859625488238404db1d0bca installed
 DEBUG util.py:444:  rpm-build-4.18.2-2.tl4.aarch64 1720700342 1252037 e2cf8244a7097ba63b59d38e66d0440e installed
-DEBUG util.py:444:  emacs-filesystem-1:29.1-6.tl4.noarch 1721619052 0 b544031b1fd5a678ceaba81f6a20f838 installed
+DEBUG util.py:444:  emacs-filesystem-1:29.1-7.tl4.noarch 1727261463 0 fdd768ed800acba446d6c21794b76cdc installed
 DEBUG util.py:444:  rpmdevtools-9.6-4.tl4.noarch 1703666524 219026 42eeafa5da5687c92342ab0241da822f installed
 DEBUG util.py:444:  which-2.21-4.tl4.aarch64 1703684433 253759 d37db8cf095bd7bf27de22bb6ecefe02 installed
 DEBUG util.py:444:  make-4.4.1-2.tl4.aarch64 1703675783 1932999 2fe7cc69fee3a36bff0192dcd3396291 installed
@@ -1564,7 +1569,7 @@ DEBUG util.py:444:  libfido2-1.13.0-3.tl4.aarch64 1703667202 349238 751c9bf6e356
 DEBUG util.py:444:  openssh-clients-9.3p2-13.tl4.1.aarch64 1720753678 3800702 f3d92e0845d763ad8f6acce25dccfcc3 installed
 DEBUG util.py:444:  libatomic-12.3.1.2-3.tl4.aarch64 1721984597 201762 3657b97ce46f3f70feddeedb96a4f3f7 installed
 DEBUG util.py:444:  libasan-12.3.1.2-3.tl4.aarch64 1721984597 1350214 da7c05847e18e3ed3363d9aa8119dde7 installed
-DEBUG util.py:444:  kernel-debug-headers-6.6.41-10.mlnx.2.debug.tl4.aarch64 1724302917 6267318 c100806938e544ecb6179474801eb447 installed
+DEBUG util.py:444:  kernel-headers-6.6.47-12.tl4.aarch64 1727272375 6268639 52118482f4e8c64094fa3d26ef8b03ed installed
 DEBUG util.py:444:  libxcrypt-devel-4.4.36-2.tl4.aarch64 1703676125 328931 a4b98d7cdae64b31af0a1948044cdde7 installed
 DEBUG util.py:444:  glibc-devel-2.38-13.tl4.aarch64 1718681079 9750261 67175b99a03125671073688e7fdef4b9 installed
 DEBUG util.py:444:  groff-base-1.23.0-4.tl4.aarch64 1703679573 5295449 3356af19d8bb4bd039b573e726908b2f installed
@@ -1635,48 +1640,48 @@ DEBUG util.py:444:  dos2unix-7.5.0-2.tl4.aarch64 1703665991 1135017 bf0320ddcde6
 DEBUG util.py:444:  crypto-policies-scripts-20230614-5.git027799d.tl4.noarch 1714983832 311432 ea5860f61c4c25484385140a6ff51e92 installed
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/data/mock/dist-ts4-build-496114-68005/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/data/mock/dist-ts4-build-498070-69073/root'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
 DEBUG backend.py:799:  Copying packages to result dir
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:167:  kill orphans
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/pts'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/dev/shm'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/sys'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
 DEBUG util.py:621:  child environment: None
-DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-496114-68005-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
+DEBUG util.py:539:  Executing command: ['/bin/umount', '-n', '-l', '/data/mock/dist-ts4-build-498070-69073-bootstrap/root/proc'] with env {'TERM': 'vt100', 'SHELL': '/bin/sh', 'HOME': '/builddir', 'HOSTNAME': 'mock', 'PATH': '/usr/bin:/bin:/usr/sbin:/sbin', 'LANG': 'C.UTF-8'} and shell False
 DEBUG util.py:595:  Child return code was: 0
