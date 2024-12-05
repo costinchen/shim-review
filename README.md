@@ -163,7 +163,7 @@ The current builds contain the grub,3 fixes but not the NTFS fixes, but we don't
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
-Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:  
+Skip this, if you're not using GRUB2, otherwise do you have an entry in your GRUB2 binary similar to:
 `grub,4,Free Software Foundation,grub,GRUB_UPSTREAM_VERSION,https://www.gnu.org/software/grub/`?
 *******************************************************************************
 No, it's grub,3.
@@ -180,7 +180,7 @@ This is our fisrt application, we had no previous signed shim.
 ### Is upstream commit [1957a85b0032a81e6482ca4aab883643b8dae06e "efi: Restrict efivar_ssdt_load when the kernel is locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=1957a85b0032a81e6482ca4aab883643b8dae06e) applied?
 ### Is upstream commit [75b0cea7bf307f362057cc778efe89af4c615354 "ACPI: configfs: Disallow loading ACPI tables when locked down"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=75b0cea7bf307f362057cc778efe89af4c615354) applied?
 ### Is upstream commit [eadb2f47a3ced5c64b23b90fd2a3463f63726066 "lockdown: also lock down previous kgdb use"](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=eadb2f47a3ced5c64b23b90fd2a3463f63726066) applied?
-Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.  
+Hint: upstream kernels should have all these applied, but if you ship your own heavily-modified older kernel version, that is being maintained separately from upstream, this may not be the case.
 If you are shipping an older kernel, double-check your sources; maybe you do not have all the patches, but ship a configuration, that does not expose the issue(s).
 *******************************************************************************
 Yes, all mentioned upstream commits above are applied.
@@ -281,8 +281,8 @@ shim.tencentos,1,TencentOS Linux 3,shim,15.8,tencentos_secure@tencent.com
 grub2 (x86_64/aarch64)
 sbat,1,SBAT Version,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
 grub,3,Free Software Foundation,grub,2.02,https//www.gnu.org/software/grub/
-grub.rh,2,Red Hat,grub2,2.02-156.tl3.1,mailto:secalert@redhat.com
-grub.tencentos,1,TencentOS Linux 3,grub2,2.02,mail:tencentos_secure@tencent.com
+grub.rh,2,Red Hat,grub2,2.02-158.el8,mailto:secalert@redhat.com
+grub.tencentos,1,TencentOS Linux 3,grub2,2.02-158.tl3.ap.1,mail:tencentos_secure@tencent.com
 
 fwupd (x86_64/aarch64)
 sbat,1,UEFI shim,sbat,1,https://github.com/rhboot/shim/blob/main/SBAT.md
@@ -324,7 +324,7 @@ No, we are not using systemd-boot.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-Our grub2 is origined from RHEL 8 downstream and the version number is grub2-2.02-156.tl3.
+Our grub2 is origined from RHEL 8 downstream and the version number is grub2-2.02-158.tl3.ap.1.
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
@@ -356,7 +356,7 @@ TencentOS Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
-The reviewing process is meant to be a peer-review effort and the best way to have your application reviewed faster is to help with reviewing others. We are in most cases volunteers working on this venue in our free time, rather than being employed and paid to review the applications during our business hours. 
+The reviewing process is meant to be a peer-review effort and the best way to have your application reviewed faster is to help with reviewing others. We are in most cases volunteers working on this venue in our free time, rather than being employed and paid to review the applications during our business hours.
 
 A reasonable timeframe of waiting for a review can reach 2-3 months. Helping us is the best way to shorten this period. The more help we get, the faster and the smoother things will go.
 
