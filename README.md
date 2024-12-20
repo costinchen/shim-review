@@ -22,7 +22,25 @@ Here's the template:
 *******************************************************************************
 ### What organization or people are asking to have this signed?
 *******************************************************************************
-Tencent Holdings Ltd.
+Tencent Holdings Ltd: https://www.tencent.com/
+
+*******************************************************************************
+### What's the legal data that proves the organization's genuineness?
+The reviewers should be able to easily verify, that your organization is a legal entity, to prevent abuse.
+Provide the information, which can prove the genuineness with certainty.
+*******************************************************************************
+Company/tax register entries or equivalent:
+(a link to the organization entry in your jurisdiction's register will do)
+
+NASDAQ: Tencent Holdings Ltd. (TCTZF) https://www.nasdaq.com/market-activity/stocks/tctzf
+
+The public details of both your organization and the issuer in the EV certificate used for signing .cab files at Microsoft Hardware Dev Center File Signing Services.
+(**not** the CA certificate embedded in your shim binary)
+
+```
+Issuer: O=DigiCert Inc, CN=DigiCert Secure Site CN CA G3, C=US
+Subject: CN=Shenzhen Tencent Computer Systems Company Limited, O=Shenzhen Tencent Computer Systems Company Limited, L=Shenzhen, ST=Guangdong Province, C=CN
+```
 
 *******************************************************************************
 ### What product or service is this for?
@@ -38,7 +56,7 @@ TencentOS is a commercial operating system. In order for our large amount of cus
 *******************************************************************************
 ### Why are you unable to reuse shim from another distro that is already signed?
 *******************************************************************************
-TencentOS wants to employ Secure Boot for building a trusted operating system from Shim to GRUB to the kernel to kernel modules. As we are using our custom kernel with some features for our products, we need a signed shim with our certificate such that we can sign the kernel and loader to keep Secure Boot on.
+TencentOS wants to build a trusted operating system with Secure Boot from **shim**, **grub**, **kernel** to **kernel modules**. As we are using our custom kernel with some features for our products, we need a signed shim with our certificate such that we can sign the kernel and bootloaders to keep Secure Boot on.
 
 *******************************************************************************
 ### Who is the primary contact for security updates, etc.?
@@ -87,7 +105,7 @@ Make sure that you've verified that your build process uses that file as a sourc
 
 A short guide on verifying public keys and signatures should be available in the [docs](./docs/) directory.
 *******************************************************************************
-Yes, we are using the source from https://github.com/rhboot/shim/releases/download/15.7/shim-15.8.tar.bz2.
+Yes, we are using the source from https://github.com/rhboot/shim/releases/download/15.8/shim-15.8.tar.bz2.
 
 *******************************************************************************
 ### URL for a repo that contains the exact code which was built to result in your binary:
@@ -159,7 +177,7 @@ Downstream RHEL like implementation.
   * CVE-2023-4693
   * CVE-2023-4692
 *******************************************************************************
-The current builds contain the grub,3 fixes but not the NTFS fixes, but we don't build in the NTFS modules in our signed image.
+Our current grub2 builds all fixes above except NTFS fixes, but we don't build the NTFS modules in our signed grub image. (Our grub2 is built from RHEL8 source code)
 
 *******************************************************************************
 ### If shim is loading GRUB2 bootloader, and if these fixes have been applied, is the upstream global SBAT generation in your GRUB2 binary set to 4?
@@ -173,7 +191,7 @@ No, it's grub,3.
 ### Does your new chain of trust disallow booting old GRUB2 builds affected by the CVEs?
 If you had no previous signed shim, say so here. Otherwise a simple _yes_ will do.
 *******************************************************************************
-This is our fisrt application, we had no previous signed shim.
+This is our fisrt application. We had no previous signed shim.
 
 *******************************************************************************
 ### If your boot chain of trust includes a Linux kernel:
@@ -186,9 +204,18 @@ If you are shipping an older kernel, double-check your sources; maybe you do not
 Yes, all mentioned upstream commits above are applied.
 
 *******************************************************************************
+### How does your signed kernel enforce lockdown when your system runs
+### with Secure Boot enabled?
+Hint: If it does not, we are not likely to sign your shim.
+*******************************************************************************
+Our kernel is built with CONFIG_LOCK_DOWN_KERNEL_FORCE_INTEGRITY, CONFIG_MODULE_SIG, CONFIG_MODULE_SIG_FORCE, and all kernel modules are signed with generated ephemeral keys.
+
+When the system is booted with Secure Boot enabled, the kernel will enforce lockdown and prevent loading unsigned kernel modules or kernel modules with invalid signatures.
+
+*******************************************************************************
 ### Do you build your signed kernel with additional local patches? What do they do?
 *******************************************************************************
-Yes. We add some hardware drivers and have local patches to enforce kernel_lockdown when secure boot is enabled.
+Yes. Patches are applied to the kernel to support different hardware, extra features for TencentOS, and address recent security vulnerabilities.
 
 *******************************************************************************
 ### Do you use an ephemeral key for signing kernel modules?
@@ -253,7 +280,7 @@ a5e93e8908195fb79a4c781408193cb7e9128d44e165ae061f07cb66806835d1  shimx64.efi
 ### How do you manage and protect the keys used in your shim?
 Describe the security strategy that is used for key protection. This can range from using hardware tokens like HSMs or Smartcards, air-gapped vaults, physical safes to other good practices.
 *******************************************************************************
-The keys are stored on a physical machine with an FIPS-140-2 certified HSM. Access is strictly limited to several developers involved in building relevant software packages and signing binaries.
+The keys are stored on an FIPS-140-2 certified [CloudHSM](https://cloud.tencent.com/product/cloudhsm) with pkcs#11 interface. Access is strictly limited to several developers involved in building relevant software packages and signing binaries.
 
 *******************************************************************************
 ### Do you use EV certificates as embedded certificates in the shim?
@@ -324,7 +351,7 @@ No, we are not using systemd-boot.
 *******************************************************************************
 ### What is the origin and full version number of your bootloader (GRUB2 or systemd-boot or other)?
 *******************************************************************************
-Our grub2 is origined from RHEL 8 downstream and the version number is grub2-2.02-158.tl3.ap.1.
+Our grub2 is origined from RHEL8 (grub2-2.02-158.el8) and the full version number is grub2-2.02-158.tl3.ap.1.
 
 *******************************************************************************
 ### If your shim launches any other components apart from your bootloader, please provide further details on what is launched.
@@ -342,7 +369,7 @@ Our GRUB2 only loads Linux kernel.
 ### How do the launched components prevent execution of unauthenticated code?
 Summarize in one or two sentences, how your secure bootchain works on higher level.
 *******************************************************************************
-grub2 verifies signatures on booted kernels via shim. fwupd does not include code to launch other binaries, it can only load UEFI updates.
+shim verifies signature of grub, grub verifies signature of kernel (vmlinux). Kernel verifies signatures of kernel modules. fwupd does not include code to launch other binaries, it can only load UEFI updates.
 
 *******************************************************************************
 ### Does your shim load any loaders that support loading unsigned kernels (e.g. certain GRUB2 configurations)?
@@ -352,7 +379,7 @@ No.
 *******************************************************************************
 ### What kernel are you using? Which patches and configuration does it include to enforce Secure Boot?
 *******************************************************************************
-TencentOS Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable branch with some features for tencentos. We have lockdown and other patches applied to the longterm kernel.
+TencentOS Server Linux 3 is now using upstream kernel 5.4.119 and 5.4.241 on our stable branches. We have lockdown and other patches applied to the kernel.
 
 *******************************************************************************
 ### What contributions have you made to help us review the applications of other applicants?
