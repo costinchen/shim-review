@@ -38,8 +38,16 @@ The public details of both your organization and the issuer in the EV certificat
 (**not** the CA certificate embedded in your shim binary)
 
 ```
-Issuer: O=DigiCert Inc, CN=DigiCert Secure Site CN CA G3, C=US
-Subject: CN=Shenzhen Tencent Computer Systems Company Limited, O=Shenzhen Tencent Computer Systems Company Limited, L=Shenzhen, ST=Guangdong Province, C=CN
+Issuer:
+CN = DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+O = DigiCert, Inc.
+C = US
+Subject:
+CN = Tencent Technology (Shenzhen) Company Limited
+O = Tencent Technology (Shenzhen) Company Limited
+L = Shenzhen
+S = Guangdong Province
+C = CN
 ```
 
 *******************************************************************************
